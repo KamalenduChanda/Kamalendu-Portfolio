@@ -341,6 +341,29 @@ const PROJECTS_CONFIG = [
       'Deliverables: Scalable Master Vector Package (.AI, .EPS, .SVG, .PDF) across dark and light presentation backgrounds.'
     ],
     deliverables: 'Vector Brand Kit (.AI, .EPS, .SVG, .PDF), 3 Production Monogram Variants, Full Color & Monochrome Assets.'
+  },
+  {
+    id: 13,
+    title: 'Vector Infographic Design & Recreations',
+    subtitle: 'EDITORIAL DATA VISUALIZATION & 3D VECTOR PROCESS MODELS',
+    category: 'Infographic & Data Visualization',
+    software: ['ai'],
+    image: 'assets/infographic-3d-ribbon.jpg',
+    gallery: [
+      { url: 'assets/infographic-3d-ribbon.jpg', label: 'Infographic 01: 3D Dimensional Process Ribbon — 4-Stage Methodology (Visuals, Purpose, Data, Design)', wide: true },
+      { url: 'assets/infographic-lightbulb-tiers.jpg', label: 'Infographic 02: Tiered Ideation Lightbulb — 5-Phase Business Strategy & Startup Growth Framework' }
+    ],
+    spec: 'Adobe Illustrator Vector Suite • 3D Ribbon Extrusions • Custom Vector Iconography & Data Hierarchy',
+    desc: 'High-impact vector infographic design and editorial recreation project crafted entirely in Adobe Illustrator. Features two complex data visualization frameworks: a dimensional 3D curled ribbon process map breaking down visual communication methodologies (Visual Representation, Purpose, Data, and Design with storytelling and statistical metrics), and a concept-driven layered lightbulb diagram symbolizing entrepreneurial growth across five structured tiers (Ideation, Teamwork, Startup Launch, Business Scaling, and Ultimate Success). Designed with calculated isometric shadows, gradient depth lighting, custom vector pictograms, and clean typographic hierarchy.',
+    pipeline: [
+      'Information Architecture & Hierarchy: Structuring raw multi-step business methodologies and data processes into intuitive visual narratives.',
+      'Adobe Illustrator 3D & Ribbon Modeling: Constructing continuous curled ribbon segments with gradient drop shadows and color blocking across vertical palette columns.',
+      'Lightbulb Slicing & Layer Geometry: Segmenting organic bulb curves into distinct horizontal banners with perspective depth and electrical coil path work.',
+      'Custom Vector Iconography: Designing crisp minimalist pictograms (Lightbulb Spark, Teamwork Group, Cognitive Startup Silhouette, Growth Bar Chart, and Media Controls).',
+      'Color Psychology & Lighting: Balancing cool corporate teals and warm energetic orange/coral tones for immediate visual engagement.',
+      'Deliverables: Print and presentation-ready vector assets (.AI, .EPS, .SVG, .PDF) optimized for business decks, editorial reports, and digital whitepapers.'
+    ],
+    deliverables: 'Vector Master Files (.AI, .EPS, .SVG, .PDF), High-Res Editorial Sheets (300 DPI), and Digital Slide Presentation Assets.'
   }
 ];
 
