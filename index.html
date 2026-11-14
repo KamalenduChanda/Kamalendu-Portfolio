@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Manrope:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css?v=6.1">
+  <link rel="stylesheet" href="styles.css?v=7.0">
 </head>
 <body>
   <!-- Ambient Grain Overlay -->
@@ -449,50 +449,17 @@
         </div>
       </div>
 
-            <!-- Sidewise Slider Toolbar & Controls -->
-      <div class="slider-controls-bar">
-        <div class="slider-left-meta">
-          <div class="slider-counter" id="sliderCounter" aria-label="Current slide counter">
-            <span class="slide-active-num" id="currentSlide">01</span>
-            <span class="slide-divider">/</span>
-            <span class="slide-total-num" id="totalSlides">15</span>
-          </div>
-          <div class="slider-progress-track" title="Showcase progress">
-            <div class="slider-progress-bar" id="sliderProgressBar"></div>
-          </div>
-          <div class="slider-hint">
-            <span class="hint-pill"><span class="hint-icon">↔</span> Scroll Wheel or Drag to Slide</span>
-          </div>
-        </div>
-
-        <div class="slider-right-actions">
-          <div class="slider-nav-arrows">
-            <button type="button" class="slider-nav-btn prev-btn" id="sliderPrevBtn" aria-label="Previous project" title="Previous Project">
-              <span>←</span>
-            </button>
-            <button type="button" class="slider-nav-btn next-btn" id="sliderNextBtn" aria-label="Next project" title="Next Project">
-              <span>→</span>
-            </button>
-          </div>
-          <div class="view-mode-toggle" role="group" aria-label="Display View Mode">
-            <button type="button" class="view-toggle-btn active" id="viewSidewiseBtn" title="Horizontal Sidewise Slider View">
-              <span>↔ Sidewise</span>
-            </button>
-            <button type="button" class="view-toggle-btn" id="viewGridBtn" title="Two-Column Grid View">
-              <span>☷ Grid</span>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Dynamic Project Grid -->
-      <div class="project-grid sidewise-mode" id="projectGrid">
+            <!-- Dynamic Project Grid -->
+      <div class="project-grid" id="projectGrid">
         <!-- ================================================================ -->
-        <!-- DISCIPLINE 1: MOTION DESIGN & 3D COMMERCIAL VIDEO REELS (RECOMMENDED FIRST) -->
-        <!-- ================================================================ -->
-
+                <!-- DISCIPLINE 1: MOTION DESIGN & VIDEO (FEATURED FIRST) -->
+        <div class="discipline-divider" data-software="ae pr">
+          <div class="discipline-tag"><span class="disc-icon">&#127916;</span> Motion Design &amp; 3D Video (Featured First)</div>
+          <div class="discipline-line"></div>
+          <div class="discipline-count">2 Projects</div>
+        </div>
         <!-- PROJECT 01: Unimate & Balance - 3D Product Motion Reel (After Effects, Photoshop & Illustrator) -->
-        <article class="project-card project-wide" data-software="ae ps ai" data-id="1">
+        <article class="project-card" data-software="ae ps ai" data-id="1">
           <div class="project-image image-unimate-motion">
             <div class="project-badges">
               <span class="badge badge-ae"><span class="badge-tag">Ae</span> After Effects</span>
@@ -521,7 +488,7 @@
         </article>
 
         <!-- PROJECT 02: ChatGPT - Motion Graphic & Kinetic Visuals (After Effects, Premiere Pro & Gen AI) -->
-        <article class="project-card project-wide" data-software="ae pr genai" data-id="2">
+        <article class="project-card" data-software="ae pr genai" data-id="2">
           <div class="project-image image-chatgpt-motion">
             <div class="project-badges">
               <span class="badge badge-ae"><span class="badge-tag">Ae</span> After Effects</span>
@@ -550,9 +517,13 @@
         </article>
 
         <!-- ================================================================ -->
-        <!-- DISCIPLINE 2: BRAND IDENTITY & VECTOR LOGO DESIGN -->
-        <!-- ================================================================ -->
-
+        
+        <!-- DISCIPLINE 2: ADOBE ILLUSTRATOR -->
+        <div class="discipline-divider" data-software="ai">
+          <div class="discipline-tag"><span class="disc-icon">&#9998;</span> Adobe Illustrator &bull; Brand Identity, Packaging &amp; Vector Art</div>
+          <div class="discipline-line"></div>
+          <div class="discipline-count">6 Projects</div>
+        </div>
         <!-- PROJECT 03: Holy India - Brand Identity & Logo Design Thinking (Adobe Illustrator Only) -->
         <article class="project-card" data-software="ai" data-id="3">
           <div class="project-image image-holy-india">
@@ -690,15 +661,48 @@
           </div>
         </article>
 
-        <!-- PROJECT 08: Coca-Cola: Coke Zero - Commercial Poster (Photoshop) -->
-        <article class="project-card" data-software="ps" data-id="8">
+                <!-- PROJECT 08: Vector Infographic Design & Recreations (Adobe Illustrator Only) -->
+        <article class="project-card" data-software="ai" data-id="8">
+          <div class="project-image image-infographic">
+            <div class="project-badges">
+              <span class="badge badge-ai"><span class="badge-tag">Ai</span> Illustrator Only</span>
+            </div>
+            <span class="project-index">08 &bull; INFOGRAPHIC DESIGN</span>
+            <button class="project-play-btn" aria-label="Open project details">
+              <span>View Breakdown &rarr;</span>
+            </button>
+            <div class="project-title">
+              <small>EDITORIAL DESIGN &bull; 3D VECTOR MODELS</small>
+              <h3>Vector Infographic &bull; Design Recreations</h3>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="meta-desc">Precise vector technical recreations in Illustrator: 3D multi-tier ribbon process flow and layered lightbulb business conceptual diagram.</span>
+            <div class="meta-tags">
+              <span class="meta-tool">Illustrator Only</span>
+              <span class="meta-tool">Vector Hierarchy</span>
+              <span class="meta-tool">Editorial Design</span>
+              <span class="meta-year">Vector Art</span>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- DISCIPLINE 3: ADOBE PHOTOSHOP -->
+        <div class="discipline-divider" data-software="ps">
+          <div class="discipline-tag"><span class="disc-icon">&#127912;</span> Adobe Photoshop &bull; Theatrical Key Art, Matte Painting &amp; Posters</div>
+          <div class="discipline-line"></div>
+          <div class="discipline-count">7 Projects</div>
+        </div>
+        <!-- PROJECT 09: Coca-Cola: Coke Zero - Commercial Poster (Photoshop) -->
+        <article class="project-card" data-software="ps" data-id="9">
           <div class="project-image image-cokezero">
             <div class="project-badges">
               <span class="badge badge-ps"><span class="badge-tag">Ps</span> Photoshop</span>
             </div>
-            <span class="project-index">08 &bull; COMMERCIAL POSTER</span>
+            <span class="project-index">09 &bull; COMMERCIAL POSTER</span>
             <button class="project-play-btn" aria-label="Open project details">
-              <span>View Breakdown ↗</span>
+              <span>View Breakdown &rarr;</span>
             </button>
             <div class="project-title">
               <small>BEVERAGE KEY ART &bull; COMMERCIAL</small>
@@ -716,40 +720,7 @@
         </article>
 
         <!-- ================================================================ -->
-        <!-- DISCIPLINE 4: EDITORIAL & DATA VISUALIZATION -->
-        <!-- ================================================================ -->
-
-        <!-- PROJECT 09: Vector Infographic Design & Recreations (Adobe Illustrator Only) -->
-        <article class="project-card" data-software="ai" data-id="9">
-          <div class="project-image image-infographic">
-            <div class="project-badges">
-              <span class="badge badge-ai"><span class="badge-tag">Ai</span> Illustrator Only</span>
-            </div>
-            <span class="project-index">09 &bull; INFOGRAPHIC DESIGN</span>
-            <button class="project-play-btn" aria-label="Open project details">
-              <span>View Breakdown ↗</span>
-            </button>
-            <div class="project-title">
-              <small>DATA VISUALIZATION &bull; VECTOR RECREATION</small>
-              <h3>Infographic Design &bull; Vector Suite</h3>
-            </div>
-          </div>
-          <div class="project-meta">
-            <span class="meta-desc">Editorial vector infographics recreated in Illustrator: 3D curled ribbon process pipeline and tiered startup lightbulb strategy diagram.</span>
-            <div class="meta-tags">
-              <span class="meta-tool">Illustrator (100% Vector)</span>
-              <span class="meta-tool">Infographic Design</span>
-              <span class="meta-tool">Data Visualization</span>
-              <span class="meta-year">Vector Art</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- ================================================================ -->
-        <!-- DISCIPLINE 5: THEATRICAL KEY ART, MATTE PAINTING & POP CULTURE POSTERS -->
-        <!-- ================================================================ -->
-
-        <!-- PROJECT 10: Spider-Man: Miles Morales - Movie Poster Design (Photoshop) -->
+        : Spider-Man: Miles Morales - Movie Poster Design (Photoshop) -->
         <article class="project-card" data-software="ps" data-id="10">
           <div class="project-image image-spiderman">
             <div class="project-badges">
@@ -1249,6 +1220,6 @@
     </div>
   </div>
 
-  <script src="script.js?v=6.1"></script>
+  <script src="script.js?v=7.0"></script>
 </body>
 </html>
