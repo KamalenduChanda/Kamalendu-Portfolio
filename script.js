@@ -299,6 +299,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initSoftwareFiltering();
   initProjectModal();
   initArtworkLightbox();
+  initExperienceCertificate();
   initShowreelPlayer();
   initYouTubeHandler();
   initScrollReveals();
@@ -953,6 +954,33 @@ function initArtworkLightbox() {
   // Expose global methods
   window.openArtworkLightbox = openLightbox;
   window.closeArtworkLightbox = closeLightbox;
+}
+
+// EXPERIENCE & INTERNSHIP CERTIFICATE LIGHTBOX HANDLER
+function initExperienceCertificate() {
+  const viewBtn = document.getElementById('viewCertificateBtn');
+  const previewCard = document.getElementById('certPreviewTrigger');
+
+  const certData = {
+    title: 'MoreTasks Business Solution — Internship Certificate',
+    image: 'assets/moretasks-certificate.jpg',
+    gallery: [
+      {
+        url: 'assets/moretasks-certificate.jpg',
+        label: 'Official Certificate of Internship • Kamalendu Chanda • Graphic Design - Intern (2 Dec 2024 – 28 Feb 2025) • Authorized & Stamped by MoreTasks Design Team'
+      }
+    ]
+  };
+
+  function triggerLightbox(e) {
+    if (e) e.preventDefault();
+    if (window.openArtworkLightbox) {
+      window.openArtworkLightbox(certData, 0);
+    }
+  }
+
+  if (viewBtn) viewBtn.addEventListener('click', triggerLightbox);
+  if (previewCard) previewCard.addEventListener('click', triggerLightbox);
 }
 
 // SHOWREEL PLAYER SIMULATION
