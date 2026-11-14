@@ -6,7 +6,7 @@
  * 2. Adobe Premiere Pro (Pr)
  * 3. Adobe Photoshop (Ps)
  * 4. Adobe Illustrator (Ai)
- * 5. Generative AI Tools (AI) - Midjourney, Runway, Firefly
+ * 5. Generative AI Skills (AI) - Concept Ideation, Prompt Design, Visual Synthesis
  * 
  * =========================================================================
  * HOW TO ADD YOUR YOUTUBE LINK & SOCIAL MEDIA:
