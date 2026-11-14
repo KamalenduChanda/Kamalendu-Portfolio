@@ -306,6 +306,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollReveals();
   initYear();
   initContactForm();
+  initArtworkProtection();
 
   // Advanced Interactive Animations
   initCustomCursor();
@@ -617,6 +618,9 @@ function initProjectModal() {
             <span>🔍 View 100% Master Artworks</span>
             <span>↗</span>
           </button>
+          <button type="button" class="button button-glass" id="modalWatermarkDownloadBtn" title="Download Key Visual with official © KC_Din watermark">
+            <span>⬇ Download (Watermarked © KC_Din)</span>
+          </button>
           <a href="#contact" class="button button-outline" onclick="closeModal()">
             <span>Inquire About Similar Project</span>
           </a>
@@ -657,6 +661,15 @@ function initProjectModal() {
       modalView100Btn.addEventListener('click', () => {
         if (window.openArtworkLightbox) {
           window.openArtworkLightbox(project, 0);
+        }
+      });
+    }
+
+    const modalWatermarkDownloadBtn = document.getElementById('modalWatermarkDownloadBtn');
+    if (modalWatermarkDownloadBtn) {
+      modalWatermarkDownloadBtn.addEventListener('click', () => {
+        if (window.downloadWatermarkedImage && project.image) {
+          window.downloadWatermarkedImage(project.image, project.title);
         }
       });
     }
@@ -739,7 +752,7 @@ function initArtworkLightbox() {
   const zoomToggleBtn = document.getElementById('lightboxZoomToggle');
   const zoomLabel = document.getElementById('lightboxZoomLabel');
   const zoomIcon = document.getElementById('lightboxZoomIcon');
-  const directLink = document.getElementById('lightboxDirectLink');
+  const downloadBtn = document.getElementById('lightboxWatermarkDownload');
 
   if (!lightbox || !imgEl) return;
 
@@ -806,7 +819,15 @@ function initArtworkLightbox() {
     if (titleEl) titleEl.textContent = currentProject ? currentProject.title : 'Master Artwork';
     if (captionEl) captionEl.textContent = item.label || '';
     if (counterEl) counterEl.textContent = `${currentIndex + 1} / ${currentImages.length}`;
-    if (directLink) directLink.href = item.url;
+    if (downloadBtn) {
+      downloadBtn.onclick = (e) => {
+        e.preventDefault();
+        if (window.downloadWatermarkedImage && item && item.url) {
+          const title = (currentProject && currentProject.title) ? currentProject.title : 'KC_Din_Artwork';
+          window.downloadWatermarkedImage(item.url, title);
+        }
+      };
+    }
 
     // Show/hide prev/next buttons
     if (currentImages.length > 1) {
@@ -1595,3 +1616,256 @@ function initContactForm() {
     }
   });
 }
+
+// ==========================================================================
+// SECURITY & COPYRIGHT PROTECTION ENGINE (WATERMARKING & ANTI-SCRAPE)
+// ==========================================================================
+
+let toastTimeout = null;
+function showSecurityToast(title, message) {
+  let toast = document.getElementById('securityToast');
+  if (!toast) {
+    toast = document.createElement('div');
+    toast.id = 'securityToast';
+    toast.className = 'security-toast';
+    toast.setAttribute('role', 'alert');
+    toast.setAttribute('aria-live', 'polite');
+    toast.innerHTML = `
+      <div class="toast-icon">🛡️</div>
+      <div class="toast-body">
+        <strong id="securityToastTitle">Artwork Protected • © KC_Din</strong>
+        <p id="securityToastMsg">Right-click &amp; direct save restricted. Official downloads carry verified watermark.</p>
+      </div>
+    `;
+    document.body.appendChild(toast);
+  }
+  const titleEl = document.getElementById('securityToastTitle');
+  const msgEl = document.getElementById('securityToastMsg');
+  if (titleEl && title) titleEl.textContent = title;
+  if (msgEl && message) msgEl.textContent = message;
+
+  toast.classList.add('show');
+  if (toastTimeout) clearTimeout(toastTimeout);
+  toastTimeout = setTimeout(() => {
+    toast.classList.remove('show');
+  }, 3800);
+}
+window.showSecurityToast = showSecurityToast;
+
+// DYNAMIC WATERMARK EXPORT ENGINE (HTML5 CANVAS)
+function downloadWatermarkedImage(imageUrl, artworkTitle) {
+  if (!imageUrl) return;
+
+  // For official PDF documents (e.g. internship certificate), download official file directly
+  if (imageUrl.toLowerCase().endsWith('.pdf')) {
+    const a = document.createElement('a');
+    a.href = imageUrl;
+    a.download = `${(artworkTitle || 'Certificate').replace(/[^a-z0-9_-]/gi, '_')}.pdf`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    showSecurityToast('Document Downloaded', 'Official PDF credential exported.');
+    return;
+  }
+
+  showSecurityToast('Generating Watermark...', 'Applying official © KC_Din watermark stamp to artwork...');
+
+  const img = new Image();
+  img.crossOrigin = 'anonymous';
+
+  img.onload = () => {
+    try {
+      const canvas = document.createElement('canvas');
+      const ctx = canvas.getContext('2d');
+      const w = img.naturalWidth || img.width;
+      const h = img.naturalHeight || img.height;
+      canvas.width = w;
+      canvas.height = h;
+
+      // Draw original master artwork
+      ctx.drawImage(img, 0, 0, w, h);
+
+      // Responsive scale factor based on master resolution (1080p, 2K, 4K)
+      const scale = Math.max(1, Math.min(w, h) / 1000);
+
+      // 1. Center Diagonal Subtle Watermark (Anti-Theft Overlay)
+      ctx.save();
+      ctx.translate(w / 2, h / 2);
+      ctx.rotate(-28 * Math.PI / 180);
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+
+      // Drop shadow for legibility across dark and light artworks
+      ctx.shadowColor = 'rgba(0, 0, 0, 0.45)';
+      ctx.shadowBlur = 8 * scale;
+
+      // Main diagonal title
+      ctx.font = `900 ${Math.round(44 * scale)}px "Cabinet Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif`;
+      ctx.fillStyle = 'rgba(255, 255, 255, 0.18)';
+      ctx.fillText('KC_DIN • KAMALENDU CHANDA', 0, -18 * scale);
+
+      // Secondary diagonal notice
+      ctx.font = `700 ${Math.round(18 * scale)}px "JetBrains Mono", monospace`;
+      ctx.fillStyle = 'rgba(199, 255, 72, 0.28)';
+      ctx.fillText('ORIGINAL CREATIVE ASSET • DO NOT REPRODUCE WITHOUT ATTRIBUTION', 0, 22 * scale);
+      ctx.restore();
+
+      // 2. Bottom-Right Official Security Badge Pill
+      ctx.save();
+      const badgeW = Math.round(390 * scale);
+      const badgeH = Math.round(76 * scale);
+      const margin = Math.round(28 * scale);
+      const badgeX = w - badgeW - margin;
+      const badgeY = h - badgeH - margin;
+      const radius = Math.round(12 * scale);
+
+      // Pill Shadow
+      ctx.shadowColor = 'rgba(0, 0, 0, 0.75)';
+      ctx.shadowBlur = 18 * scale;
+      ctx.shadowOffsetX = 0;
+      ctx.shadowOffsetY = 4 * scale;
+
+      // Pill Dark Frosted Background
+      ctx.fillStyle = 'rgba(5, 10, 8, 0.92)';
+      ctx.beginPath();
+      if (typeof ctx.roundRect === 'function') {
+        ctx.roundRect(badgeX, badgeY, badgeW, badgeH, radius);
+      } else {
+        ctx.rect(badgeX, badgeY, badgeW, badgeH);
+      }
+      ctx.fill();
+
+      // Pill Border with neon lime tint
+      ctx.strokeStyle = 'rgba(199, 255, 72, 0.55)';
+      ctx.lineWidth = Math.max(1.5, 2 * scale);
+      ctx.stroke();
+
+      ctx.shadowColor = 'transparent';
+
+      // Inner Tag Pill: "[ KC_DIN ]"
+      const tagW = Math.round(92 * scale);
+      const tagH = Math.round(26 * scale);
+      const tagX = badgeX + Math.round(18 * scale);
+      const tagY = badgeY + Math.round(16 * scale);
+      const tagRadius = Math.round(4 * scale);
+
+      ctx.fillStyle = '#c7ff48';
+      ctx.beginPath();
+      if (typeof ctx.roundRect === 'function') {
+        ctx.roundRect(tagX, tagY, tagW, tagH, tagRadius);
+      } else {
+        ctx.rect(tagX, tagY, tagW, tagH);
+      }
+      ctx.fill();
+
+      ctx.font = `800 ${Math.round(12 * scale)}px "JetBrains Mono", monospace`;
+      ctx.fillStyle = '#050a08';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText('KC_DIN', tagX + tagW / 2, tagY + tagH / 2 + 0.5);
+
+      // Primary Creator Text
+      ctx.textAlign = 'left';
+      ctx.textBaseline = 'middle';
+      ctx.font = `700 ${Math.round(15 * scale)}px "Cabinet Grotesk", sans-serif`;
+      ctx.fillStyle = '#ffffff';
+      ctx.fillText('© KC_Din • Kamalendu Chanda', tagX + tagW + Math.round(14 * scale), tagY + tagH / 2);
+
+      // Secondary URL / Verified Stamp
+      ctx.font = `600 ${Math.round(11 * scale)}px "JetBrains Mono", monospace`;
+      ctx.fillStyle = '#9ab0a2';
+      ctx.fillText('kamalenduchanda.github.io • Motion & Brand Design', tagX, badgeY + badgeH - Math.round(20 * scale));
+
+      ctx.restore();
+
+      // 3. Top-Left Anti-Crop Micro Watermark
+      ctx.save();
+      ctx.textAlign = 'left';
+      ctx.textBaseline = 'top';
+      ctx.font = `700 ${Math.round(12 * scale)}px "JetBrains Mono", monospace`;
+      ctx.shadowColor = 'rgba(0, 0, 0, 0.8)';
+      ctx.shadowBlur = 6 * scale;
+      ctx.fillStyle = 'rgba(255, 255, 255, 0.45)';
+      ctx.fillText('© KC_DIN ARCHIVE', Math.round(20 * scale), Math.round(18 * scale));
+      ctx.restore();
+
+      // Export canvas to JPEG blob
+      canvas.toBlob((blob) => {
+        if (!blob) {
+          throw new Error('Canvas blob generation failed');
+        }
+        const blobUrl = URL.createObjectURL(blob);
+        const safeTitle = (artworkTitle || 'Artwork')
+          .toLowerCase()
+          .replace(/[^a-z0-9]+/g, '-')
+          .replace(/^-|-$/g, '');
+        const filename = `${safeTitle}-watermarked-KC_Din.jpg`;
+
+        const a = document.createElement('a');
+        a.href = blobUrl;
+        a.download = filename;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+
+        setTimeout(() => URL.revokeObjectURL(blobUrl), 3500);
+        showSecurityToast('Watermarked Download Complete', `Saved as "${filename}" with official © KC_Din watermark.`);
+      }, 'image/jpeg', 0.94);
+
+    } catch (err) {
+      console.error('Watermark generation error:', err);
+      const a = document.createElement('a');
+      a.href = imageUrl;
+      a.download = `KC_Din-${(artworkTitle || 'Artwork').replace(/[^a-z0-9_-]/gi, '_')}.jpg`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      showSecurityToast('Artwork Downloaded', 'Direct artwork saved.');
+    }
+  };
+
+  img.onerror = () => {
+    window.open(imageUrl, '_blank');
+    showSecurityToast('Opening Artwork', 'Opened master artwork in new tab.');
+  };
+
+  img.src = imageUrl;
+}
+window.downloadWatermarkedImage = downloadWatermarkedImage;
+
+// ARTWORK RIGHT-CLICK & DRAG PROTECTION
+function initArtworkProtection() {
+  // Prevent dragging artworks and images
+  document.addEventListener('dragstart', (e) => {
+    const target = e.target;
+    if (target && target.tagName === 'IMG') {
+      e.preventDefault();
+      showSecurityToast(
+        'Artwork Protected • © KC_Din',
+        'Direct dragging & scraping restricted. Use the official "Download (Watermarked © KC_Din)" button.'
+      );
+    }
+  });
+
+  // Intercept right-click context menu ONLY on artwork images and preview containers
+  document.addEventListener('contextmenu', (e) => {
+    const target = e.target;
+    const isImage = target && target.tagName === 'IMG';
+    const isInStage = target && (
+      target.closest('.artwork-lightbox-stage') ||
+      target.closest('.project-card') ||
+      target.closest('.portfolio-grid') ||
+      target.closest('.showreel-media') ||
+      target.closest('.cert-preview-col')
+    );
+
+    if (isImage || isInStage) {
+      e.preventDefault();
+      showSecurityToast(
+        'Right-Click Protected • © KC_Din',
+        'Original assets are protected. Please download through the official Watermarked Download button.'
+      );
+    }
+  });
+}
+window.initArtworkProtection = initArtworkProtection;
