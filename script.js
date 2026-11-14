@@ -17,10 +17,9 @@
 
 // 1. SOCIAL MEDIA CONFIGURATION (Add your real profile links here)
 const SOCIAL_LINKS = {
-  youtube: 'https://youtube.com',      // e.g. https://youtube.com/@kamalendu
-  instagram: 'https://instagram.com',  // e.g. https://instagram.com/kamalendu
-  behance: 'https://behance.net',      // e.g. https://behance.net/kamalendu
-  linkedin: 'https://linkedin.com'     // e.g. https://linkedin.com/in/kamalendu
+  youtube: 'https://youtube.com',
+  instagram: 'https://www.instagram.com/kc.din?utm_source=ig_web_button_share_sheet&srtk=ZDNlZDc0MzIxNw==',
+  linkedin: 'https://www.linkedin.com/in/kamalendu-chanda-324703339'
 };
 
 // 2. YOUTUBE SHOWREEL CONFIGURATION
@@ -73,95 +72,10 @@ const SOFTWARE_CONFIG = [
   }
 ];
 
-// 4. PROJECTS DATABASE
+// 4. PROJECTS DATABASE (Kamalendu's Real Commercial Works)
 const PROJECTS_CONFIG = [
   {
     id: 1,
-    title: 'Where the Quiet Lives',
-    subtitle: 'MOTION DESIGN & CONCEPT ART',
-    category: '2.5D Parallax & Compositing',
-    software: ['ae', 'ps', 'genai'],
-    image: 'assets/hero-valley.png',
-    spec: '4K 60FPS • Multiplane Parallax',
-    desc: 'An evocative motion exploration of an untouched valley. Built using Generative AI environment ideation, multi-layered Photoshop digital matte painting, and an After Effects 3D camera rig with volumetric mist passes.',
-    pipeline: [
-      'Generative AI: Rapid ideation of environment mood and light direction.',
-      'Photoshop: Separation of foreground, midground ridges, and distant peaks into 8 distinct depth plates.',
-      'Photoshop: Hand-painted volumetric mist and custom atmospheric lighting.',
-      'After Effects: 3D multiplane composition with 35mm virtual lens, custom depth of field, and continuous drift.'
-    ],
-    deliverables: 'Master 3840x2160 ProRes 422HQ, 16:9 & 9:16 Cuts.'
-  },
-  {
-    id: 2,
-    title: 'Somewhere Higher',
-    subtitle: 'VIDEO EDITING & SOUND DESIGN',
-    category: 'Cinematic Narrative Cut',
-    software: ['pr', 'ae'],
-    image: 'assets/mountains.png',
-    spec: '4K DCI • Rhythmic Audio Sync',
-    desc: 'A cinematic short capturing mountain exploration. Cut with frame-by-frame rhythmic precision in Premiere Pro, paired with custom sound design and dynamic speed-ramped title sequences in After Effects.',
-    pipeline: [
-      'Premiere Pro: Assembly and pacing cut timed to acoustic percussion and bass drops.',
-      'Premiere Pro: Custom Lumetri color grade featuring cinematic teals and warm highlights.',
-      'After Effects: Kinetic title typography with directional motion blur.',
-      'Sound Design: Multi-track audio mix with footsteps, wind swells, and cinematic risers.'
-    ],
-    deliverables: '4K Master Cut for Commercial & Web Streaming.'
-  },
-  {
-    id: 3,
-    title: 'Into the Green',
-    subtitle: 'DIGITAL ART & COMPOSITE',
-    category: 'Digital Matte Painting',
-    software: ['ps', 'genai'],
-    image: 'assets/forest-hills.png',
-    spec: 'High-Res 300 DPI Key Art',
-    desc: 'Dense atmospheric forest study exploring light falloff and organic texturing. Hand-crafted in Photoshop using AI-assisted texture synthesis, photographic elements, and luminosity masks.',
-    pipeline: [
-      'Generative AI: Synthesis of ancient moss and foliage texture variants.',
-      'Photoshop: Composite blending of 14 unique textures for bark and forest canopy.',
-      'Photoshop: Color grading LUT and soft rim lighting painted on non-destructive overlay layers.',
-      'Photoshop: Film grain texture overlay and optical bloom.'
-    ],
-    deliverables: 'Master PSD with organized smart object layer structure.'
-  },
-  {
-    id: 4,
-    title: 'Zenith Vector Suite',
-    subtitle: 'IDENTITY & KINETIC LOGO',
-    category: 'Vector Systems & Animation',
-    software: ['ai', 'ae'],
-    image: 'assets/rock-garden.png',
-    spec: 'Infinite Scalability • Vector & Motion',
-    desc: 'Brand identity system featuring custom geometric iconography and an animated vector logo sequence. Designed with mathematical precision in Illustrator and keyframed to life in After Effects.',
-    pipeline: [
-      'Illustrator: Strict grid-based logo construction with geometric bezier curves.',
-      'Illustrator: Separation of stroke trims and fill paths for individual motion control.',
-      'After Effects: Path animation, trim paths, bounce physics expressions, and elastic easing.',
-      'After Effects: 4K video bumpers and web-ready animation.'
-    ],
-    deliverables: 'Vector AI Master Kit, SVG System, and 4K Motion Ident Video.'
-  },
-  {
-    id: 5,
-    title: 'Echoes in Horizon',
-    subtitle: 'COMMERCIAL REEL',
-    category: 'Pacing & Commercial Edit',
-    software: ['pr'],
-    image: 'assets/distant-valley.png',
-    spec: 'Commercial Cut • Multi-camera',
-    desc: 'Commercial video cut demonstrating narrative momentum and emotional pacing. Featuring multi-camera synchronized cutting, custom transition timing, and Lumetri color science in Premiere Pro.',
-    pipeline: [
-      'Premiere Pro: Multi-cam ingest and sync using audio waveform matching.',
-      'Premiere Pro: Story pacing with J-cuts and L-cuts to build anticipation.',
-      'Premiere Pro: Audio sweetening using parametric EQ, dialogue clarity compressors, and ducking.',
-      'Premiere Pro: Broadcast safe color calibration.'
-    ],
-    deliverables: 'Broadcast TV master, YouTube 4K master, and social reels.'
-  },
-  {
-    id: 6,
     title: 'Trivana — Logo & Packaging Design',
     subtitle: 'LOGO DESIGN & PACKAGING COVER',
     category: 'Brand Identity & Product Packaging',
@@ -185,7 +99,7 @@ const PROJECTS_CONFIG = [
     deliverables: 'Vector Logo Kit (AI, EPS, SVG), Print-Ready CMYK Packaging Masters (300 DPI), and Digital Showcase Mockups.'
   },
   {
-    id: 7,
+    id: 2,
     title: 'Spider-Man: Miles Morales — Movie Poster',
     subtitle: 'KEY ART & OUTDOOR ADVERTISING MOCKUP',
     category: 'Key Art & Theatrical Poster Design',
@@ -206,7 +120,7 @@ const PROJECTS_CONFIG = [
     deliverables: 'Master Theatrical Poster PSD (300 DPI), High-Res Billboard Mockup, and Social Display Key Art.'
   },
   {
-    id: 8,
+    id: 3,
     title: 'Demon Slayer: Infinity Castle — Movie Poster',
     subtitle: 'ANIME THEATRICAL KEY ART & BILLBOARD MOCKUP',
     category: 'Anime Key Art & Poster Design',
@@ -227,7 +141,7 @@ const PROJECTS_CONFIG = [
     deliverables: 'Theatrical Master PSD (300 DPI), Outdoor Billboard Mockup, and High-Res Promotional Key Art.'
   },
   {
-    id: 9,
+    id: 4,
     title: 'Men in Blue: Champions — Sports Editorial Spread',
     subtitle: 'T20 WORLD CUP VICTORY COMMEMORATIVE ART',
     category: 'Sports Editorial Design & Magazine Spread',
@@ -248,7 +162,7 @@ const PROJECTS_CONFIG = [
     deliverables: 'High-Res Print Master PSD (300 DPI), Editorial Magazine Mockup, and Social Graphics Kit.'
   },
   {
-    id: 10,
+    id: 5,
     title: 'The Forest Colossus — Jungle Photo Manipulation',
     subtitle: 'ATMOSPHERIC PHOTO MANIPULATION & MATTE COMPOSITE',
     category: 'Photo Manipulation & Environmental Matte Art',
@@ -268,7 +182,7 @@ const PROJECTS_CONFIG = [
     deliverables: 'Master Layered Composite PSD (300 DPI), High-Res Digital Art Print, and Social Portfolio Showcase.'
   },
   {
-    id: 11,
+    id: 6,
     title: 'Fine Up — Beverage Bottle Label Suite',
     subtitle: 'VECTOR LOGO, AI BACKGROUNDS & PACKAGING COMPOSITE',
     category: 'Commercial Beverage Label & Identity Design',
@@ -293,7 +207,7 @@ const PROJECTS_CONFIG = [
     deliverables: 'Vector Brand Identity Kit (AI, EPS), 5 Print-Ready Bottle Wrap PSDs (300 DPI CMYK), and Digital Retail Mockups.'
   },
   {
-    id: 12,
+    id: 7,
     title: 'Coca-Cola: Coke Zero — Commercial Poster',
     subtitle: 'BEVERAGE KEY ART & PRODUCT POSTER',
     category: 'Commercial Advertising & Product Poster',
@@ -313,7 +227,7 @@ const PROJECTS_CONFIG = [
     deliverables: 'Print-Ready Advertising Master PSD (300 DPI), Retail Key Art, and Social Media Display Ads.'
   },
   {
-    id: 13,
+    id: 8,
     title: 'Campus Shoes: Prebook Drop — Social Campaign',
     subtitle: 'ECOMMERCE AD DESIGN & 3D SOCIAL MOCKUP',
     category: 'Social Media Ad Design & 3D Mockup',
@@ -334,7 +248,7 @@ const PROJECTS_CONFIG = [
     deliverables: 'Social Media Ad Kit (1:1 & 9:16), 3D Device Showcase Mockups, and Layered PSD Templates.'
   },
   {
-    id: 14,
+    id: 9,
     title: 'Peaceful Yoga: Mind & Body — Event Poster',
     subtitle: 'WELLNESS POSTER & ORGANIC GRAPHIC DESIGN',
     category: 'Event Poster & Editorial Print Layout',
@@ -380,22 +294,18 @@ document.addEventListener('DOMContentLoaded', () => {
 function initSocialLinks() {
   const ytHeader = document.getElementById('headerYtLink');
   const instaHeader = document.getElementById('headerInstaLink');
-  const behanceHeader = document.getElementById('headerBehanceLink');
   const linkedinHeader = document.getElementById('headerLinkedinLink');
 
   const ytContact = document.getElementById('contactYtLink');
   const instaContact = document.getElementById('contactInstaLink');
-  const behanceContact = document.getElementById('contactBehanceLink');
   const linkedinContact = document.getElementById('contactLinkedinLink');
 
   if (ytHeader) ytHeader.href = SOCIAL_LINKS.youtube;
   if (instaHeader) instaHeader.href = SOCIAL_LINKS.instagram;
-  if (behanceHeader) behanceHeader.href = SOCIAL_LINKS.behance;
   if (linkedinHeader) linkedinHeader.href = SOCIAL_LINKS.linkedin;
 
   if (ytContact) ytContact.href = SOCIAL_LINKS.youtube;
   if (instaContact) instaContact.href = SOCIAL_LINKS.instagram;
-  if (behanceContact) behanceContact.href = SOCIAL_LINKS.behance;
   if (linkedinContact) linkedinContact.href = SOCIAL_LINKS.linkedin;
 }
 
