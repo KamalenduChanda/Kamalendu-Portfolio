@@ -1,0 +1,1168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+  <meta name="theme-color" content="#060b09">
+  <meta name="description" content="Kamalendu — Motion Designer, Video Editor & Visual Artist. After Effects, Premiere Pro, Photoshop, Illustrator, and Generative AI.">
+  <title>Kamalendu — Motion Designer &amp; Video Editor</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Manrope:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css?v=3.1">
+</head>
+<body>
+  <!-- Ambient Grain Overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Header / Navigation -->
+  <header class="topbar" id="topbar">
+    <a class="wordmark" href="#home" aria-label="Kamalendu Home">
+      <span class="mark">K<span>.</span></span>
+      <div class="wordmark-group">
+        <span class="wordmark-name">KAMALENDU</span>
+        <span class="wordmark-sub">MOTION &bull; EDIT &bull; VISUALS</span>
+      </div>
+    </a>
+
+    <!-- Social Links (Desktop Header) -->
+    <div class="header-socials">
+      <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="YouTube" id="headerYtLink">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+      </a>
+      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="Instagram" id="headerInstaLink">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      </a>
+      <a href="https://behance.net" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="Behance" id="headerBehanceLink">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-4.971 3-3.401 0-5.755-2.168-5.755-6.002 0-3.528 2.28-6.198 5.679-6.198 3.537 0 5.371 2.58 5.371 5.922 0 .524-.07 1.056-.07 1.056h-8.08c.071 1.83 1.352 2.872 2.898 2.872 1.298 0 2.115-.658 2.529-1.65h2.408zm-7.797-4.143h5.451c-.07-1.488-.992-2.587-2.673-2.587-1.764 0-2.658 1.157-2.778 2.587zm-10.929 7.143h-5v-16h5.811c2.148 0 3.754.437 4.707 1.34 1.002.949 1.482 2.25 1.482 3.636 0 1.637-.775 2.946-2.027 3.666 1.677.674 2.527 2.186 2.527 4.098 0 1.658-.613 3.008-1.748 3.92-1.127.904-2.827 1.34-5.752 1.34zm-2.071-6.937h2.895c1.474 0 2.457-.654 2.457-1.87 0-1.144-.896-1.79-2.37-1.79h-2.982v3.66zm0 4.887h3.197c1.748 0 2.766-.757 2.766-2.091 0-1.309-1.07-2.039-2.78-2.039h-3.183v4.13z"/></svg>
+      </a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn" id="headerLinkedinLink">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+      </a>
+    </div>
+
+    <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#software" class="nav-link">Skills &amp; Software</a>
+      <a href="#work" class="nav-link">Selected Work</a>
+      <a href="#showreel" class="nav-link">Showreel</a>
+      <a href="#pipeline" class="nav-link">Pipeline</a>
+      <a href="#contact" class="nav-cta">
+        <span>Contact</span>
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION (Safe non-overlapping flex layout) -->
+    <section class="hero" id="home">
+      <div class="hero-image" aria-hidden="true"></div>
+      <div class="hero-shade" aria-hidden="true"></div>
+      
+      <!-- Atmospheric Parallax Plates (Zero seams, zero lines - Pure Cinematic Depth) -->
+      <div class="depth-layer depth-mountains" data-depth=".12" aria-hidden="true"></div>
+      <div class="depth-layer depth-forest" data-depth=".24" aria-hidden="true"></div>
+      <div class="depth-layer depth-mist" data-depth=".34" aria-hidden="true"></div>
+      
+      <!-- Interactive Hero Motion Canvas (Living Bokeh, Fireflies & Continuous Fog Motes) -->
+      <canvas id="heroCanvas" class="hero-canvas" aria-hidden="true"></canvas>
+
+      <!-- Main Hero Content -->
+      <div class="hero-center-box">
+        <div class="hero-copy">
+          <div class="eyebrow-badge">
+            <span class="live-dot"></span>
+            <span>KAMALENDU &bull; MOTION &amp; VIDEO PORTFOLIO</span>
+          </div>
+
+          <h1 class="hero-title">
+            Visual Rhythm.<br>
+            <em>Cinematic Motion.</em>
+          </h1>
+
+          <p class="hero-intro">
+            Motion Designer &amp; Video Editor crafting dynamic motion graphics, rhythm-based video cuts, and evocative visuals.
+          </p>
+
+          <!-- Core Skills / Software Pills -->
+          <div class="hero-software-pills" aria-label="Primary Software & Skills">
+            <a href="#software" class="soft-pill pill-ae" title="Adobe After Effects">
+              <span class="soft-tag">Ae</span> After Effects
+            </a>
+            <a href="#software" class="soft-pill pill-pr" title="Adobe Premiere Pro">
+              <span class="soft-tag">Pr</span> Premiere Pro
+            </a>
+            <a href="#software" class="soft-pill pill-ps" title="Adobe Photoshop">
+              <span class="soft-tag">Ps</span> Photoshop
+            </a>
+            <a href="#software" class="soft-pill pill-ai" title="Adobe Illustrator">
+              <span class="soft-tag">Ai</span> Illustrator
+            </a>
+            <a href="#software" class="soft-pill pill-genai" title="Generative AI Tools">
+              <span class="soft-tag">AI</span> Generative AI
+            </a>
+          </div>
+
+          <!-- Hero Action Buttons (Guaranteed Clean Spacing) -->
+          <div class="hero-actions">
+            <a class="button button-lime" href="#work">
+              <span>View Projects</span>
+              <span class="btn-icon">↘</span>
+            </a>
+            <a class="button button-glass" href="#showreel">
+              <span class="play-icon">▶</span>
+              <span>Watch Showreel</span>
+            </a>
+            <a class="text-link" href="#contact">
+              Let’s connect <span>→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Illustrated Portrait of Kamalendu -->
+        <div class="portrait-wrap">
+          <div class="portrait-glow"></div>
+          <div class="portrait-hand-aura" aria-hidden="true"></div>
+          <img class="portrait" src="assets/kamalendu-portrait.png" alt="Portrait of Kamalendu, motion designer and visual artist">
+        </div>
+      </div>
+
+      <!-- Safe Non-overlapping Hero Footer Bar -->
+      <div class="hero-bottom-bar">
+        <span class="hero-scroll-hint">SCROLL TO EXPLORE</span>
+        <span class="hero-line"></span>
+        <span class="hero-software-summary">AE &bull; PR &bull; PS &bull; AI &bull; GENERATIVE AI</span>
+      </div>
+    </section>
+
+    <!-- MARQUEE TICKER -->
+    <div class="ticker" aria-label="Creative Disciplines">
+      <div class="ticker-track">
+        <span>MOTION DESIGN</span><b>✳</b>
+        <span>VIDEO EDITING</span><b>✳</b>
+        <span>AFTER EFFECTS</span><b>✳</b>
+        <span>PREMIERE PRO</span><b>✳</b>
+        <span>PHOTOSHOP</span><b>✳</b>
+        <span>ILLUSTRATOR</span><b>✳</b>
+        <span>GENERATIVE AI</span><b>✳</b>
+        <span>KINETIC TYPOGRAPHY</span><b>✳</b>
+        <span>MOTION DESIGN</span><b>✳</b>
+        <span>VIDEO EDITING</span><b>✳</b>
+        <span>AFTER EFFECTS</span><b>✳</b>
+        <span>PREMIERE PRO</span><b>✳</b>
+        <span>PHOTOSHOP</span><b>✳</b>
+        <span>ILLUSTRATOR</span><b>✳</b>
+        <span>GENERATIVE AI</span><b>✳</b>
+      </div>
+    </div>
+
+    <!-- ABOUT SECTION (Clean, direct, no overlapping sticker) -->
+    <section class="about section-pad" id="about">
+      <div class="section-kicker">
+        <span>01 / ABOUT</span>
+        <span class="kicker-rule"></span>
+        <span>THE CREATIVE FOCUS</span>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-heading">
+          <h2>
+            Precision in every<br>
+            <em>keyframe.</em>
+          </h2>
+        </div>
+
+        <div class="about-copy">
+          <p class="lead">
+            I turn ideas into fluid motion, rhythm-driven video cuts, and striking visual artwork.
+          </p>
+          <p>
+            Whether assembling pacing in <strong>Premiere Pro</strong>, animating kinetic typography and VFX in <strong>After Effects</strong>, painting digital environments in <strong>Photoshop</strong>, crafting crisp vectors in <strong>Illustrator</strong>, or leveraging <strong>Generative AI</strong> for rapid concept synthesis — my focus is clean execution and visual impact.
+          </p>
+
+          <div class="about-buttons">
+            <a href="#software" class="under-link">View Skills &amp; Tools <span>→</span></a>
+            <a href="#work" class="under-link">Browse Selected Work <span>↓</span></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Metrics -->
+      <div class="about-stats">
+        <div class="stat-card">
+          <strong>5</strong>
+          <small>CORE CREATIVE PILLARS</small>
+          <span class="stat-desc">Ae, Pr, Ps, Ai &amp; Gen AI</span>
+        </div>
+        <div class="stat-card">
+          <strong>100<span>%</span></strong>
+          <small>CUSTOM WORK</small>
+          <span class="stat-desc">Frame-by-frame attention</span>
+        </div>
+        <div class="stat-card">
+          <strong>4K<span>60</span></strong>
+          <small>HIGH DEFINITION</small>
+          <span class="stat-desc">Crisp color &amp; render clarity</span>
+        </div>
+        <div class="stat-card">
+          <strong>&infin;</strong>
+          <small>CREATIVE AGILITY</small>
+          <span class="stat-desc">Adapting new creative tools</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOFTWARE & SKILLS SECTION (Only user tools + AI, no extra cards) -->
+    <section class="software section-pad" id="software">
+      <div class="section-kicker">
+        <span>02 / SKILLS &amp; SOFTWARE</span>
+        <span class="kicker-rule"></span>
+        <span>CREATIVE SUITE</span>
+      </div>
+
+      <div class="software-header">
+        <div>
+          <h2>
+            Software &amp; <em>Skills.</em>
+          </h2>
+          <p class="section-sub">
+            Mastered tools applied across motion graphics, video post-production, digital art, vector identity, and AI concepting.
+          </p>
+        </div>
+      </div>
+
+      <!-- Clean 5-card grid for Kamalendu's skills -->
+      <div class="software-grid" id="softwareGrid">
+        <!-- 1. AFTER EFFECTS -->
+        <article class="soft-card card-ae" data-software="ae">
+          <div class="soft-card-top">
+            <div class="soft-icon ae-icon">
+              <span>Ae</span>
+            </div>
+            <span class="soft-version">MOTION &bull; VFX</span>
+          </div>
+          <h3 class="soft-title">After Effects</h3>
+          <p class="soft-desc">
+            Kinetic typography, 2.5D multiplane parallax, VFX compositing, logo animation, speed ramps, and motion tracking.
+          </p>
+          <div class="soft-skills-list">
+            <span class="skill-tag">Kinetic Typography</span>
+            <span class="skill-tag">2.5D Parallax</span>
+            <span class="skill-tag">VFX Compositing</span>
+            <span class="skill-tag">Motion Tracking</span>
+          </div>
+          <div class="soft-card-footer">
+            <button class="filter-trigger" data-filter="ae">Filter Ae Projects <span>→</span></button>
+          </div>
+        </article>
+
+        <!-- 2. PREMIERE PRO -->
+        <article class="soft-card card-pr" data-software="pr">
+          <div class="soft-card-top">
+            <div class="soft-icon pr-icon">
+              <span>Pr</span>
+            </div>
+            <span class="soft-version">EDIT &bull; COLOR</span>
+          </div>
+          <h3 class="soft-title">Premiere Pro</h3>
+          <p class="soft-desc">
+            Narrative pacing, rhythmic music-synced cuts, Lumetri color grading, dialogue clarity, and commercial showreels.
+          </p>
+          <div class="soft-skills-list">
+            <span class="skill-tag">Rhythmic Cuts</span>
+            <span class="skill-tag">Lumetri Color</span>
+            <span class="skill-tag">Audio Mastering</span>
+            <span class="skill-tag">Commercial Reels</span>
+          </div>
+          <div class="soft-card-footer">
+            <button class="filter-trigger" data-filter="pr">Filter Pr Projects <span>→</span></button>
+          </div>
+        </article>
+
+        <!-- 3. PHOTOSHOP -->
+        <article class="soft-card card-ps" data-software="ps">
+          <div class="soft-card-top">
+            <div class="soft-icon ps-icon">
+              <span>Ps</span>
+            </div>
+            <span class="soft-version">MATTE &bull; COMPOSITE</span>
+          </div>
+          <h3 class="soft-title">Photoshop</h3>
+          <p class="soft-desc">
+            Digital matte painting, photo manipulation, high-res poster art, lighting adjustments, and visual texture craft.
+          </p>
+          <div class="soft-skills-list">
+            <span class="skill-tag">Matte Painting</span>
+            <span class="skill-tag">Photo Manipulation</span>
+            <span class="skill-tag">Key Art &amp; Posters</span>
+            <span class="skill-tag">Texture Blending</span>
+          </div>
+          <div class="soft-card-footer">
+            <button class="filter-trigger" data-filter="ps">Filter Ps Projects <span>→</span></button>
+          </div>
+        </article>
+
+        <!-- 4. ILLUSTRATOR -->
+        <article class="soft-card card-ai" data-software="ai">
+          <div class="soft-card-top">
+            <div class="soft-icon ai-icon">
+              <span>Ai</span>
+            </div>
+            <span class="soft-version">VECTOR &bull; IDENTITY</span>
+          </div>
+          <h3 class="soft-title">Illustrator</h3>
+          <p class="soft-desc">
+            Precision vector graphics, brand logos, custom typography, iconography, and layered assets prepared for motion.
+          </p>
+          <div class="soft-skills-list">
+            <span class="skill-tag">Vector Illustration</span>
+            <span class="skill-tag">Brand Identity</span>
+            <span class="skill-tag">Motion Assets</span>
+            <span class="skill-tag">Typography</span>
+          </div>
+          <div class="soft-card-footer">
+            <button class="filter-trigger" data-filter="ai">Filter Ai Projects <span>→</span></button>
+          </div>
+        </article>
+
+        <!-- 5. GENERATIVE AI -->
+        <article class="soft-card card-genai" data-software="genai">
+          <div class="soft-card-top">
+            <div class="soft-icon genai-icon">
+              <span>AI</span>
+            </div>
+            <span class="soft-version">SYNTHESIS &bull; CONCEPT</span>
+          </div>
+          <h3 class="soft-title">Generative AI</h3>
+          <p class="soft-desc">
+            Midjourney concept generation, Adobe Firefly asset expansion, Runway AI video motion, and neural resolution upscaling.
+          </p>
+          <div class="soft-skills-list">
+            <span class="skill-tag">Midjourney</span>
+            <span class="skill-tag">Runway AI</span>
+            <span class="skill-tag">Adobe Firefly</span>
+            <span class="skill-tag">AI Upscaling</span>
+          </div>
+          <div class="soft-card-footer">
+            <button class="filter-trigger" data-filter="genai">Filter AI Projects <span>→</span></button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SELECTED WORKS WITH SOFTWARE FILTERING -->
+    <section class="work section-pad" id="work">
+      <div class="section-kicker">
+        <span>03 / PORTFOLIO</span>
+        <span class="kicker-rule"></span>
+        <span>FILTER BY SKILL</span>
+      </div>
+
+      <div class="work-heading">
+        <div>
+          <h2>
+            Selected <em>Works.</em>
+          </h2>
+          <p>
+            Filter commercial and personal projects by creative tool:
+          </p>
+        </div>
+
+        <!-- Filter Buttons Bar -->
+        <div class="filter-bar" id="filterBar" role="tablist" aria-label="Filter works by software">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">
+            <span>All Works</span>
+            <span class="count-badge" id="countAll">14</span>
+          </button>
+          <button class="filter-btn" data-filter="ae" role="tab" aria-selected="false">
+            <span class="tag-chip ae-chip">Ae</span>
+            <span>After Effects</span>
+            <span class="count-badge" id="countAe">3</span>
+          </button>
+          <button class="filter-btn" data-filter="pr" role="tab" aria-selected="false">
+            <span class="tag-chip pr-chip">Pr</span>
+            <span>Premiere Pro</span>
+            <span class="count-badge" id="countPr">3</span>
+          </button>
+          <button class="filter-btn" data-filter="ps" role="tab" aria-selected="false">
+            <span class="tag-chip ps-chip">Ps</span>
+            <span>Photoshop</span>
+            <span class="count-badge" id="countPs">11</span>
+          </button>
+          <button class="filter-btn" data-filter="ai" role="tab" aria-selected="false">
+            <span class="tag-chip ai-chip">Ai</span>
+            <span>Illustrator</span>
+            <span class="count-badge" id="countAi">3</span>
+          </button>
+          <button class="filter-btn" data-filter="genai" role="tab" aria-selected="false">
+            <span class="tag-chip genai-chip">AI</span>
+            <span>Generative AI</span>
+            <span class="count-badge" id="countGenAi">3</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Dynamic Project Grid -->
+      <div class="project-grid" id="projectGrid">
+
+        <!-- PROJECT 1: Wide Card - After Effects + Photoshop + AI -->
+        <article class="project-card project-wide" data-software="ae ps genai" data-id="1">
+          <div class="project-image image-valley">
+            <div class="project-badges">
+              <span class="badge badge-ae"><span class="badge-tag">Ae</span> After Effects</span>
+              <span class="badge badge-ps"><span class="badge-tag">Ps</span> Photoshop</span>
+              <span class="badge badge-genai"><span class="badge-tag">AI</span> Gen AI</span>
+            </div>
+            <span class="project-index">01 &bull; 2.5D PARALLAX &amp; COMPOSITING</span>
+            <button class="project-play-btn" aria-label="Open project details">
+              <span>View Breakdown ↗</span>
+            </button>
+            <div class="project-title">
+              <small>MOTION DESIGN &bull; CONCEPT ART</small>
+              <h3>Where the Quiet Lives</h3>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="meta-desc">Multiplane camera parallax, volumetric light passes, and digital matte painting.</span>
+            <div class="meta-tags">
+              <span class="meta-tool">After Effects</span>
+              <span class="meta-tool">Photoshop</span>
+              <span class="meta-tool">Gen AI</span>
+              <span class="meta-year">4K 60FPS</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 2: Premiere Pro + After Effects -->
+        <article class="project-card" data-software="pr ae" data-id="2">
+          <div class="project-image image-mountain">
+            <div class="project-badges">
+              <span class="badge badge-pr"><span class="badge-tag">Pr</span> Premiere Pro</span>
+              <span class="badge badge-ae"><span class="badge-tag">Ae</span> After Effects</span>
+            </div>
+            <span class="project-index">02 &bull; CINEMATIC EDIT</span>
+            <button class="project-play-btn" aria-label="Open project details">
+              <span>View Breakdown ↗</span>
+            </button>
+            <div class="project-title">
+              <small>VIDEO EDITING &bull; SOUND DESIGN</small>
+              <h3>Somewhere Higher</h3>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="meta-desc">Rhythmic cut timed to percussion with custom motion title sequences.</span>
+            <div class="meta-tags">
+              <span class="meta-tool">Premiere Pro</span>
+              <span class="meta-tool">After Effects</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 3: Photoshop + AI -->
+        <article class="project-card" data-software="ps genai" data-id="3">
+          <div class="project-image image-forest">
+            <div class="project-badges">
+              <span class="badge badge-ps"><span class="badge-tag">Ps</span> Photoshop</span>
+              <span class="badge badge-genai"><span class="badge-tag">AI</span> Gen AI</span>
+            </div>
+            <span class="project-index">03 &bull; MATTE PAINTING</span>
+            <button class="project-play-btn" aria-label="Open project details">
+              <span>View Breakdown ↗</span>
+            </button>
+            <div class="project-title">
+              <small>DIGITAL ART &bull; COMPOSITE</small>
+              <h3>Into the Green</h3>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="meta-desc">Photorealistic forest matte painting, AI texture synthesis, and mood lighting.</span>
+            <div class="meta-tags">
+              <span class="meta-tool">Photoshop</span>
+              <span class="meta-tool">Gen AI</span>
+              <span class="meta-year">Key Art</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 4: Illustrator + After Effects -->
+        <article class="project-card" data-software="ai ae" data-id="4">
+          <div class="project-image image-garden">
+            <div class="project-badges">
+              <span class="badge badge-ai"><span class="badge-tag">Ai</span> Illustrator</span>
+              <span class="badge badge-ae"><span class="badge-tag">Ae</span> After Effects</span>
+            </div>
+            <span class="project-index">04 &bull; VECTOR &amp; ANIMATION</span>
+            <button class="project-play-btn" aria-label="Open project details">
+              <span>View Breakdown ↗</span>
+            </button>
+            <div class="project-title">
+              <small>IDENTITY &bull; KINETIC LOGO</small>
+              <h3>Zenith Vector Suite</h3>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="meta-desc">Geometric vector brand marks animated with clean bounce and easing in After Effects.</span>
+            <div class="meta-tags">
+              <span class="meta-tool">Illustrator</span>
+              <span class="meta-tool">After Effects</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 5: Premiere Pro -->
+        <article class="project-card" data-software="pr" data-id="5">
+          <div class="project-image image-distant">
+            <div class="project-badges">
+              <span class="badge badge-pr"><span class="badge-tag">Pr</span> Premiere Pro</span>
+            </div>
+            <span class="project-index">05 &bull; COLOR &amp; PACING</span>
+            <button class="project-play-btn" aria-label="Open project details">
+              <span>View Breakdown ↗</span>
+            </button>
+            <div class="project-title">
+              <small>COMMERCIAL REEL</small>
+              <h3>Echoes in Horizon</h3>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="meta-desc">Dynamic commercial edit, multi-camera sync, Lumetri color grade, and sound mix.</span>
+            <div class="meta-tags">
+              <span class="meta-tool">Premiere Pro</span>
+              <span class="meta-year">Color Grade</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 6: Trivana - Logo & Packaging Design (Photoshop + Illustrator) -->
+        <article class="project-card" data-software="ps ai" data-id="6">
+          <div class="project-image image-trivana">
+            <div class="project-badges">
+              <span class="badge badge-ai"><span class="badge-tag">Ai</span> Illustrator Logo</span>
+              <span class="badge badge-ps"><span class="badge-tag">Ps</span> Photoshop Packaging</span>
+            </div>
+            <span class="project-index">06 &bull; LOGO &amp; PACKAGING (2 MODELS)</span>
+            <button class="project-play-btn" aria-label="Open project details">
+              <span>View Breakdown ↗</span>
+            </button>
+            <div class="project-title">
+              <small>BRAND LOGO &bull; PRODUCT COVER</small>
+              <h3>Trivana &bull; Packaging Suite</h3>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="meta-desc">Logo designed in Illustrator; product packaging cover and Aloe Vera composite crafted in Photoshop across 2 color models.</span>
+            <div class="meta-tags">
+              <span class="meta-tool">Illustrator (Logo)</span>
+              <span class="meta-tool">Photoshop (Packaging)</span>
+              <span class="meta-year">Dual Model</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 7: Spider-Man: Miles Morales - Movie Poster Design (Photoshop) -->
+        <article class="project-card" data-software="ps" data-id="7">
+          <div class="project-image image-spiderman">
+            <div class="project-badges">
+              <span class="badge badge-ps"><span class="badge-tag">Ps</span> Photoshop</span>
+            </div>
+            <span class="project-index">07 &bull; MOVIE POSTER &amp; MOCKUP</span>
+            <button class="project-play-btn" aria-label="Open project details">
+              <span>View Breakdown ↗</span>
+            </button>
+            <div class="project-title">
+              <small>THEATRICAL KEY ART &bull; MOCKUP</small>
+              <h3>Spider-Man: Miles Morales</h3>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="meta-desc">Double-exposure theatrical movie poster designed in Photoshop with rainy night bus shelter advertising mockup.</span>
+            <div class="meta-tags">
+              <span class="meta-tool">Photoshop (Key Art)</span>
+              <span class="meta-tool">Mockup Design</span>
+              <span class="meta-year">Key Art</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 8: Demon Slayer: Infinity Castle - Movie Poster Design (Photoshop) -->
+        <article class="project-card" data-software="ps" data-id="8">
+          <div class="project-image image-demonslayer">
+            <div class="project-badges">
+              <span class="badge badge-ps"><span class="badge-tag">Ps</span> Photoshop</span>
+            </div>
+            <span class="project-index">08 &bull; ANIME KEY ART &amp; MOCKUP</span>
+            <button class="project-play-btn" aria-label="Open project details">
+              <span>View Breakdown ↗</span>
+            </button>
+            <div class="project-title">
+              <small>THEATRICAL KEY ART &bull; MOCKUP</small>
+              <h3>Demon Slayer &bull; Infinity Castle</h3>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="meta-desc">Theatrical anime key art poster designed in Photoshop with Tanjiro, Nezuko, and rainy night bus shelter billboard mockup.</span>
+            <div class="meta-tags">
+              <span class="meta-tool">Photoshop (Key Art)</span>
+              <span class="meta-tool">Anime Poster</span>
+              <span class="meta-year">Key Art</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 9: Men in Blue: Champions - Sports Editorial Spread (Photoshop) -->
+        <article class="project-card" data-software="ps" data-id="9">
+          <div class="project-image image-meninblue">
+            <div class="project-badges">
+              <span class="badge badge-ps"><span class="badge-tag">Ps</span> Photoshop</span>
+            </div>
+            <span class="project-index">09 &bull; SPORTS EDITORIAL &amp; MOCKUP</span>
+            <button class="project-play-btn" aria-label="Open project details">
+              <span>View Breakdown ↗</span>
+            </button>
+            <div class="project-title">
+              <small>COMMEMORATIVE EDITORIAL &bull; MOCKUP</small>
+              <h3>Men in Blue &bull; Champions</h3>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="meta-desc">Team India T20 World Cup victory tribute designed in Photoshop with open magazine editorial spread mockup.</span>
+            <div class="meta-tags">
+              <span class="meta-tool">Photoshop (Editorial)</span>
+              <span class="meta-tool">Sports Graphics</span>
+              <span class="meta-year">Editorial</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 10: The Forest Colossus - Jungle Photo Manipulation (Photoshop) -->
+        <article class="project-card" data-software="ps" data-id="10">
+          <div class="project-image image-elephant">
+            <div class="project-badges">
+              <span class="badge badge-ps"><span class="badge-tag">Ps</span> Photoshop</span>
+            </div>
+            <span class="project-index">10 &bull; PHOTO MANIPULATION</span>
+            <button class="project-play-btn" aria-label="Open project details">
+              <span>View Breakdown ↗</span>
+            </button>
+            <div class="project-title">
+              <small>MATTE ART &bull; PHOTO MANIPULATION</small>
+              <h3>The Forest Colossus</h3>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="meta-desc">Cinematic jungle photo manipulation blending a colossal elephant, hooded traveler, and volumetric forest light in Photoshop.</span>
+            <div class="meta-tags">
+              <span class="meta-tool">Photoshop (Composite)</span>
+              <span class="meta-tool">Photo Manipulation</span>
+              <span class="meta-year">Key Art</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 11: Fine Up - Beverage Bottle Label Suite (Illustrator + Photoshop + Gen AI) -->
+        <article class="project-card" data-software="ai ps genai" data-id="11">
+          <div class="project-image image-fineup">
+            <div class="project-badges">
+              <span class="badge badge-ai"><span class="badge-tag">Ai</span> Illustrator</span>
+              <span class="badge badge-ps"><span class="badge-tag">Ps</span> Photoshop</span>
+              <span class="badge badge-genai"><span class="badge-tag">AI</span> Gen AI</span>
+            </div>
+            <span class="project-index">11 &bull; BEVERAGE PACKAGING (5 FLAVORS)</span>
+            <button class="project-play-btn" aria-label="Open project details">
+              <span>View Breakdown ↗</span>
+            </button>
+            <div class="project-title">
+              <small>BOTTLE LABEL &bull; LOGO DESIGN</small>
+              <h3>Fine Up &bull; Beverage Labels</h3>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="meta-desc">5-flavor carbonated drink label collection: Illustrator logo, Gen AI liquid backgrounds, and Photoshop composite wrapping.</span>
+            <div class="meta-tags">
+              <span class="meta-tool">Illustrator (Logo)</span>
+              <span class="meta-tool">Gen AI (Backgrounds)</span>
+              <span class="meta-tool">Photoshop (Composite)</span>
+              <span class="meta-year">5 SKUs</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 12: Coca-Cola: Coke Zero - Commercial Poster (Photoshop) -->
+        <article class="project-card" data-software="ps" data-id="12">
+          <div class="project-image image-cokezero">
+            <div class="project-badges">
+              <span class="badge badge-ps"><span class="badge-tag">Ps</span> Photoshop</span>
+            </div>
+            <span class="project-index">12 &bull; COMMERCIAL POSTER</span>
+            <button class="project-play-btn" aria-label="Open project details">
+              <span>View Breakdown ↗</span>
+            </button>
+            <div class="project-title">
+              <small>COMMERCIAL AD &bull; POSTER ART</small>
+              <h3>Coca-Cola &bull; Coke Zero</h3>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="meta-desc">Classic beverage advertising poster created in Photoshop with frosted glass condensation, bubble typography, and liquid splash.</span>
+            <div class="meta-tags">
+              <span class="meta-tool">Photoshop (Composite)</span>
+              <span class="meta-tool">Product Key Art</span>
+              <span class="meta-year">Commercial</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 13: Campus Shoes: Prebook Drop - Social Campaign (Photoshop) -->
+        <article class="project-card" data-software="ps" data-id="13">
+          <div class="project-image image-campus">
+            <div class="project-badges">
+              <span class="badge badge-ps"><span class="badge-tag">Ps</span> Photoshop</span>
+            </div>
+            <span class="project-index">13 &bull; SOCIAL MEDIA CAMPAIGN</span>
+            <button class="project-play-btn" aria-label="Open project details">
+              <span>View Breakdown ↗</span>
+            </button>
+            <div class="project-title">
+              <small>SOCIAL AD &bull; 3D MOCKUP</small>
+              <h3>Campus Shoes &bull; Prebook Drop</h3>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="meta-desc">E-commerce social media sneaker ad designed in Photoshop with Instagram and Facebook 3D mobile mockup.</span>
+            <div class="meta-tags">
+              <span class="meta-tool">Photoshop (Ad Design)</span>
+              <span class="meta-tool">Social Media</span>
+              <span class="meta-year">E-Commerce</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 14: Peaceful Yoga: Mind & Body - Event Poster (Photoshop) -->
+        <article class="project-card" data-software="ps" data-id="14">
+          <div class="project-image image-yoga">
+            <div class="project-badges">
+              <span class="badge badge-ps"><span class="badge-tag">Ps</span> Photoshop</span>
+            </div>
+            <span class="project-index">14 &bull; WELLNESS POSTER</span>
+            <button class="project-play-btn" aria-label="Open project details">
+              <span>View Breakdown ↗</span>
+            </button>
+            <div class="project-title">
+              <small>EVENT POSTER &bull; WELLNESS</small>
+              <h3>Peaceful Yoga &bull; Event Poster</h3>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="meta-desc">Calming wellness event poster designed in Photoshop with circular nature vignette, fluid shapes, and typography.</span>
+            <div class="meta-tags">
+              <span class="meta-tool">Photoshop (Layout)</span>
+              <span class="meta-tool">Poster Design</span>
+              <span class="meta-year">Print</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SHOWREEL & YOUTUBE VIDEO SECTION -->
+    <section class="showreel section-pad" id="showreel">
+      <div class="section-kicker">
+        <span>04 / SHOWREEL</span>
+        <span class="kicker-rule"></span>
+        <span>VIDEO &bull; MOTION IN ACTION</span>
+      </div>
+
+      <div class="showreel-wrap">
+        <div class="showreel-header">
+          <h2>
+            Motion &amp; Edit <em>Showreel.</em>
+          </h2>
+          <p>
+            Keyframe dynamics, rhythmic cuts, and visual composites in one reel.
+          </p>
+        </div>
+
+        <!-- Video Player Wrapper (Supports custom interactive player or YouTube Embed) -->
+        <div class="reel-player-container" id="reelPlayer">
+          
+          <!-- YouTube Iframe Container (Activates automatically when YouTube link or ID is set) -->
+          <div class="youtube-player-wrap" id="youtubePlayerWrap" style="display: none;">
+            <iframe id="youtubeIframe" src="" title="Kamalendu Motion Reel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+
+          <!-- Built-in Interactive Player Screen -->
+          <div class="reel-screen" id="builtInPlayer">
+            <div class="reel-poster" id="reelPoster">
+              <div class="poster-overlay"></div>
+              <div class="poster-content">
+                <span class="reel-badge">SHOWREEL &bull; 4K 60FPS</span>
+                <h3 class="reel-title">Kamalendu Motion &amp; Editing Reel</h3>
+                <p class="reel-meta">After Effects &bull; Premiere Pro &bull; Photoshop &bull; Illustrator &bull; Generative AI</p>
+                <button class="reel-play-btn" id="playReelBtn" aria-label="Play showreel">
+                  <span class="play-triangle">▶</span>
+                  <span class="play-text">PLAY SHOWREEL</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Active Simulation View -->
+            <div class="reel-active-view" id="reelActiveView" style="display: none;">
+              <div class="reel-canvas-wrap">
+                <div class="reel-ambient-glow"></div>
+                <div class="reel-mock-screen">
+                  <div class="scene-animator" id="sceneAnimator">
+                    <div class="scene-layer scene-bg"></div>
+                    <div class="scene-layer scene-mountains"></div>
+                    <div class="scene-layer scene-particles"></div>
+                    <div class="scene-layer scene-text">
+                      <span class="hud-time">00:14:28</span>
+                      <h4>KEYFRAME DYNAMICS</h4>
+                      <p>AFTER EFFECTS COMPOSITING</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Player Controls Bar -->
+            <div class="reel-controls">
+              <button class="ctrl-btn" id="ctrlPlayToggle" aria-label="Play or pause">▶</button>
+              <div class="audio-waveform" id="audioWaveform" aria-hidden="true" title="Audio Waveform Dynamics">
+                <span class="wave-bar"></span><span class="wave-bar"></span><span class="wave-bar"></span><span class="wave-bar"></span>
+                <span class="wave-bar"></span><span class="wave-bar"></span><span class="wave-bar"></span><span class="wave-bar"></span>
+                <span class="wave-bar"></span><span class="wave-bar"></span><span class="wave-bar"></span><span class="wave-bar"></span>
+              </div>
+              <div class="scrubber">
+                <div class="scrubber-track" id="scrubberTrack">
+                  <div class="scrubber-progress" id="scrubberProgress" style="width: 28%;"></div>
+                </div>
+              </div>
+              <span class="ctrl-time" id="ctrlTime">00:42 / 02:15</span>
+              <div class="ctrl-software-tags">
+                <span class="mini-tag ae-tag">Ae</span>
+                <span class="mini-tag pr-tag">Pr</span>
+                <span class="mini-tag ps-tag">Ps</span>
+                <span class="mini-tag ai-tag">Ai</span>
+                <span class="mini-tag genai-tag">AI</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chapters -->
+          <div class="reel-chapters">
+            <div class="chapter-item active" data-time="0">
+              <span class="chapter-time">00:00</span>
+              <div class="chapter-info">
+                <strong>Kinetic Titles &bull; 2.5D</strong>
+                <small>After Effects</small>
+              </div>
+            </div>
+            <div class="chapter-item" data-time="24">
+              <span class="chapter-time">00:24</span>
+              <div class="chapter-info">
+                <strong>Rhythmic Cuts &bull; Pacing</strong>
+                <small>Premiere Pro</small>
+              </div>
+            </div>
+            <div class="chapter-item" data-time="58">
+              <span class="chapter-time">00:58</span>
+              <div class="chapter-info">
+                <strong>Matte Painting &bull; Lighting</strong>
+                <small>Photoshop</small>
+              </div>
+            </div>
+            <div class="chapter-item" data-time="92">
+              <span class="chapter-time">01:32</span>
+              <div class="chapter-info">
+                <strong>Vectors &bull; AI Concepting</strong>
+                <small>Illustrator + Gen AI</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CREATIVE PIPELINE SECTION -->
+    <section class="approach section-pad" id="pipeline">
+      <div class="approach-bg" aria-hidden="true"></div>
+      <div class="approach-content">
+        <div class="section-kicker">
+          <span>05 / PIPELINE</span>
+          <span class="kicker-rule"></span>
+          <span>HOW PROJECTS ARE BUILT</span>
+        </div>
+
+        <div class="approach-grid">
+          <div>
+            <h2>
+              The Creative<br>
+              <em>Workflow.</em>
+            </h2>
+            <p class="pipeline-intro">
+              Connecting vector design, matte textures, rhythmic editing, and motion dynamics into one cohesive pipeline.
+            </p>
+          </div>
+
+          <div class="approach-list">
+            <!-- Phase 1: Illustrator & AI -->
+            <article class="pipeline-card">
+              <span class="pipeline-num">01</span>
+              <div>
+                <div class="pipeline-app">
+                  <span class="app-chip ai-chip">Ai</span>
+                  <span class="app-chip genai-chip">AI</span>
+                  <small>CONCEPT &amp; VECTOR ASSETS</small>
+                </div>
+                <h3>Vectors, Concept &amp; Typography</h3>
+                <p>Generating initial visual concepts, geometric vectors, brand marks, and typography built for animation.</p>
+              </div>
+              <b class="pipeline-icon">✳</b>
+            </article>
+
+            <!-- Phase 2: Photoshop -->
+            <article class="pipeline-card">
+              <span class="pipeline-num">02</span>
+              <div>
+                <div class="pipeline-app">
+                  <span class="app-chip ps-chip">Ps</span>
+                  <small>ADOBE PHOTOSHOP</small>
+                </div>
+                <h3>Matte Painting &amp; Texturing</h3>
+                <p>Digital matte backgrounds, photo manipulation, lighting passes, depth separation, and mood color grading.</p>
+              </div>
+              <b class="pipeline-icon">✳</b>
+            </article>
+
+            <!-- Phase 3: Premiere Pro -->
+            <article class="pipeline-card">
+              <span class="pipeline-num">03</span>
+              <div>
+                <div class="pipeline-app">
+                  <span class="app-chip pr-chip">Pr</span>
+                  <small>ADOBE PREMIERE PRO</small>
+                </div>
+                <h3>Timeline Pacing &amp; Audio Rhythm</h3>
+                <p>Timeline assembly, cutting on the beat, sound design, sound effects placement, and Lumetri color grading.</p>
+              </div>
+              <b class="pipeline-icon">✳</b>
+            </article>
+
+            <!-- Phase 4: After Effects -->
+            <article class="pipeline-card">
+              <span class="pipeline-num">04</span>
+              <div>
+                <div class="pipeline-app">
+                  <span class="app-chip ae-chip">Ae</span>
+                  <small>ADOBE AFTER EFFECTS</small>
+                </div>
+                <h3>Motion Magic &amp; Final Polish</h3>
+                <p>Keyframing, 2.5D camera moves, optical flares, glow passes, speed ramps, and delivering master 4K renders.</p>
+              </div>
+              <b class="pipeline-icon">✳</b>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / HIRE SECTION -->
+    <section class="contact section-pad" id="contact">
+      <div class="contact-orb" aria-hidden="true">✳</div>
+      
+      <div class="section-kicker">
+        <span>06 / CONTACT</span>
+        <span class="kicker-rule"></span>
+        <span>LET’S COLLABORATE</span>
+      </div>
+
+      <div class="contact-layout">
+        <div class="contact-main">
+          <p class="eyebrow">
+            <span class="live-dot"></span> AVAILABLE FOR NEW COMMISSIONS
+          </p>
+          <h2>
+            Let’s build something<br>
+            <em>remarkable.</em>
+          </h2>
+          <p>
+            Available for motion graphics, video editing, poster art, and visual direction.
+          </p>
+
+          <!-- Direct Info Chips -->
+          <div class="contact-chips">
+            <div class="info-chip">
+              <span class="chip-title">LOCATION:</span>
+              <span class="chip-val">India &bull; Remote Worldwide</span>
+            </div>
+            <div class="info-chip">
+              <span class="chip-title">TOOLS:</span>
+              <span class="chip-val">After Effects, Premiere Pro, Photoshop, Illustrator, Generative AI</span>
+            </div>
+          </div>
+
+          <!-- Social Media Bar in Contact -->
+          <div class="contact-social-bar">
+            <span class="social-bar-label">SOCIAL MEDIA:</span>
+            <div class="social-links-row">
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-text-btn" id="contactYtLink">
+                <span class="soc-dot yt-dot"></span> YouTube
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-text-btn" id="contactInstaLink">
+                <span class="soc-dot insta-dot"></span> Instagram
+              </a>
+              <a href="https://behance.net" target="_blank" rel="noopener noreferrer" class="social-text-btn" id="contactBehanceLink">
+                <span class="soc-dot behance-dot"></span> Behance
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-text-btn" id="contactLinkedinLink">
+                <span class="soc-dot linkedin-dot"></span> LinkedIn
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-action-box">
+            <a class="button button-lime" href="mailto:kamalendu.portfolio@example.com?subject=Project%20Inquiry%20for%20Kamalendu">
+              <span>Send An Email</span>
+              <span class="btn-icon">↗</span>
+            </a>
+            <a class="button button-glass" href="#work">
+              <span>Back to Top</span>
+              <span class="btn-icon">↑</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Inquiry Card -->
+        <div class="contact-card">
+          <h3 class="card-title">Quick Inquiry</h3>
+          <p class="card-sub">Send a direct message:</p>
+          
+          <form class="quick-inquiry" id="inquiryForm" onsubmit="event.preventDefault(); alert('Thank you, message sent to Kamalendu!');">
+            <div class="form-group">
+              <label for="clientName">Your Name</label>
+              <input type="text" id="clientName" placeholder="Name or Company" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="clientEmail">Your Email</label>
+              <input type="email" id="clientEmail" placeholder="yourname@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label>Service Needed</label>
+              <div class="form-checkboxes">
+                <label class="cb-label"><input type="checkbox" checked> After Effects Motion</label>
+                <label class="cb-label"><input type="checkbox" checked> Premiere Pro Video Edit</label>
+                <label class="cb-label"><input type="checkbox"> Photoshop Digital Art</label>
+                <label class="cb-label"><input type="checkbox"> Illustrator Vector Design</label>
+                <label class="cb-label"><input type="checkbox"> Generative AI Concepting</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="clientMessage">Project Details</label>
+              <textarea id="clientMessage" rows="3" placeholder="Timeline, scope, or reference links..."></textarea>
+            </div>
+
+            <button type="submit" class="button button-lime w-100">
+              <span>Send Message</span>
+              <span>→</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <a class="wordmark" href="#home">
+      <span class="mark">K<span>.</span></span>
+      <span class="wordmark-name">KAMALENDU</span>
+    </a>
+    <span class="footer-note">AFTER EFFECTS &bull; PREMIERE PRO &bull; PHOTOSHOP &bull; ILLUSTRATOR &bull; AI <b>✳</b></span>
+    <span class="footer-copy">&copy; <span id="year">2026</span> KAMALENDU. ALL RIGHTS RESERVED.</span>
+    <a class="back-top" href="#home">TOP ↑</a>
+  </footer>
+
+  <!-- PROJECT DETAILS MODAL -->
+  <div class="modal-backdrop" id="projectModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <button class="modal-close" id="modalClose" aria-label="Close project modal">&times;</button>
+      
+      <div class="modal-body" id="modalContent">
+        <!-- Content will be injected dynamically by script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- MASTER 100% ARTWORK LIGHTBOX / FULL-VIEW ZOOM VIEWER -->
+  <div class="artwork-lightbox" id="artworkLightbox" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="artwork-lightbox-backdrop" id="lightboxBackdrop"></div>
+    
+    <!-- Top Control Bar -->
+    <header class="artwork-lightbox-bar">
+      <div class="artwork-lightbox-meta">
+        <span class="artwork-lightbox-counter" id="lightboxCounter">1 / 1</span>
+        <div class="artwork-lightbox-titles">
+          <h4 class="artwork-lightbox-title" id="lightboxTitle">Project Artwork</h4>
+          <p class="artwork-lightbox-caption" id="lightboxCaption">Artwork Preview</p>
+        </div>
+      </div>
+
+      <div class="artwork-lightbox-controls">
+        <button class="lightbox-action-btn" id="lightboxZoomToggle" type="button" title="Toggle between Fit View and 100% Actual Scale">
+          <span class="lightbox-btn-icon" id="lightboxZoomIcon">🔍</span>
+          <span class="lightbox-btn-text" id="lightboxZoomLabel">100% Scale</span>
+        </button>
+
+        <a class="lightbox-action-btn" id="lightboxDirectLink" href="#" target="_blank" rel="noopener noreferrer" title="Open raw master artwork in new tab">
+          <span class="lightbox-btn-icon">↗</span>
+          <span class="lightbox-btn-text">Open Raw</span>
+        </a>
+
+        <button class="lightbox-close-btn" id="lightboxClose" type="button" aria-label="Close Lightbox (Esc)">&times;</button>
+      </div>
+    </header>
+
+    <!-- Stage / Viewport -->
+    <div class="artwork-lightbox-stage" id="lightboxStage">
+      <div class="artwork-lightbox-wrap" id="lightboxWrap">
+        <img src="" alt="" id="lightboxImg" class="artwork-lightbox-img" draggable="false">
+      </div>
+    </div>
+
+    <!-- Navigation Arrows -->
+    <button class="lightbox-nav-btn lightbox-nav-prev" id="lightboxPrev" type="button" aria-label="Previous artwork (Left Arrow)">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+    </button>
+    <button class="lightbox-nav-btn lightbox-nav-next" id="lightboxNext" type="button" aria-label="Next artwork (Right Arrow)">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+    </button>
+
+    <!-- Bottom Hint for Mobile / Desktop -->
+    <div class="lightbox-footer-hint" id="lightboxFooterHint">
+      <span>Tap image to zoom 100% • Swipe left/right to browse • Esc or &times; to exit</span>
+    </div>
+  </div>
+
+  <!-- Interactive Motion Studio Cursor (Desktop Only) -->
+  <div class="custom-cursor" id="customCursor" aria-hidden="true">
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing">
+      <span class="cursor-text" id="cursorText"></span>
+    </div>
+  </div>
+
+  <script src="script.js?v=3.1"></script>
+</body>
+</html>
