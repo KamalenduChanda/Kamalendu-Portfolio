@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Manrope:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css?v=5.1">
+  <link rel="stylesheet" href="styles.css?v=6.0">
 </head>
 <body>
   <!-- Ambient Grain Overlay -->
@@ -449,8 +449,44 @@
         </div>
       </div>
 
+            <!-- Sidewise Slider Toolbar & Controls -->
+      <div class="slider-controls-bar">
+        <div class="slider-left-meta">
+          <div class="slider-counter" id="sliderCounter" aria-label="Current slide counter">
+            <span class="slide-active-num" id="currentSlide">01</span>
+            <span class="slide-divider">/</span>
+            <span class="slide-total-num" id="totalSlides">15</span>
+          </div>
+          <div class="slider-progress-track" title="Showcase progress">
+            <div class="slider-progress-bar" id="sliderProgressBar"></div>
+          </div>
+          <div class="slider-hint">
+            <span class="hint-pill"><span class="hint-icon">↔</span> Scroll Wheel or Drag to Slide</span>
+          </div>
+        </div>
+
+        <div class="slider-right-actions">
+          <div class="slider-nav-arrows">
+            <button type="button" class="slider-nav-btn prev-btn" id="sliderPrevBtn" aria-label="Previous project" title="Previous Project">
+              <span>←</span>
+            </button>
+            <button type="button" class="slider-nav-btn next-btn" id="sliderNextBtn" aria-label="Next project" title="Next Project">
+              <span>→</span>
+            </button>
+          </div>
+          <div class="view-mode-toggle" role="group" aria-label="Display View Mode">
+            <button type="button" class="view-toggle-btn active" id="viewSidewiseBtn" title="Horizontal Sidewise Slider View">
+              <span>↔ Sidewise</span>
+            </button>
+            <button type="button" class="view-toggle-btn" id="viewGridBtn" title="Two-Column Grid View">
+              <span>☷ Grid</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
       <!-- Dynamic Project Grid -->
-      <div class="project-grid" id="projectGrid">
+      <div class="project-grid sidewise-mode" id="projectGrid">
         <!-- ================================================================ -->
         <!-- DISCIPLINE 1: MOTION DESIGN & 3D COMMERCIAL VIDEO REELS (RECOMMENDED FIRST) -->
         <!-- ================================================================ -->
@@ -1213,6 +1249,6 @@
     </div>
   </div>
 
-  <script src="script.js?v=5.1"></script>
+  <script src="script.js?v=6.0"></script>
 </body>
 </html>

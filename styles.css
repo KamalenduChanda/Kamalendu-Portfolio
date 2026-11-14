@@ -3605,3 +3605,239 @@ body.has-custom-cursor.lightbox-open .custom-cursor {
   color: var(--lime);
   box-shadow: 0 0 16px rgba(199, 255, 72, 0.22);
 }
+
+
+/* ==========================================================================
+   SIDEWISE HORIZONTAL PROJECT SHOWCASE & SLIDER
+   ========================================================================== */
+.slider-controls-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 24px;
+  padding: 12px 20px;
+  background: rgba(18, 22, 28, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.slider-left-meta {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.slider-counter {
+  font-family: 'DM Mono', monospace;
+  font-size: 1.15rem;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+}
+
+.slide-active-num {
+  color: var(--color-lime);
+  font-weight: 800;
+  font-size: 1.4rem;
+}
+
+.slide-divider {
+  color: rgba(255, 255, 255, 0.25);
+  font-size: 1.1rem;
+}
+
+.slide-total-num {
+  color: var(--color-text-dim);
+  font-size: 0.95rem;
+}
+
+.slider-progress-track {
+  width: 140px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-progress-bar {
+  width: 8%;
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-lime), #84cc16);
+  border-radius: 999px;
+  transition: width 0.15s ease-out;
+  box-shadow: 0 0 10px rgba(163, 230, 53, 0.5);
+}
+
+.slider-hint .hint-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  font-family: 'DM Mono', monospace;
+  color: rgba(255, 255, 255, 0.65);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.slider-hint .hint-icon {
+  color: var(--color-lime);
+  font-size: 0.95rem;
+}
+
+.slider-right-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.slider-nav-arrows {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.slider-nav-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--color-text);
+  font-size: 1.15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.slider-nav-btn:hover {
+  background: var(--color-lime);
+  color: #0b0f14;
+  border-color: var(--color-lime);
+  transform: scale(1.06);
+  box-shadow: 0 0 18px rgba(163, 230, 53, 0.4);
+}
+
+.view-mode-toggle {
+  display: flex;
+  background: rgba(0, 0, 0, 0.35);
+  padding: 3px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.view-toggle-btn {
+  padding: 6px 12px;
+  font-size: 0.76rem;
+  font-family: 'DM Mono', monospace;
+  font-weight: 500;
+  border: none;
+  background: transparent;
+  color: var(--color-text-dim);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.view-toggle-btn.active {
+  background: var(--color-lime);
+  color: #0b0f14;
+  font-weight: 700;
+}
+
+/* SIDEWISE SLIDER MODE (Active Default) */
+.project-grid.sidewise-mode {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  scroll-snap-type: x mandatory !important;
+  scroll-behavior: smooth !important;
+  gap: 28px !important;
+  padding: 16px 4px 32px 4px !important;
+  margin-top: 20px !important;
+  -webkit-overflow-scrolling: touch !important;
+  cursor: grab;
+}
+
+.project-grid.sidewise-mode.is-dragging {
+  cursor: grabbing;
+  user-select: none;
+  scroll-snap-type: none !important;
+  scroll-behavior: auto !important;
+}
+
+.project-grid.sidewise-mode .project-card {
+  flex: 0 0 clamp(320px, 46vw, 560px) !important;
+  width: clamp(320px, 46vw, 560px) !important;
+  max-width: clamp(320px, 46vw, 560px) !important;
+  scroll-snap-align: start !important;
+  margin: 0 !important;
+  grid-column: auto !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-grid.sidewise-mode .project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.5), 0 0 20px rgba(163, 230, 53, 0.15);
+}
+
+.project-grid.sidewise-mode .project-card .project-image {
+  height: clamp(260px, 30vw, 340px) !important;
+}
+
+/* Custom Sidewise Scrollbar */
+.project-grid.sidewise-mode::-webkit-scrollbar {
+  height: 8px;
+}
+.project-grid.sidewise-mode::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 999px;
+  margin: 0 20px;
+}
+.project-grid.sidewise-mode::-webkit-scrollbar-thumb {
+  background: rgba(163, 230, 53, 0.4);
+  border-radius: 999px;
+  transition: background 0.2s;
+}
+.project-grid.sidewise-mode::-webkit-scrollbar-thumb:hover {
+  background: var(--color-lime);
+  box-shadow: 0 0 10px rgba(163, 230, 53, 0.6);
+}
+
+/* Grid fallback when user toggles 'Grid' view */
+.project-grid.grid-mode {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 28px 24px !important;
+  overflow-x: visible !important;
+  cursor: default !important;
+}
+.project-grid.grid-mode .project-wide {
+  grid-column: span 2 !important;
+}
+@media (max-width: 860px) {
+  .project-grid.grid-mode {
+    grid-template-columns: 1fr !important;
+  }
+  .project-grid.grid-mode .project-wide {
+    grid-column: span 1 !important;
+  }
+  .project-grid.sidewise-mode .project-card {
+    flex: 0 0 86vw !important;
+    width: 86vw !important;
+    max-width: 86vw !important;
+  }
+}
