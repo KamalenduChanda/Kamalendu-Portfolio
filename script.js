@@ -1132,7 +1132,7 @@ function initExperienceCertificate() {
     gallery: [
       {
         url: 'assets/moretasks-certificate.jpg',
-        label: 'Official Certificate of Internship • Kamalendu Chanda • Graphic Design - Intern (2 Dec 2024 – 28 Feb 2025) • Authorized & Stamped by MoreTasks Design Team'
+        label: 'Official Certificate of Internship • Kamalendu Chanda • Graphic Design - Intern (2 Dec 2024 – 28 Feb 2025) • MoreTasks Business Solution'
       }
     ]
   };
