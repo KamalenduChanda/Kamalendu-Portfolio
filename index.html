@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Manrope:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css?v=3.3">
+  <link rel="stylesheet" href="styles.css?v=3.4">
 </head>
 <body>
   <!-- Ambient Grain Overlay -->
@@ -30,7 +30,7 @@
 
     <!-- Social Links (Desktop Header) -->
     <div class="header-socials">
-      <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="YouTube" id="headerYtLink">
+      <a href="https://www.youtube.com/@kc__din70" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="YouTube: @kc__din70" id="headerYtLink">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
       </a>
       <a href="https://www.instagram.com/kc.din?utm_source=ig_web_button_share_sheet&srtk=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="Instagram" id="headerInstaLink">
@@ -639,6 +639,34 @@
             </div>
           </div>
         </article>
+
+        <!-- PROJECT 10: ChatGPT - Motion Graphic & Kinetic Visuals (After Effects & Gen AI) -->
+        <article class="project-card" data-software="ae pr genai" data-id="10">
+          <div class="project-image image-chatgpt-motion">
+            <div class="project-badges">
+              <span class="badge badge-ae"><span class="badge-tag">Ae</span> After Effects</span>
+              <span class="badge badge-genai"><span class="badge-tag">AI</span> Gen AI</span>
+              <span class="badge badge-pr"><span class="badge-tag">Pr</span> Premiere Pro</span>
+            </div>
+            <span class="project-index">10 &bull; MOTION GRAPHIC</span>
+            <button class="project-play-btn" aria-label="Open project details">
+              <span>View Breakdown ↗</span>
+            </button>
+            <div class="project-title">
+              <small>KINETIC MOTION &bull; YOUTUBE SHOWCASE</small>
+              <h3>ChatGPT &bull; Motion Graphic</h3>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="meta-desc">Cinematic commercial motion graphic for ChatGPT with "Unleash your creativity" kinetic typography, Mount Fuji backdrop, and glassmorphism UI.</span>
+            <div class="meta-tags">
+              <span class="meta-tool">After Effects</span>
+              <span class="meta-tool">Motion Graphics</span>
+              <span class="meta-tool">YouTube Video</span>
+              <span class="meta-year">4K 60FPS</span>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -656,105 +684,31 @@
             Motion &amp; Edit <em>Showreel.</em>
           </h2>
           <p>
-            Keyframe dynamics, rhythmic cuts, and visual composites in one reel.
+            Featured piece: <strong>Motion graphic of ChatGPT</strong> — kinetic typography, glassmorphism UI animation, and visual composites by Kamalendu (KC_Din).
           </p>
         </div>
 
         <!-- Video Player Wrapper (Supports custom interactive player or YouTube Embed) -->
         <div class="reel-player-container" id="reelPlayer">
           
-          <!-- YouTube Iframe Container (Activates automatically when YouTube link or ID is set) -->
-          <div class="youtube-player-wrap" id="youtubePlayerWrap" style="display: none;">
-            <iframe id="youtubeIframe" src="" title="Kamalendu Motion Reel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <!-- YouTube Iframe Container (Active with Kamalendu's ChatGPT Motion Graphic) -->
+          <div class="youtube-player-wrap" id="youtubePlayerWrap">
+            <iframe id="youtubeIframe" src="https://www.youtube.com/embed/UhjRv-46pgg?rel=0" title="Motion graphic of ChatGPT by Kamalendu (KC_Din)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
 
-          <!-- Built-in Interactive Player Screen -->
-          <div class="reel-screen" id="builtInPlayer">
-            <div class="reel-poster" id="reelPoster">
-              <div class="poster-overlay"></div>
-              <div class="poster-content">
-                <span class="reel-badge">SHOWREEL &bull; 4K 60FPS</span>
-                <h3 class="reel-title">Kamalendu Motion &amp; Editing Reel</h3>
-                <p class="reel-meta">After Effects &bull; Premiere Pro &bull; Photoshop &bull; Illustrator &bull; Generative AI</p>
-                <button class="reel-play-btn" id="playReelBtn" aria-label="Play showreel">
-                  <span class="play-triangle">▶</span>
-                  <span class="play-text">PLAY SHOWREEL</span>
-                </button>
-              </div>
+          <!-- Bottom Action Bar for Video -->
+          <div class="reel-video-bar">
+            <div class="reel-video-info">
+              <span class="reel-video-badge"><span class="soc-dot yt-dot"></span> YOUTUBE MOTION SHOWCASE</span>
+              <h4 class="reel-video-title">Motion graphic of ChatGPT &bull; by KC_Din</h4>
             </div>
-
-            <!-- Active Simulation View -->
-            <div class="reel-active-view" id="reelActiveView" style="display: none;">
-              <div class="reel-canvas-wrap">
-                <div class="reel-ambient-glow"></div>
-                <div class="reel-mock-screen">
-                  <div class="scene-animator" id="sceneAnimator">
-                    <div class="scene-layer scene-bg"></div>
-                    <div class="scene-layer scene-mountains"></div>
-                    <div class="scene-layer scene-particles"></div>
-                    <div class="scene-layer scene-text">
-                      <span class="hud-time">00:14:28</span>
-                      <h4>KEYFRAME DYNAMICS</h4>
-                      <p>AFTER EFFECTS COMPOSITING</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Player Controls Bar -->
-            <div class="reel-controls">
-              <button class="ctrl-btn" id="ctrlPlayToggle" aria-label="Play or pause">▶</button>
-              <div class="audio-waveform" id="audioWaveform" aria-hidden="true" title="Audio Waveform Dynamics">
-                <span class="wave-bar"></span><span class="wave-bar"></span><span class="wave-bar"></span><span class="wave-bar"></span>
-                <span class="wave-bar"></span><span class="wave-bar"></span><span class="wave-bar"></span><span class="wave-bar"></span>
-                <span class="wave-bar"></span><span class="wave-bar"></span><span class="wave-bar"></span><span class="wave-bar"></span>
-              </div>
-              <div class="scrubber">
-                <div class="scrubber-track" id="scrubberTrack">
-                  <div class="scrubber-progress" id="scrubberProgress" style="width: 28%;"></div>
-                </div>
-              </div>
-              <span class="ctrl-time" id="ctrlTime">00:42 / 02:15</span>
-              <div class="ctrl-software-tags">
-                <span class="mini-tag ae-tag">Ae</span>
-                <span class="mini-tag pr-tag">Pr</span>
-                <span class="mini-tag ps-tag">Ps</span>
-                <span class="mini-tag ai-tag">Ai</span>
-                <span class="mini-tag genai-tag">AI</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Chapters -->
-          <div class="reel-chapters">
-            <div class="chapter-item active" data-time="0">
-              <span class="chapter-time">00:00</span>
-              <div class="chapter-info">
-                <strong>Kinetic Titles &bull; 2.5D</strong>
-                <small>After Effects</small>
-              </div>
-            </div>
-            <div class="chapter-item" data-time="24">
-              <span class="chapter-time">00:24</span>
-              <div class="chapter-info">
-                <strong>Rhythmic Cuts &bull; Pacing</strong>
-                <small>Premiere Pro</small>
-              </div>
-            </div>
-            <div class="chapter-item" data-time="58">
-              <span class="chapter-time">00:58</span>
-              <div class="chapter-info">
-                <strong>Matte Painting &bull; Lighting</strong>
-                <small>Photoshop</small>
-              </div>
-            </div>
-            <div class="chapter-item" data-time="92">
-              <span class="chapter-time">01:32</span>
-              <div class="chapter-info">
-                <strong>Vectors &bull; AI Concepting</strong>
-                <small>Illustrator + Gen AI</small>
-              </div>
+            <div class="reel-video-actions">
+              <a href="https://youtu.be/UhjRv-46pgg" target="_blank" rel="noopener noreferrer" class="social-text-btn">
+                <span>Watch on YouTube</span> ↗
+              </a>
+              <a href="https://www.youtube.com/@kc__din70" target="_blank" rel="noopener noreferrer" class="social-text-btn">
+                <span class="soc-dot yt-dot"></span> <span>Visit @kc__din70</span>
+              </a>
             </div>
           </div>
         </div>
@@ -887,8 +841,8 @@
           <div class="contact-social-bar">
             <span class="social-bar-label">SOCIAL MEDIA:</span>
             <div class="social-links-row">
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-text-btn" id="contactYtLink">
-                <span class="soc-dot yt-dot"></span> YouTube
+              <a href="https://www.youtube.com/@kc__din70" target="_blank" rel="noopener noreferrer" class="social-text-btn" id="contactYtLink">
+                <span class="soc-dot yt-dot"></span> YouTube (@kc__din70)
               </a>
               <a href="https://www.instagram.com/kc.din?utm_source=ig_web_button_share_sheet&srtk=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="social-text-btn" id="contactInstaLink">
                 <span class="soc-dot insta-dot"></span> Instagram
@@ -1041,6 +995,6 @@
     </div>
   </div>
 
-  <script src="script.js?v=3.3"></script>
+  <script src="script.js?v=3.4"></script>
 </body>
 </html>

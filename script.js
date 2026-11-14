@@ -17,7 +17,7 @@
 
 // 1. SOCIAL MEDIA CONFIGURATION (Add your real profile links here)
 const SOCIAL_LINKS = {
-  youtube: 'https://youtube.com',
+  youtube: 'https://www.youtube.com/@kc__din70',
   instagram: 'https://www.instagram.com/kc.din?utm_source=ig_web_button_share_sheet&srtk=ZDNlZDc0MzIxNw==',
   linkedin: 'https://www.linkedin.com/in/kamalendu-chanda-324703339'
 };
@@ -25,7 +25,7 @@ const SOCIAL_LINKS = {
 // 2. YOUTUBE SHOWREEL CONFIGURATION
 // If you have a YouTube video ID, paste it here (e.g. "dQw4w9WgXcQ" or full URL)
 const YOUTUBE_CONFIG = {
-  defaultVideoId: '' // Leave empty to show the built-in interactive player, or paste your ID/URL
+  defaultVideoId: 'UhjRv-46pgg' // Kamalendu's ChatGPT Motion Graphic (https://youtu.be/UhjRv-46pgg)
 };
 
 // 3. SOFTWARE & SKILLS DATABASE
@@ -266,6 +266,28 @@ const PROJECTS_CONFIG = [
       'Photoshop: Editorial hierarchy layout for date, time, venue, and bulleted wellness benefits.'
     ],
     deliverables: 'Print-Ready Event Poster PSD (300 DPI), Digital Display Key Art, and Social Flyer Formats.'
+  },
+  {
+    id: 10,
+    title: 'ChatGPT — Motion Graphic & Kinetic Visuals',
+    subtitle: 'KINETIC MOTION GRAPHIC & YOUTUBE SHOWCASE',
+    category: 'Motion Graphics & Video Animation',
+    software: ['ae', 'pr', 'genai'],
+    image: 'assets/chatgpt-motion-thumb.jpg',
+    youtubeId: 'UhjRv-46pgg',
+    youtubeUrl: 'https://youtu.be/UhjRv-46pgg',
+    gallery: [
+      { url: 'assets/chatgpt-motion-thumb.jpg', label: 'Master Motion Frame — "Unleash your creativity" over Mount Fuji' }
+    ],
+    spec: 'After Effects & Premiere Pro • 4K 60FPS • Kinetic Typography & Glassmorphism UI',
+    desc: 'Cinematic commercial motion graphic piece for ChatGPT created by Kamalendu (KC_Din). The visual sequence features a wandering warrior standing before snow-capped Mount Fuji amidst blossoming cherry trees and floating petals, framed by a frosted glassmorphism UI element delivering the kinetic message "Unleash your creativity". Produced with precision keyframe velocity curves, optical blurs, dynamic camera ease, and multi-layered depth compositing.',
+    pipeline: [
+      'After Effects: Kinetic typography choreography, text tracking animation, and custom motion blur curves.',
+      'After Effects: Frosted glassmorphism UI capsule design featuring dynamic transparency, refraction edge highlights, and specular gloss.',
+      'Photoshop & Gen AI: Cinematic environmental art generation of Mount Fuji with multi-plane depth separation and sakura blossom particle passes.',
+      'Premiere Pro: Audio rhythm synchronization, timing pacing, and broadcast master rendering in 4K 60FPS.'
+    ],
+    deliverables: '4K Master Video (YouTube), Kinetic Title Templates, and High-Resolution Keyframe Stills.'
   }
 ];
 
@@ -565,6 +587,12 @@ function initProjectModal() {
         </div>
         <p class="modal-desc">${project.desc}</p>
         
+        ${project.youtubeId ? `
+          <div class="modal-video-embed">
+            <iframe src="https://www.youtube.com/embed/${project.youtubeId}?rel=0" title="${project.title}" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+          </div>
+        ` : ''}
+
         ${galleryHtml}
 
         <div class="modal-pipeline-box">
@@ -577,7 +605,13 @@ function initProjectModal() {
         </div>
 
         <div class="modal-actions">
-          <button type="button" class="button button-lime" id="modalView100Btn">
+          ${project.youtubeUrl ? `
+            <a href="${project.youtubeUrl}" target="_blank" rel="noopener noreferrer" class="button button-lime">
+              <span>▶ Watch on YouTube</span>
+              <span class="btn-icon">↗</span>
+            </a>
+          ` : ''}
+          <button type="button" class="button ${project.youtubeUrl ? 'button-glass' : 'button-lime'}" id="modalView100Btn">
             <span>🔍 View 100% Master Artworks</span>
             <span>↗</span>
           </button>
@@ -1038,10 +1072,12 @@ function initYouTubeHandler() {
     const videoId = parseYouTubeId(videoInput);
     if (!videoId) return;
 
-    if (ytIframe && ytWrap && builtInPlayer) {
+    if (ytIframe && ytWrap) {
       ytIframe.src = `https://www.youtube.com/embed/${videoId}?rel=0`;
       ytWrap.style.display = 'block';
-      builtInPlayer.style.display = 'none';
+      if (builtInPlayer) builtInPlayer.style.display = 'none';
+      const reelChapters = document.querySelector('.reel-chapters');
+      if (reelChapters) reelChapters.style.display = 'none';
     }
   }
 
