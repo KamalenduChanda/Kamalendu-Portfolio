@@ -317,6 +317,30 @@ const PROJECTS_CONFIG = [
       'Vector Deliverables: Master scalable assets (.AI, .EPS, .SVG, .PDF) calibrated for crisp display from 16px favicons to monumental physical signage.'
     ],
     deliverables: 'Complete Vector Master Identity (.AI, .EPS, .SVG, .PDF), Monogram Variations, Brand Color Swatches, and Design Thinking Presentation Slides.'
+  },
+  {
+    id: 12,
+    title: 'Pixel Pulse — Tech Brand Logo & Monogram Design',
+    subtitle: 'VECTOR BRAND IDENTITY & GEOMETRIC EXPLORATION',
+    category: 'Brand Identity & Logo Design',
+    software: ['ai'],
+    image: 'assets/pixel-pulse-gradient-logo.png',
+    gallery: [
+      { url: 'assets/pixel-pulse-gradient-logo.png', label: 'Concept 01: Fluid Kinetic Wave "P" — Electric Cyan to Magenta Gradients for Digital Tech & Media', wide: true },
+      { url: 'assets/pixel-pulse-hex-badge.png', label: 'Concept 02: Hexagonal Carbon Badge — Symmetrical Digital Waveform & Hardware Circuitry Pulse' },
+      { url: 'assets/pixel-pulse-lineart-monogram.png', label: 'Concept 03: Architectural Dual-Line "P" Monogram — Minimalist Spatial Line-Art with Drop Shadow Depth' }
+    ],
+    spec: 'Adobe Illustrator Vector Suite • Precision Bezier Mathematics • Gradient Mesh & Pathfinder Systems',
+    desc: 'A modern technology and media brand identity suite for "Pixel Pulse", crafted exclusively in Adobe Illustrator. The project explores three distinct visual directions: a fluid kinetic wave "P" utilizing smooth multi-stop gradient transitions from electric cyan to vibrant magenta; a high-precision hexagonal badge symbolizing hardware, audio-frequency waveforms, and digital circuitry; and an architectural dual-line geometric monogram engineered for minimal luxury and editorial tech applications. Every concept was constructed using Adobe Illustrator\'s precision grid, Pathfinder geometry, and custom typography kerning.',
+    pipeline: [
+      'Conceptual Ideation & Grid Construction: Designing geometric vector grids in Adobe Illustrator to explore tech, audio-visual pulse, and kinetic motion metaphors.',
+      'Fluid Gradient Vector Modeling: Crafting Concept 01\'s overlapping teardrop wave petals with smooth multi-stop gradient ramps and clean anchor curvature.',
+      'Hexagonal Symmetry & Waveform Synthesis: Utilizing 60-degree isometric angles to construct the stepped digital pulse monogram nested within a rounded carbon hexagon.',
+      'Architectural Line-Art Precision: Engineering Concept 03 with uniform optical stroke weights, continuous corner radiuses, and calculated drop shadow displacement.',
+      'Typography & Kerning: Curating wide-tracked modern grotesque logotype typography ("PIXEL PULSE") with clean optical alignment.',
+      'Deliverables: Scalable Master Vector Package (.AI, .EPS, .SVG, .PDF) across dark and light presentation backgrounds.'
+    ],
+    deliverables: 'Vector Brand Kit (.AI, .EPS, .SVG, .PDF), 3 Production Monogram Variants, Full Color & Monochrome Assets.'
   }
 ];
 
