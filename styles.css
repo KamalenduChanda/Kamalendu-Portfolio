@@ -1278,6 +1278,7 @@ h2 em {
 .image-pixel-pulse { background-color: #ffffff; background-image: linear-gradient(0deg, rgba(6, 12, 10, 0.85) 0%, rgba(6, 12, 10, 0.1) 60%), url('assets/pixel-pulse-gradient-logo.png'); background-size: contain; background-repeat: no-repeat; background-position: center; }
 .image-infographic { background-image: linear-gradient(0deg, rgba(6, 12, 10, 0.84) 0%, rgba(6, 12, 10, 0.15) 65%), url('assets/infographic-3d-ribbon.jpg'); background-size: cover; background-position: center; }
 .image-kc-fashion { background-image: linear-gradient(0deg, rgba(6, 12, 10, 0.84) 0%, rgba(6, 12, 10, 0.15) 65%), url('assets/kc-fashion-mockup.jpg'); background-size: cover; background-position: center; }
+.image-unimate-motion { background-color: #0b1410; background-image: radial-gradient(circle at 50% 45%, rgba(245, 210, 40, 0.18) 0%, transparent 65%), linear-gradient(0deg, rgba(6, 12, 10, 0.88) 0%, rgba(6, 12, 10, 0.15) 60%), url('assets/unimate-lemon-sachet.png'); background-size: contain; background-repeat: no-repeat; background-position: center; }
 
 .project-badges {
   position: absolute;
@@ -3570,4 +3571,37 @@ body.has-custom-cursor.lightbox-open .custom-cursor {
   .card-quick-zoom-btn {
     opacity: 1;
   }
+}
+
+
+/* SHOWREEL VIDEO SWITCHER */
+.showreel-switcher {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.reel-switch-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 18px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--white);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.6px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.reel-switch-btn:hover,
+.reel-switch-btn.active {
+  background: rgba(199, 255, 72, 0.14);
+  border-color: var(--lime);
+  color: var(--lime);
+  box-shadow: 0 0 16px rgba(199, 255, 72, 0.22);
 }

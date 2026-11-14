@@ -26,7 +26,7 @@ const SOCIAL_LINKS = {
 // 2. YOUTUBE SHOWREEL CONFIGURATION
 // If you have a YouTube video ID, paste it here (e.g. "dQw4w9WgXcQ" or full URL)
 const YOUTUBE_CONFIG = {
-  defaultVideoId: 'UhjRv-46pgg' // Kamalendu's ChatGPT Motion Graphic (https://youtu.be/UhjRv-46pgg)
+  defaultVideoId: 's3BlFzT4MIk' // Unimate & Balance 3D Product Motion Reel (https://youtube.com/shorts/s3BlFzT4MIk?feature=share)
 };
 
 // 3. SOFTWARE & SKILLS DATABASE
@@ -73,203 +73,40 @@ const SOFTWARE_CONFIG = [
   }
 ];
 
-// 4. PROJECTS DATABASE (Kamalendu's Real Commercial Works)
+// 4. PROJECTS DATABASE (Kamalendu's Real Commercial Works - Organized by Discipline)
 const PROJECTS_CONFIG = [
+  // =========================================================================
+  // DISCIPLINE 1: MOTION DESIGN & COMMERCIAL VIDEO ANIMATION (RECOMMENDED FIRST)
+  // =========================================================================
   {
     id: 1,
-    title: 'Trivana — Logo & Packaging Design',
-    subtitle: 'LOGO DESIGN & PACKAGING COVER',
-    category: 'Brand Identity & Product Packaging',
-    software: ['ai', 'ps'],
-    image: 'assets/trivana-cover-teal-back.jpg',
+    title: 'Unimate & Balance — 3D Product Motion Reel',
+    subtitle: 'COMMERCIAL 3D PRODUCT ANIMATION & MOTION GRAPHICS',
+    category: 'Motion Graphics & 3D Product Animation',
+    software: ['ae', 'ps', 'ai'],
+    image: 'assets/unimate-lemon-sachet.png',
+    youtubeId: 's3BlFzT4MIk',
+    youtubeUrl: 'https://youtube.com/shorts/s3BlFzT4MIk?feature=share',
     gallery: [
-      { url: 'assets/trivana-cover-teal-back.jpg', label: 'Model A (Teal) — Brand Logo & Back Cover' },
-      { url: 'assets/trivana-cover-teal-front.jpg', label: 'Model A (Teal) — Product Front Cover' },
-      { url: 'assets/trivana-cover-purple-back.jpg', label: 'Model B (Purple) — Aloe Vera & Feature Icons' },
-      { url: 'assets/trivana-cover-purple-front.jpg', label: 'Model B (Purple) — Product Front Cover' }
+      { url: 'assets/unimate-lemon-sachet.png', label: 'Unimate Lemon — 3D Product Sachet Render with Dynamic Citrus Splash & Fruit Slices', wide: true },
+      { url: 'assets/balance-citrus-sachet.png', label: 'Balance Citrus — 3D Product Sachet Render with Sliced Orange, Lemon Wheels & Leaves', wide: true },
+      { url: 'assets/unimate-lemon-label.png', label: 'Unimate Lemon — Packaging Die-Cut Label Design Artwork (Illustrator & Photoshop)' },
+      { url: 'assets/balance-citrus-label.png', label: 'Balance Citrus — Packaging Die-Cut Label Design Artwork (Illustrator & Photoshop)' },
+      { url: 'assets/citrus-fruit-slices.png', label: 'Citrus & Lemon Fruit Anatomy — High-Resolution Vector & Composite Asset Breakdown Sheet' }
     ],
-    spec: 'Dual Color Models (Teal & Purple) • Print & Vector',
-    desc: 'Complete brand identity and product packaging cover design for Trivana hygienic pads, created across two distinct color variant models (Teal/Emerald and Royal Purple). Adobe Illustrator was used to design the dynamic female silhouette brand logo, typography, iconography, and layout structure. Adobe Photoshop was utilized for high-resolution product composite rendering, Aloe Vera leaf moisture and gel droplets, layered lighting, and packaging finish.',
+    spec: 'After Effects, Photoshop & Illustrator • 3D Sachet Dynamics • Commercial 4K 60FPS Reel',
+    desc: 'Commercial 3D product motion graphics reel for Unimate Lemon and Balance Citrus dietary drink sachets by Kamalendu (KC_Din). The project combines custom packaging vector label design in Adobe Illustrator, photo-realistic citrus fruit composite rendering in Adobe Photoshop, and seamless 3D product animation with dynamic fruit slice choreography in Adobe After Effects. Features fluid rotational sachet ease curves, flying splash droplets, realistic specular highlight passes, and synced musical pacing.',
     pipeline: [
-      'Illustrator: Custom vector logo design featuring the graceful, dynamic female figure silhouette symbolizing comfort, confidence, and freedom of motion.',
-      'Illustrator: Complete packaging vector typography, "7 PADS" banner badges, feature icons (Cottony Soft Cover, Odour Control, Leak Lock Technology), and disposal infographics.',
-      'Photoshop: Realistic product composite of the pad with layered texture details, absorbent core gradient, and embossed surface shading.',
-      'Photoshop: High-impact photo manipulation of fresh Aloe Vera leaf with dripping moisture droplets to highlight natural care and comfort.',
-      'Photoshop: Multi-model color exploration comparing Teal/Aqua and Royal Purple variants for retail shelf appeal.'
+      'Adobe Illustrator: Vector logo styling, precision packaging die-cut wrap layouts, and typography for Unimate and Balance Citrus sachets.',
+      'Adobe Photoshop: Digital compositing of fresh citrus wheels, multi-angle lemon slices, splash water droplets, and organic leaf lighting.',
+      'Adobe After Effects: 3D camera choreography, sachet rotation kinetics, floating fruit slice motion paths, and velocity easing.',
+      'Adobe After Effects: Optical light rays, particle air bubbles, and glassmorphic motion blur compositing.',
+      'Commercial Deliverables: Vertical 9:16 Social Commercial Reel (YouTube Shorts), Broadcast Master, and High-Res 3D Packaging Renders.'
     ],
-    deliverables: 'Vector Logo Kit (AI, EPS, SVG), Print-Ready CMYK Packaging Masters (300 DPI), and Digital Showcase Mockups.'
+    deliverables: 'Commercial Video Reel (YouTube Shorts), 3D Product Packaging Renders (PNG), and Die-Cut Vector Master PSD/AI Files.'
   },
   {
     id: 2,
-    title: 'Spider-Man: Miles Morales — Movie Poster',
-    subtitle: 'KEY ART & OUTDOOR ADVERTISING MOCKUP',
-    category: 'Key Art & Theatrical Poster Design',
-    software: ['ps'],
-    image: 'assets/spiderman-mockup.jpg',
-    gallery: [
-      { url: 'assets/spiderman-poster.jpg', label: 'Key Art Theatrical Poster — Double Exposure & Skyline Silhouette' },
-      { url: 'assets/spiderman-mockup.jpg', label: 'Outdoor Advertising Mockup — Rainy Night Bus Shelter Billboard' }
-    ],
-    spec: 'Photoshop Key Art • High-Res Theatrical Poster & Rainy Night Mockup',
-    desc: 'Cinematic theatrical movie poster for Marvel\'s "Spider-Man: Miles Morales", conceived and executed in Adobe Photoshop. The composition features an arresting double-exposure treatment within Miles Morales\'s dynamic leaping silhouette, contrasting an electric neon city night against an intense cyan skyline silhouette. Finished with authentic Marvel billing block credits and placed into a photorealistic rainy night bus shelter billboard mockup with glowing street reflections.',
-    pipeline: [
-      'Photoshop: Double-exposure silhouette masking inside Miles Morales, capturing character kinetic descent with neon magenta/blue light passes.',
-      'Photoshop: High-contrast cyan city skyline silhouette framing the iconic Marvel Spider-Man typography.',
-      'Photoshop: Typography hierarchy with custom red brush script for "MILES MORALES" and authentic theatrical credit billing block.',
-      'Photoshop: Smart Object integration into a photorealistic rainy night bus shelter billboard with wet pavement reflections and authentic ambient kiosk illumination.'
-    ],
-    deliverables: 'Master Theatrical Poster PSD (300 DPI), High-Res Billboard Mockup, and Social Display Key Art.'
-  },
-  {
-    id: 3,
-    title: 'Demon Slayer: Infinity Castle — Movie Poster',
-    subtitle: 'ANIME THEATRICAL KEY ART & BILLBOARD MOCKUP',
-    category: 'Anime Key Art & Poster Design',
-    software: ['ps'],
-    image: 'assets/demonslayer-mockup.jpg',
-    gallery: [
-      { url: 'assets/demonslayer-poster.jpg', label: 'Key Art Theatrical Poster — Tanjiro, Nezuko & Infinity Castle' },
-      { url: 'assets/demonslayer-mockup.jpg', label: 'Outdoor Advertising Mockup — Rainy Night Bus Shelter Display' }
-    ],
-    spec: 'Photoshop Key Art • Theatrical Poster & Photorealistic Billboard Mockup',
-    desc: 'Theatrical key art movie poster for the "Demon Slayer: Kimetsu no Yaiba — Infinity Castle" arc, created in Adobe Photoshop. The composition places Tanjiro Kamado in an intense leaping katana attack pose in the foreground, anchored by an awakened demon-form Nezuko, the ominous blood-red moon, and the dimensional architecture of the Infinity Castle. Features authentic theatrical release date typography, Japanese anime billing block credits, and a photorealistic rainy night bus shelter billboard mockup with glowing asphalt reflections.',
-    pipeline: [
-      'Photoshop: Multi-character depth compositing placing dynamic Tanjiro in foreground and awakened Nezuko in the midground aura.',
-      'Photoshop: Blood-red atmospheric color grading, glowing red moon backdrop, and ominous Infinity Castle environmental textures.',
-      'Photoshop: Official Kimetsu no Yaiba logo integration, custom grunge-textured "INFINITY CASTLE" typography, and theatrical anime credit block.',
-      'Photoshop: Smart Object realistic placement into a rain-slicked city bus stop kiosk with glass raindrops, depth of field, and glowing neon bokeh.'
-    ],
-    deliverables: 'Theatrical Master PSD (300 DPI), Outdoor Billboard Mockup, and High-Res Promotional Key Art.'
-  },
-  {
-    id: 4,
-    title: 'Men in Blue: Champions — Sports Editorial Spread',
-    subtitle: 'T20 WORLD CUP VICTORY COMMEMORATIVE ART',
-    category: 'Sports Editorial Design & Magazine Spread',
-    software: ['ps'],
-    image: 'assets/meninblue-mockup.jpg',
-    gallery: [
-      { url: 'assets/meninblue-poster.jpg', label: 'Commemorative Art — Rohit, Virat, Bumrah & Trophy Celebration' },
-      { url: 'assets/meninblue-mockup.jpg', label: 'Editorial Mockup — Open Magazine Spread with Botanical Shadow' }
-    ],
-    spec: 'Photoshop Editorial • Print Spread & Publication Mockup',
-    desc: 'Commemorative sports editorial spread honoring Team India\'s historic T20 World Cup Championship triumph, designed in Adobe Photoshop. The composition captures the raw emotion and pinnacle moments of the final: Rohit Sharma collapsing onto the pitch in joy, Suryakumar Yadav\'s match-winning boundary catch, Jasprit Bumrah\'s fierce celebration against the tricolor flag, and Virat Kohli alongside Rohit lifting the ICC trophy. Features dynamic editorial typography ("MAN IN BLUE", "CHAMPIONS"), saffron/white/blue color harmony, and a clean open-magazine print mockup with botanical shadow aesthetics.',
-    pipeline: [
-      'Photoshop: High-precision subject extraction and cutout compositing of key tournament moments with seamless edge feathering.',
-      'Photoshop: Editorial typography styling combining bold condensed sans-serif with custom two-tone saffron and blue fill treatments.',
-      'Photoshop: Textured splash background overlays and color grading matching Team India\'s official kit tones.',
-      'Photoshop: Clean magazine print spread mockup integration with realistic paper curl, center crease, and botanical leaf shadow overlay.'
-    ],
-    deliverables: 'High-Res Print Master PSD (300 DPI), Editorial Magazine Mockup, and Social Graphics Kit.'
-  },
-  {
-    id: 5,
-    title: 'The Forest Colossus — Jungle Photo Manipulation',
-    subtitle: 'ATMOSPHERIC PHOTO MANIPULATION & MATTE COMPOSITE',
-    category: 'Photo Manipulation & Environmental Matte Art',
-    software: ['ps'],
-    image: 'assets/elephant-manipulation.jpg',
-    gallery: [
-      { url: 'assets/elephant-manipulation.jpg', label: 'Final Matte Composite — The Colossal Elephant & Explorer' }
-    ],
-    spec: 'Photoshop Matte Painting • Advanced Blending & Atmospheric Depth',
-    desc: 'Atmospheric fantasy photo manipulation and digital matte composite created in Adobe Photoshop. The narrative artwork depicts a solitary hooded traveler encountering a monumental, ancient elephant emerging through dense jungle foliage. Built by seamlessly fusing multiple photographic plates: large-scale elephant anatomy, layered foreground rainforest flora, a misty woodland canopy, and volumetric cyan overhead backlighting with painted edge rim lights and cinematic color grading.',
-    pipeline: [
-      'Photoshop: Multi-plate image compositing combining foreground tropical foliage, hooded explorer, deep jungle background, and colossal elephant subject.',
-      'Photoshop: Advanced pen tool extraction and edge hair/skin refinement on the elephant subject.',
-      'Photoshop: Hand-painted volumetric cyan backlighting cascading through the misty forest canopy with ambient rim light on the elephant’s ears and tusks.',
-      'Photoshop: Unified cinematic color grading using Curves, Selective Color, and Camera Raw filter for moody atmospheric depth.'
-    ],
-    deliverables: 'Master Layered Composite PSD (300 DPI), High-Res Digital Art Print, and Social Portfolio Showcase.'
-  },
-  {
-    id: 6,
-    title: 'Fine Up — Beverage Bottle Label Suite',
-    subtitle: 'VECTOR LOGO, AI BACKGROUNDS & PACKAGING COMPOSITE',
-    category: 'Commercial Beverage Label & Identity Design',
-    software: ['ai', 'ps', 'genai'],
-    image: 'assets/fineup-labels.jpg',
-    gallery: [
-      { url: 'assets/fineup-labels.jpg', label: 'Complete 5-Flavor Bottle Label Master Collection', wide: true },
-      { url: 'assets/fineup-orange.jpg', label: 'Flavor 01: Orange Citrus Splash (Bubbles & Slices)', wide: true },
-      { url: 'assets/fineup-cola.jpg', label: 'Flavor 02: Sparkling Cola Fizz (Ice & Effervescence)', wide: true },
-      { url: 'assets/fineup-jeera.jpg', label: 'Flavor 03: Masala Jeera Soda (Cumin Seeds & Foam)', wide: true },
-      { url: 'assets/fineup-lemon.jpg', label: 'Flavor 04: Green Lemon Lime Dew (Foliage & Droplets)', wide: true },
-      { url: 'assets/fineup-soda.jpg', label: 'Flavor 05: Carbonated Blue Chill (Splash & Condensation)', wide: true }
-    ],
-    spec: 'Multi-Tool Workflow • Illustrator (Logo) + Gen AI (Liquid BGs) + Photoshop (Composite)',
-    desc: 'Comprehensive 5-flavor beverage bottle label suite for "Fine Up" carbonated drinks, demonstrating a multi-software creative pipeline. Adobe Illustrator was used to design the dynamic circular vector brand logo with fluid custom script typography and two-tone wave accents. Generative AI was leveraged for generating high-impact liquid backgrounds, carbonation micro-bubbles, ice splashes, and flavor cues. Adobe Photoshop brought the elements together into cohesive, print-ready bottle wrap labels with tactile condensation water droplets, seamless fade zones, and vibrant color calibration across all 5 flavors (Orange, Cola, Jeera, Lemon-Lime, and Soda).',
-    pipeline: [
-      'Illustrator: Vector logo design for "Fine Up", crafting the fluid script typography, red "Up" badge, and layered circular depth badge.',
-      'Generative AI: Prompt-crafted synthesis of high-resolution macro liquid textures, effervescent bubbles, and dynamic splash dynamics.',
-      'Photoshop: Multi-layer packaging composite blending liquid plates, fruit slices, and condensation droplet displacement masks.',
-      'Photoshop: Flavor-specific color grading across 5 commercial SKU variants with clean typography and regulatory ingredient fade zones.'
-    ],
-    deliverables: 'Vector Brand Identity Kit (AI, EPS), 5 Print-Ready Bottle Wrap PSDs (300 DPI CMYK), and Digital Retail Mockups.'
-  },
-  {
-    id: 7,
-    title: 'Coca-Cola: Coke Zero — Commercial Poster',
-    subtitle: 'BEVERAGE KEY ART & PRODUCT POSTER',
-    category: 'Commercial Advertising & Product Poster',
-    software: ['ps'],
-    image: 'assets/cokezero-poster.jpg',
-    gallery: [
-      { url: 'assets/cokezero-poster.jpg', label: 'Commercial Print Poster — "The Pause That Refreshes" Coke Zero' }
-    ],
-    spec: 'Photoshop Product Composite • Commercial Key Art (300 DPI)',
-    desc: 'Classic commercial beverage advertising poster for Coca-Cola\'s "Coke Zero", created in Adobe Photoshop. The composition celebrates the timeless heritage tagline "The pause that refreshes", spotlighting a chilled condensation-beaded glass bottle alongside a luminous frosted tumbler filled with sparkling ice cubes and carbonated cola. Features bold "COKE ZERO" typography with liquid bubble texturing, a golden effervescent base splash wave, and a clean minimalist white border frame.',
-    pipeline: [
-      'Photoshop: High-contrast product isolation and glass reflection compositing of the chilled Coke contour bottle and iced tumbler.',
-      'Photoshop: Realistic tactile condensation droplet painting and glass frost effect on the drink surfaces.',
-      'Photoshop: Custom typography styling for "COKE ZERO" utilizing textured carbonation bubble clipping masks and crimson glow.',
-      'Photoshop: Liquid wave splash integration along the base with golden backlight luminescence and print-ready framing.'
-    ],
-    deliverables: 'Print-Ready Advertising Master PSD (300 DPI), Retail Key Art, and Social Media Display Ads.'
-  },
-  {
-    id: 8,
-    title: 'Campus Shoes: Prebook Drop — Social Campaign',
-    subtitle: 'ECOMMERCE AD DESIGN & 3D SOCIAL MOCKUP',
-    category: 'Social Media Ad Design & 3D Mockup',
-    software: ['ps'],
-    image: 'assets/campus-mockup.jpg',
-    gallery: [
-      { url: 'assets/campus-post.jpg', label: 'E-commerce Ad Creative — "CAMPUS" Prebook Launch' },
-      { url: 'assets/campus-mockup.jpg', label: '3D Social Media Mockup — Instagram & Facebook Mobile UI' }
-    ],
-    spec: 'Photoshop Ad Creative • 1:1 Social Format & 3D Multi-Device Mockup',
-    desc: 'High-conversion commercial social media ad campaign for Campus running shoes, designed in Adobe Photoshop. The creative features a dynamic floating athletic sneaker with realistic cast shadows, layered over bold condensed "CAMPUS" typography with letter cutout masking. Incorporates promotional callouts ("50% OFF", "PREBOOK NOW"), contact details, and a scannable QR code on a striped cobalt-blue gradient background. Presented through a 3D social media showcase mockup featuring Instagram mobile UI, Facebook feed card, and floating 3D social badges on studio podiums.',
-    pipeline: [
-      'Photoshop: High-precision footwear product extraction with clean edge isolation and dynamic 3D drop shadow generation.',
-      'Photoshop: Typographic hierarchy combining massive block lettering with overlay transparency and vector badge elements.',
-      'Photoshop: Commercial promotional layout featuring stitched discount badges, contact CTA, and functional QR code.',
-      'Photoshop: Smart Object integration into a premium 3D mobile smartphone and social media studio scene.'
-    ],
-    deliverables: 'Social Media Ad Kit (1:1 & 9:16), 3D Device Showcase Mockups, and Layered PSD Templates.'
-  },
-  {
-    id: 9,
-    title: 'Peaceful Yoga: Mind & Body — Event Poster',
-    subtitle: 'WELLNESS POSTER & ORGANIC GRAPHIC DESIGN',
-    category: 'Event Poster & Editorial Print Layout',
-    software: ['ps'],
-    image: 'assets/yoga-poster.jpg',
-    gallery: [
-      { url: 'assets/yoga-poster.jpg', label: 'Wellness Event Poster — "Peaceful Yoga" Nature Vignette' }
-    ],
-    spec: 'Photoshop Event Poster • Organic Vector-Matte Layout (300 DPI)',
-    desc: 'Calming wellness and health event poster for "Peaceful Yoga", designed in Adobe Photoshop. The layout features an organic circular window composition framing a meditating yogi in the Tree Pose (Vrikshasana) amidst a lush bonsai-style river valley landscape. Employs soft sage-green earthy tones, layered fluid wave shapes, modern dual-style typography (solid & outline), health benefit bullet points (Flexibility, Sleep Quality, Anxiety Reduction), and clean event scheduling details for Jawaharlal Nehru Stadium.',
-    pipeline: [
-      'Photoshop: Circular mask vignette blending organic nature scenery with the central yoga illustration.',
-      'Photoshop: Typographic pairing with custom solid and outlined title treatment for "PEACEFUL YOGA".',
-      'Photoshop: Layered fluid background shapes with sage-green color harmony, subtle dot grids, and botanical leaf shadows.',
-      'Photoshop: Editorial hierarchy layout for date, time, venue, and bulleted wellness benefits.'
-    ],
-    deliverables: 'Print-Ready Event Poster PSD (300 DPI), Digital Display Key Art, and Social Flyer Formats.'
-  },
-  {
-    id: 10,
     title: 'ChatGPT — Motion Graphic & Kinetic Visuals',
     subtitle: 'KINETIC MOTION GRAPHIC & YOUTUBE SHOWCASE',
     category: 'Motion Graphics & Video Animation',
@@ -290,8 +127,12 @@ const PROJECTS_CONFIG = [
     ],
     deliverables: '4K Master Video (YouTube), Kinetic Title Templates, and High-Resolution Keyframe Stills.'
   },
+
+  // =========================================================================
+  // DISCIPLINE 2: BRAND IDENTITY & VECTOR LOGO DESIGN
+  // =========================================================================
   {
-    id: 11,
+    id: 3,
     title: 'Holy India — Logo Design & Design Thinking',
     subtitle: 'SACRED SYMBOLISM & VECTOR TYPOGRAPHY CASE STUDY',
     category: 'Brand Identity & Logo Design',
@@ -319,7 +160,7 @@ const PROJECTS_CONFIG = [
     deliverables: 'Complete Vector Master Identity (.AI, .EPS, .SVG, .PDF), Monogram Variations, Brand Color Swatches, and Design Thinking Presentation Slides.'
   },
   {
-    id: 12,
+    id: 4,
     title: 'Pixel Pulse — Tech Brand Logo & Monogram Design',
     subtitle: 'VECTOR BRAND IDENTITY & GEOMETRIC EXPLORATION',
     category: 'Brand Identity & Logo Design',
@@ -343,7 +184,106 @@ const PROJECTS_CONFIG = [
     deliverables: 'Vector Brand Kit (.AI, .EPS, .SVG, .PDF), 3 Production Monogram Variants, Full Color & Monochrome Assets.'
   },
   {
-    id: 13,
+    id: 5,
+    title: 'Trivana — Logo & Packaging Design Suite',
+    subtitle: 'LOGO DESIGN & PACKAGING COVER',
+    category: 'Brand Identity & Product Packaging',
+    software: ['ai', 'ps'],
+    image: 'assets/trivana-cover-teal-back.jpg',
+    gallery: [
+      { url: 'assets/trivana-cover-teal-back.jpg', label: 'Model A (Teal) — Brand Logo & Back Cover' },
+      { url: 'assets/trivana-cover-teal-front.jpg', label: 'Model A (Teal) — Product Front Cover' },
+      { url: 'assets/trivana-cover-purple-back.jpg', label: 'Model B (Purple) — Aloe Vera & Feature Icons' },
+      { url: 'assets/trivana-cover-purple-front.jpg', label: 'Model B (Purple) — Product Front Cover' }
+    ],
+    spec: 'Dual Color Models (Teal & Purple) • Print & Vector',
+    desc: 'Complete brand identity and product packaging cover design for Trivana hygienic pads, created across two distinct color variant models (Teal/Emerald and Royal Purple). Adobe Illustrator was used to design the dynamic female silhouette brand logo, typography, iconography, and layout structure. Adobe Photoshop was utilized for high-resolution product composite rendering, Aloe Vera leaf moisture and gel droplets, layered lighting, and packaging finish.',
+    pipeline: [
+      'Illustrator: Custom vector logo design featuring the graceful, dynamic female figure silhouette symbolizing comfort, confidence, and freedom of motion.',
+      'Illustrator: Complete packaging vector typography, "7 PADS" banner badges, feature icons (Cottony Soft Cover, Odour Control, Leak Lock Technology), and disposal infographics.',
+      'Photoshop: Realistic product composite of the pad with layered texture details, absorbent core gradient, and embossed surface shading.',
+      'Photoshop: High-impact photo manipulation of fresh Aloe Vera leaf with dripping moisture droplets to highlight natural care and comfort.',
+      'Photoshop: Multi-model color exploration comparing Teal/Aqua and Royal Purple variants for retail shelf appeal.'
+    ],
+    deliverables: 'Vector Logo Kit (AI, EPS, SVG), Print-Ready CMYK Packaging Masters (300 DPI), and Digital Showcase Mockups.'
+  },
+
+  // =========================================================================
+  // DISCIPLINE 3: PACKAGING & COMMERCIAL PRODUCT ADVERTISING
+  // =========================================================================
+  {
+    id: 6,
+    title: 'Fine Up — 5-Flavor Soda Bottle Label Suite',
+    subtitle: 'MULTI-PRODUCT PACKAGING & BRAND IDENTITY',
+    category: 'Brand Packaging & Commercial Suite',
+    software: ['ai', 'ps', 'genai'],
+    image: 'assets/fineup-labels.jpg',
+    gallery: [
+      { url: 'assets/fineup-labels.jpg', label: 'Complete 5-Flavor Bottle Label Master Collection', wide: true },
+      { url: 'assets/fineup-orange.jpg', label: 'Flavor 01: Orange Citrus Splash (Bubbles & Slices)', wide: true },
+      { url: 'assets/fineup-cola.jpg', label: 'Flavor 02: Sparkling Cola Fizz (Ice & Effervescence)', wide: true },
+      { url: 'assets/fineup-jeera.jpg', label: 'Flavor 03: Masala Jeera Soda (Cumin Seeds & Foam)', wide: true },
+      { url: 'assets/fineup-lemon.jpg', label: 'Flavor 04: Green Lemon Lime Dew (Foliage & Droplets)', wide: true },
+      { url: 'assets/fineup-soda.jpg', label: 'Flavor 05: Carbonated Blue Chill (Splash & Condensation)', wide: true }
+    ],
+    spec: 'Multi-Tool Workflow • Illustrator (Logo) + Gen AI (Liquid BGs) + Photoshop (Composite)',
+    desc: 'Comprehensive 5-flavor beverage bottle label suite for "Fine Up" carbonated drinks, demonstrating a multi-software creative pipeline. Adobe Illustrator was used to design the dynamic circular vector brand logo with fluid custom script typography and two-tone wave accents. Generative AI was leveraged for generating high-impact liquid backgrounds, carbonation micro-bubbles, ice splashes, and flavor cues. Adobe Photoshop brought the elements together into cohesive, print-ready bottle wrap labels with tactile condensation water droplets, seamless fade zones, and vibrant color calibration across all 5 flavors (Orange, Cola, Jeera, Lemon-Lime, and Soda).',
+    pipeline: [
+      'Illustrator: Vector logo design for "Fine Up", crafting the fluid script typography, red "Up" badge, and layered circular depth badge.',
+      'Generative AI: Prompt-crafted synthesis of high-resolution macro liquid textures, effervescent bubbles, and dynamic splash dynamics.',
+      'Photoshop: Multi-layer packaging composite blending liquid plates, fruit slices, and condensation droplet displacement masks.',
+      'Photoshop: Flavor-specific color grading across 5 commercial SKU variants with clean typography and regulatory ingredient fade zones.'
+    ],
+    deliverables: 'Vector Brand Identity Kit (AI, EPS), 5 Print-Ready Bottle Wrap PSDs (300 DPI CMYK), and Digital Retail Mockups.'
+  },
+  {
+    id: 7,
+    title: 'KC Fashion Show — A4 Commercial Poster & Street Mockup',
+    subtitle: 'EDITORIAL FASHION POSTER & AI STOREFRONT MOCKUP',
+    category: 'Commercial Poster & Fashion Advertising',
+    software: ['ai', 'genai'],
+    image: 'assets/kc-fashion-mockup.jpg',
+    gallery: [
+      { url: 'assets/kc-fashion-mockup.jpg', label: 'Boutique Storefront Street Mockup — Photorealistic Architectural Wall Presentation (Gen AI Mockup)' },
+      { url: 'assets/kc-fashion-poster-flat.jpg', label: 'Master A4 Commercial Print Poster Layout — Editorial Typography, Geometric Clipping Masks & Model Showcase (Illustrator)' }
+    ],
+    spec: 'Adobe Illustrator Vector Suite • Gen AI Commercial Mockup • 300 DPI A4 Print Layout',
+    desc: 'Chic high-fashion commercial A4 event poster and architectural boutique street mockup designed for "KC Presents: Fashion Collection" (Gurgaon, Haryana showcase). Crafted in Adobe Illustrator, the poster features bold avant-garde stacked typography ("FA-SHI-ON", "COLL-ECT-ION") intersecting dual-tone geometric arches in peach coral and sage teal. Generative AI was utilized to synthesize a photorealistic luxury fashion boutique storefront with travertine stone cladding, warm interior display illumination, street greenery, and ambient daylight shadows to present the poster in a real-world commercial advertising context.',
+    pipeline: [
+      'Art Direction & Color Palette: Curating a contemporary warm editorial palette (peach coral #f8a878, mint sage #85b09a, and stark high-contrast typography).',
+      'Adobe Illustrator Layout: Designing the A4 grid with avant-garde syllabic stacked typography ("FA-SHI-ON / COLL-ECT-ION") and subtle drop shadow elevation.',
+      'Geometric Clipping & Masking: Precision vector path cutting of model photography across dual interlocking circular and semi-arch silhouettes.',
+      'Generative AI Mockup Synthesis: Prompt-engineered generation of an upscale high-fashion boutique exterior wall mockup with architectural stone texture, window reflections, and daylight lighting.',
+      'Editorial Typography & Event Hierarchy: Balancing brand mark ("KC PRESENTS"), headline, event venue details, and digital web link.',
+      'Deliverables: Print-ready A4 master (300 DPI CMYK), High-Resolution Street Mockup Key Visuals, and Digital Campaign Formats.'
+    ],
+    deliverables: 'Print-Ready A4 Master (300 DPI CMYK), Photorealistic Street Wall Mockup, and Social Campaign Stills.'
+  },
+  {
+    id: 8,
+    title: 'Coca-Cola: Coke Zero — Commercial Poster',
+    subtitle: 'BEVERAGE KEY ART & PRODUCT POSTER',
+    category: 'Commercial Advertising & Product Poster',
+    software: ['ps'],
+    image: 'assets/cokezero-poster.jpg',
+    gallery: [
+      { url: 'assets/cokezero-poster.jpg', label: 'Commercial Print Poster — "The Pause That Refreshes" Coke Zero' }
+    ],
+    spec: 'Photoshop Product Composite • Commercial Key Art (300 DPI)',
+    desc: 'Refreshing commercial beverage poster for Coca-Cola Zero Sugar featuring the iconic glass contour bottle emerging from a whirlpool of splashing ice-cold cola with floating ice cubes and sliced citrus wedges. Designed in Adobe Photoshop with dramatic side rim lighting, condensation bead overlays, dynamic depth-of-field blur, and the classic slogan "The Pause That Refreshes".',
+    pipeline: [
+      'Photoshop: Bottle extraction, contour path masking, and glass surface reflection highlights.',
+      'Photoshop: Fluid liquid splash dynamics, carbonated bubbles, and suspended ice cube depth compositing.',
+      'Photoshop: Dynamic typography lockup for "Coke Zero" with red-to-black gradient vignette backdrop.'
+    ],
+    deliverables: 'Print-Ready Poster PSD (300 DPI), High-Res Social Ad Graphics, and Retail Display Key Art.'
+  },
+
+  // =========================================================================
+  // DISCIPLINE 4: EDITORIAL & DATA VISUALIZATION
+  // =========================================================================
+  {
+    id: 9,
     title: 'Vector Infographic Design & Recreations',
     subtitle: 'EDITORIAL DATA VISUALIZATION & 3D VECTOR PROCESS MODELS',
     category: 'Infographic & Data Visualization',
@@ -365,28 +305,133 @@ const PROJECTS_CONFIG = [
     ],
     deliverables: 'Vector Master Files (.AI, .EPS, .SVG, .PDF), High-Res Editorial Sheets (300 DPI), and Digital Slide Presentation Assets.'
   },
+
+  // =========================================================================
+  // DISCIPLINE 5: KEY ART, MATTE PAINTING & POP CULTURE POSTERS
+  // =========================================================================
+  {
+    id: 10,
+    title: 'Spider-Man: Miles Morales — Movie Poster',
+    subtitle: 'KEY ART & OUTDOOR ADVERTISING MOCKUP',
+    category: 'Key Art & Theatrical Poster Design',
+    software: ['ps'],
+    image: 'assets/spiderman-mockup.jpg',
+    gallery: [
+      { url: 'assets/spiderman-poster.jpg', label: 'Key Art Theatrical Poster — Double Exposure & Skyline Silhouette' },
+      { url: 'assets/spiderman-mockup.jpg', label: 'Outdoor Advertising Mockup — Rainy Night Bus Shelter Display' }
+    ],
+    spec: 'Dual Deliverables (Key Art Poster + Outdoor Mockup) • 300 DPI Print Quality',
+    desc: 'A moody, cinematic theatrical movie poster designed for Spider-Man: Miles Morales. The composition utilizes double-exposure silhouettes, blending a reflective close-up portrait of Miles with a dramatic New York skyline where Spider-Man swings into action beneath glowing skyscraper lights. Accompanied by a realistic outdoor bus shelter advertising mockup set in a rainy city street at night.',
+    pipeline: [
+      'Photoshop: Multi-layered portrait blending combining mask channels, frequency separation, and color grading in deep crimson and charcoal blacks.',
+      'Photoshop: High-impact double exposure incorporating the New York City cityscape inside the silhouetted figure.',
+      'Photoshop: Custom typography lockup featuring cinematic credit block, Marvel branding, and atmospheric haze overlays.',
+      'Photoshop: Realistic 3D bus shelter mockup integration with wet asphalt reflections, neon street glow, and glass condensation.'
+    ],
+    deliverables: 'Theatrical Master Key Art (300 DPI PSD), Outdoor Billboard Mockup, and Social Teaser Assets.'
+  },
+  {
+    id: 11,
+    title: 'Demon Slayer: Infinity Castle — Movie Poster',
+    subtitle: 'ANIME THEATRICAL KEY ART & CINEMA MOCKUP',
+    category: 'Entertainment Key Art & Anime Poster',
+    software: ['ps'],
+    image: 'assets/demonslayer-mockup.jpg',
+    gallery: [
+      { url: 'assets/demonslayer-poster.jpg', label: 'Theatrical Anime Poster — Flame Breathing & Dimensional Castle' },
+      { url: 'assets/demonslayer-mockup.jpg', label: 'Cinema Hallway Mockup — Illuminated Backlit Poster Case' }
+    ],
+    spec: 'Photoshop Digital Painting & Compositing • Cinema Display Ready',
+    desc: 'Theatrical anime movie poster and cinema hallway advertising mockup for Demon Slayer: Kimetsu no Yaiba — Infinity Castle Arc. The artwork centers on Tanjiro Kamado unleashing his Hinokami Kagura (Flame Breathing) sword technique against a swirling vortex of glowing fire embers, floating wooden architecture, and the endless shifting staircases of Muzan\'s Infinity Castle. Presented in a realistic backlit cinema hallway poster case.',
+    pipeline: [
+      'Photoshop: Dynamic character isolation, digital flame particle painting, and custom heat distortion effects.',
+      'Photoshop: Multi-plane depth staging of the Infinity Castle architecture with dramatic atmospheric perspective.',
+      'Photoshop: Theatrical title treatment with Japanese kanji integration and billing block.',
+      'Photoshop: Cinema lobby mockup with illuminated acrylic frame, wall textures, and ambient cinema lighting reflections.'
+    ],
+    deliverables: 'Hi-Res Theatrical Master (300 DPI), Backlit Cinema Mockup, and Character Focus Stills.'
+  },
+  {
+    id: 12,
+    title: 'Men in Blue: Cricket World Cup — Tribute Poster',
+    subtitle: 'SPORTS EDITORIAL TRIBUTE & SUBWAY POSTER MOCKUP',
+    category: 'Sports Editorial & Theatrical Poster',
+    software: ['ps'],
+    image: 'assets/meninblue-mockup.jpg',
+    gallery: [
+      { url: 'assets/meninblue-poster.jpg', label: 'Sports Tribute Key Art — "Chak De India" Stadium Energy' },
+      { url: 'assets/meninblue-mockup.jpg', label: 'Subway Station Advertising Mockup — High-Traffic Commuter Display' }
+    ],
+    spec: 'Photoshop Sports Composite • Editorial Poster & Subway Mockup',
+    desc: 'High-energy sports tribute poster celebrating the Indian Cricket Team ("Men in Blue"). Features Rohit Sharma, Virat Kohli, and Hardik Pandya in iconic match-winning poses, surrounded by stadium floodlights, dynamic tricolor smoke trails, flying stadium dust, and the Hindi rally cry "Chak De India". Paired with a realistic modern subway station platform poster mockup.',
+    pipeline: [
+      'Photoshop: High-contrast player cutouts with aggressive rim lighting and edge extraction.',
+      'Photoshop: Dynamic stadium backdrop blending crowd silhouettes, glowing floodlight lenses, and tricolor smoke flares (saffron, white, and green).',
+      'Photoshop: Bold typographic lockup with distressed textures and metallic golden accents.',
+      'Photoshop: Subway station mockup integration with floor tile reflections and industrial station lighting.'
+    ],
+    deliverables: 'Full-Res Editorial Sports Poster (300 DPI), Subway Mockup File, and Social Media Matchday Graphics.'
+  },
+  {
+    id: 13,
+    title: 'Gentle Giants — Wildlife Matte Painting',
+    subtitle: 'ENVIRONMENTAL COMPOSITING & PHOTO MANIPULATION',
+    category: 'Digital Matte Painting & Concept Art',
+    software: ['ps'],
+    image: 'assets/elephant-manipulation.jpg',
+    gallery: [
+      { url: 'assets/elephant-manipulation.jpg', label: 'Digital Matte Painting — Golden Hour Elephant Sanctuary in Mist' }
+    ],
+    spec: 'Advanced Photoshop Composite • Photo Manipulation & Matte Painting',
+    desc: 'Atmospheric digital matte painting capturing a mother and baby elephant wading through a sunlit jungle river at golden hour. Created using multiple photographic plates blended seamlessly with hand-painted volumetric fog, sun rays streaming through the tropical canopy, water surface reflections, and lush riverbank vegetation.',
+    pipeline: [
+      'Photoshop: Multi-plate environmental integration combining riverbed, jungle canopy, distant mountains, and elephant subjects.',
+      'Photoshop: Custom volumetric light ray painting with golden hour color temperature grading.',
+      'Photoshop: Water displacement ripples, splash dynamics, and wet skin texture enhancements.',
+      'Photoshop: Cinematic color grading using curves, selective color, and atmospheric haze passes.'
+    ],
+    deliverables: 'Fine Art Print File (300 DPI CMYK), Desktop Wallpaper 4K Master, and Before/After Progression Layers.'
+  },
   {
     id: 14,
-    title: 'KC Fashion Show — A4 Commercial Poster & Street Mockup',
-    subtitle: 'EDITORIAL FASHION POSTER & AI STOREFRONT MOCKUP',
-    category: 'Commercial Poster & Fashion Advertising',
-    software: ['ai', 'genai'],
-    image: 'assets/kc-fashion-mockup.jpg',
+    title: 'Campus Shoes — E-Commerce Sneaker Ad & 3D Mockup',
+    subtitle: 'COMMERCIAL SNEAKER AD & 3D SOCIAL MEDIA MOCKUP',
+    category: 'Commercial Advertising & Social Media Mockup',
+    software: ['ps'],
+    image: 'assets/campus-mockup.jpg',
     gallery: [
-      { url: 'assets/kc-fashion-mockup.jpg', label: 'Boutique Storefront Street Mockup — Photorealistic Architectural Wall Presentation (Gen AI Mockup)' },
-      { url: 'assets/kc-fashion-poster-flat.jpg', label: 'Master A4 Commercial Print Poster Layout — Editorial Typography, Geometric Clipping Masks & Model Showcase (Illustrator)' }
+      { url: 'assets/campus-poster.jpg', label: 'E-Commerce Sneaker Ad — "Prebook Now" Launch Campaign' },
+      { url: 'assets/campus-mockup.jpg', label: '3D Social Media Mockup — Isometric Smartphone Display Presentation' }
     ],
-    spec: 'Adobe Illustrator Vector Suite • Gen AI Commercial Mockup • 300 DPI A4 Print Layout',
-    desc: 'Chic high-fashion commercial A4 event poster and architectural boutique street mockup designed for "KC Presents: Fashion Collection" (Gurgaon, Haryana showcase). Crafted in Adobe Illustrator, the poster features bold avant-garde stacked typography ("FA-SHI-ON", "COLL-ECT-ION") intersecting dual-tone geometric arches in peach coral and sage teal. Generative AI was utilized to synthesize a photorealistic luxury fashion boutique storefront with travertine stone cladding, warm interior display illumination, street greenery, and ambient daylight shadows to present the poster in a real-world commercial advertising context.',
+    spec: 'Dual Formats (Ad Layout + 3D Isometric Social Mockup) • E-Commerce Ready',
+    desc: 'Commercial e-commerce social media advertising piece and 3D isometric display mockup for Campus footwear. Features the sneaker floating dynamically above circular pedestals with glowing neon cyan and magenta accents, clear pricing and discount badges ("Flat 25% OFF"), and an isometric 3D smartphone mockup presentation showing the ad live on Instagram.',
     pipeline: [
-      'Art Direction & Color Palette: Curating a contemporary warm editorial palette (peach coral #f8a878, mint sage #85b09a, and stark high-contrast typography).',
-      'Adobe Illustrator Layout: Designing the A4 grid with avant-garde syllabic stacked typography ("FA-SHI-ON / COLL-ECT-ION") and subtle drop shadow elevation.',
-      'Geometric Clipping & Masking: Precision vector path cutting of model photography across dual interlocking circular and semi-arch silhouettes.',
-      'Generative AI Mockup Synthesis: Prompt-engineered generation of an upscale high-fashion boutique exterior wall mockup with architectural stone texture, window reflections, and daylight lighting.',
-      'Editorial Typography & Event Hierarchy: Balancing brand mark ("KC PRESENTS"), headline, event venue details, and digital web link.',
-      'Deliverables: Print-ready A4 master (300 DPI CMYK), High-Resolution Street Mockup Key Visuals, and Digital Campaign Formats.'
+      'Photoshop: Clean sneaker product cutout with enhanced sole textures and dynamic levitation shadow.',
+      'Photoshop: Cyberpunk-inspired gradient backdrops with geometric glow rings and abstract floating particles.',
+      'Photoshop: Retail promotional typography, badge layouts ("PREBOOK DROP", "50% ADVANCE"), and CTA buttons.',
+      'Photoshop: 3D isometric smartphone mockup with realistic screen reflections, floating UI elements, and drop shadows.'
     ],
-    deliverables: 'Print-Ready A4 Master (300 DPI CMYK), Photorealistic Street Wall Mockup, and Social Campaign Stills.'
+    deliverables: 'Instagram Feed Square (1080x1080), Story Ad (1080x1920), and 3D Presentation Mockup PSD.'
+  },
+  {
+    id: 15,
+    title: 'Peaceful Yoga: Mind & Body — Event Poster',
+    subtitle: 'WELLNESS EVENT POSTER & BOTANICAL DESIGN',
+    category: 'Event Poster & Editorial Print Design',
+    software: ['ps'],
+    image: 'assets/yoga-poster.jpg',
+    gallery: [
+      { url: 'assets/yoga-poster.jpg', label: 'Event Poster — Circular Vignette, Botanical Silhouette & Serif Typography' }
+    ],
+    spec: 'Photoshop Print Layout • 300 DPI CMYK • Editorial Typography',
+    desc: 'Serene, minimalist event poster designed for "Peaceful Yoga: Connect with Mind & Body". Features a harmonious circular composition of a yogi meditating against a glowing sunrise, framed by soft botanical leaf shadows, fluid organic color blocks in sage and cream, and elegant editorial serif typography with complete event schedules and workshop details.',
+    pipeline: [
+      'Photoshop: Silhouette composite of the meditating yogi with soft inner glow and atmospheric warmth.',
+      'Photoshop: Typographic pairing with custom solid and outlined title treatment for "PEACEFUL YOGA".',
+      'Photoshop: Layered fluid background shapes with sage-green color harmony, subtle dot grids, and botanical leaf shadows.',
+      'Photoshop: Editorial hierarchy layout for date, time, venue, and bulleted wellness benefits.'
+    ],
+    deliverables: 'Print-Ready Event Poster PSD (300 DPI), Digital Display Key Art, and Social Flyer Formats.'
   }
 ];
 
@@ -1202,6 +1247,8 @@ function initYouTubeHandler() {
   const ytWrap = document.getElementById('youtubePlayerWrap');
   const ytIframe = document.getElementById('youtubeIframe');
   const builtInPlayer = document.getElementById('builtInPlayer');
+  const titleEl = document.getElementById('reelVideoTitle');
+  const watchLink = document.getElementById('reelWatchLink');
 
   function parseYouTubeId(urlOrId) {
     if (!urlOrId) return '';
@@ -1209,6 +1256,8 @@ function initYouTubeHandler() {
     if (/^[a-zA-Z0-9_-]{11}$/.test(trimmed)) return trimmed;
     const shortMatch = trimmed.match(/youtu\.be\/([a-zA-Z0-9_-]{11})/);
     if (shortMatch) return shortMatch[1];
+    const shortsMatch = trimmed.match(/youtube\.com\/shorts\/([a-zA-Z0-9_-]{11})/);
+    if (shortsMatch) return shortsMatch[1];
     const watchMatch = trimmed.match(/[?&]v=([a-zA-Z0-9_-]{11})/);
     if (watchMatch) return watchMatch[1];
     const embedMatch = trimmed.match(/youtube\.com\/embed\/([a-zA-Z0-9_-]{11})/);
@@ -1216,7 +1265,7 @@ function initYouTubeHandler() {
     return '';
   }
 
-  function loadYouTubeVideo(videoInput) {
+  function loadYouTubeVideo(videoInput, customTitle, customUrl) {
     const videoId = parseYouTubeId(videoInput);
     if (!videoId) return;
 
@@ -1227,11 +1276,35 @@ function initYouTubeHandler() {
       const reelChapters = document.querySelector('.reel-chapters');
       if (reelChapters) reelChapters.style.display = 'none';
     }
+
+    if (titleEl && customTitle) titleEl.textContent = customTitle;
+    if (watchLink) {
+      watchLink.href = customUrl || (videoId ? `https://youtu.be/${videoId}` : '#');
+    }
   }
 
-  // Load YouTube Video if configured
+  window.loadYouTubeVideo = loadYouTubeVideo;
+
+  // Video switcher tabs
+  const switchBtns = document.querySelectorAll('.reel-switch-btn');
+  switchBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      switchBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const vId = btn.dataset.videoid;
+      const vTitle = btn.dataset.title;
+      const vUrl = btn.dataset.url;
+      loadYouTubeVideo(vId, vTitle, vUrl);
+    });
+  });
+
+  // Load initial video (Unimate 3D Product Motion Reel)
   if (YOUTUBE_CONFIG && YOUTUBE_CONFIG.defaultVideoId) {
-    loadYouTubeVideo(YOUTUBE_CONFIG.defaultVideoId);
+    loadYouTubeVideo(
+      YOUTUBE_CONFIG.defaultVideoId,
+      'Unimate & Balance — 3D Product Motion Reel • by KC_Din',
+      'https://youtube.com/shorts/s3BlFzT4MIk?feature=share'
+    );
   }
 }
 

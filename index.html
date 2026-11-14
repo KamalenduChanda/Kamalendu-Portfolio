@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Manrope:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css?v=4.4">
+  <link rel="stylesheet" href="styles.css?v=5.0">
 </head>
 <body>
   <!-- Ambient Grain Overlay -->
@@ -419,27 +419,27 @@
         <div class="filter-bar" id="filterBar" role="tablist" aria-label="Filter works by software">
           <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">
             <span>All Works</span>
-            <span class="count-badge" id="countAll">14</span>
+            <span class="count-badge" id="countAll">15</span>
           </button>
           <button class="filter-btn" data-filter="ae" role="tab" aria-selected="false">
             <span class="tag-chip ae-chip">Ae</span>
             <span>After Effects</span>
-            <span class="count-badge" id="countAe">0</span>
+            <span class="count-badge" id="countAe">2</span>
           </button>
           <button class="filter-btn" data-filter="pr" role="tab" aria-selected="false">
             <span class="tag-chip pr-chip">Pr</span>
             <span>Premiere Pro</span>
-            <span class="count-badge" id="countPr">0</span>
+            <span class="count-badge" id="countPr">1</span>
           </button>
           <button class="filter-btn" data-filter="ps" role="tab" aria-selected="false">
             <span class="tag-chip ps-chip">Ps</span>
             <span>Photoshop</span>
-            <span class="count-badge" id="countPs">9</span>
+            <span class="count-badge" id="countPs">10</span>
           </button>
           <button class="filter-btn" data-filter="ai" role="tab" aria-selected="false">
             <span class="tag-chip ai-chip">Ai</span>
             <span>Illustrator</span>
-            <span class="count-badge" id="countAi">6</span>
+            <span class="count-badge" id="countAi">7</span>
           </button>
           <button class="filter-btn" data-filter="genai" role="tab" aria-selected="false">
             <span class="tag-chip genai-chip">AI</span>
@@ -451,247 +451,50 @@
 
       <!-- Dynamic Project Grid -->
       <div class="project-grid" id="projectGrid">
+        <!-- ================================================================ -->
+        <!-- DISCIPLINE 1: MOTION DESIGN & 3D COMMERCIAL VIDEO REELS (RECOMMENDED FIRST) -->
+        <!-- ================================================================ -->
 
-        <!-- PROJECT 1: Trivana - Logo & Packaging Design (Photoshop + Illustrator) -->
-        <article class="project-card project-wide" data-software="ps ai" data-id="1">
-          <div class="project-image image-trivana">
+        <!-- PROJECT 01: Unimate & Balance - 3D Product Motion Reel (After Effects, Photoshop & Illustrator) -->
+        <article class="project-card project-wide" data-software="ae ps ai" data-id="1">
+          <div class="project-image image-unimate-motion">
             <div class="project-badges">
-              <span class="badge badge-ai"><span class="badge-tag">Ai</span> Illustrator Logo</span>
-              <span class="badge badge-ps"><span class="badge-tag">Ps</span> Photoshop Packaging</span>
-            </div>
-            <span class="project-index">01 &bull; LOGO &amp; PACKAGING (2 MODELS)</span>
-            <button class="project-play-btn" aria-label="Open project details">
-              <span>View Breakdown ↗</span>
-            </button>
-            <div class="project-title">
-              <small>BRAND LOGO &bull; PRODUCT COVER</small>
-              <h3>Trivana &bull; Packaging Suite</h3>
-            </div>
-          </div>
-          <div class="project-meta">
-            <span class="meta-desc">Logo designed in Illustrator; product packaging cover and Aloe Vera composite crafted in Photoshop across 2 color models.</span>
-            <div class="meta-tags">
-              <span class="meta-tool">Illustrator (Logo)</span>
-              <span class="meta-tool">Photoshop (Packaging)</span>
-              <span class="meta-year">Dual Model</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJECT 2: Spider-Man: Miles Morales - Movie Poster Design (Photoshop) -->
-        <article class="project-card" data-software="ps" data-id="2">
-          <div class="project-image image-spiderman">
-            <div class="project-badges">
+              <span class="badge badge-ae"><span class="badge-tag">Ae</span> After Effects</span>
               <span class="badge badge-ps"><span class="badge-tag">Ps</span> Photoshop</span>
-            </div>
-            <span class="project-index">02 &bull; MOVIE POSTER &amp; MOCKUP</span>
-            <button class="project-play-btn" aria-label="Open project details">
-              <span>View Breakdown ↗</span>
-            </button>
-            <div class="project-title">
-              <small>THEATRICAL KEY ART &bull; MOCKUP</small>
-              <h3>Spider-Man: Miles Morales</h3>
-            </div>
-          </div>
-          <div class="project-meta">
-            <span class="meta-desc">Double-exposure theatrical movie poster designed in Photoshop with rainy night bus shelter advertising mockup.</span>
-            <div class="meta-tags">
-              <span class="meta-tool">Photoshop (Key Art)</span>
-              <span class="meta-tool">Mockup Design</span>
-              <span class="meta-year">Key Art</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJECT 3: Demon Slayer: Infinity Castle - Movie Poster Design (Photoshop) -->
-        <article class="project-card" data-software="ps" data-id="3">
-          <div class="project-image image-demonslayer">
-            <div class="project-badges">
-              <span class="badge badge-ps"><span class="badge-tag">Ps</span> Photoshop</span>
-            </div>
-            <span class="project-index">03 &bull; ANIME KEY ART &amp; MOCKUP</span>
-            <button class="project-play-btn" aria-label="Open project details">
-              <span>View Breakdown ↗</span>
-            </button>
-            <div class="project-title">
-              <small>THEATRICAL KEY ART &bull; MOCKUP</small>
-              <h3>Demon Slayer &bull; Infinity Castle</h3>
-            </div>
-          </div>
-          <div class="project-meta">
-            <span class="meta-desc">Theatrical anime key art poster designed in Photoshop with Tanjiro, Nezuko, and rainy night bus shelter billboard mockup.</span>
-            <div class="meta-tags">
-              <span class="meta-tool">Photoshop (Key Art)</span>
-              <span class="meta-tool">Anime Poster</span>
-              <span class="meta-year">Key Art</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJECT 4: Men in Blue: Champions - Sports Editorial Spread (Photoshop) -->
-        <article class="project-card" data-software="ps" data-id="4">
-          <div class="project-image image-meninblue">
-            <div class="project-badges">
-              <span class="badge badge-ps"><span class="badge-tag">Ps</span> Photoshop</span>
-            </div>
-            <span class="project-index">04 &bull; SPORTS EDITORIAL &amp; MOCKUP</span>
-            <button class="project-play-btn" aria-label="Open project details">
-              <span>View Breakdown ↗</span>
-            </button>
-            <div class="project-title">
-              <small>COMMEMORATIVE EDITORIAL &bull; MOCKUP</small>
-              <h3>Men in Blue &bull; Champions</h3>
-            </div>
-          </div>
-          <div class="project-meta">
-            <span class="meta-desc">Team India T20 World Cup victory tribute designed in Photoshop with open magazine editorial spread mockup.</span>
-            <div class="meta-tags">
-              <span class="meta-tool">Photoshop (Editorial)</span>
-              <span class="meta-tool">Sports Graphics</span>
-              <span class="meta-year">Editorial</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJECT 5: The Forest Colossus - Jungle Photo Manipulation (Photoshop) -->
-        <article class="project-card" data-software="ps" data-id="5">
-          <div class="project-image image-elephant">
-            <div class="project-badges">
-              <span class="badge badge-ps"><span class="badge-tag">Ps</span> Photoshop</span>
-            </div>
-            <span class="project-index">05 &bull; PHOTO MANIPULATION</span>
-            <button class="project-play-btn" aria-label="Open project details">
-              <span>View Breakdown ↗</span>
-            </button>
-            <div class="project-title">
-              <small>MATTE ART &bull; PHOTO MANIPULATION</small>
-              <h3>The Forest Colossus</h3>
-            </div>
-          </div>
-          <div class="project-meta">
-            <span class="meta-desc">Cinematic jungle photo manipulation blending a colossal elephant, hooded traveler, and volumetric forest light in Photoshop.</span>
-            <div class="meta-tags">
-              <span class="meta-tool">Photoshop (Composite)</span>
-              <span class="meta-tool">Photo Manipulation</span>
-              <span class="meta-year">Key Art</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJECT 6: Fine Up - Beverage Bottle Label Suite (Illustrator + Photoshop + Gen AI) -->
-        <article class="project-card project-wide" data-software="ai ps genai" data-id="6">
-          <div class="project-image image-fineup">
-            <div class="project-badges">
               <span class="badge badge-ai"><span class="badge-tag">Ai</span> Illustrator</span>
-              <span class="badge badge-ps"><span class="badge-tag">Ps</span> Photoshop</span>
-              <span class="badge badge-genai"><span class="badge-tag">AI</span> Gen AI</span>
             </div>
-            <span class="project-index">06 &bull; BEVERAGE PACKAGING (5 FLAVORS)</span>
+            <span class="project-index">01 &bull; 3D PRODUCT MOTION REEL</span>
             <button class="project-play-btn" aria-label="Open project details">
-              <span>View Breakdown ↗</span>
+              <span>Watch Breakdown ↗</span>
             </button>
             <div class="project-title">
-              <small>BOTTLE LABEL &bull; LOGO DESIGN</small>
-              <h3>Fine Up &bull; Beverage Labels</h3>
+              <small>COMMERCIAL 3D ANIMATION &bull; YOUTUBE REEL</small>
+              <h3>Unimate &amp; Balance &bull; 3D Product Motion</h3>
             </div>
           </div>
           <div class="project-meta">
-            <span class="meta-desc">5-flavor carbonated drink label collection: Illustrator logo, Gen AI liquid backgrounds, and Photoshop composite wrapping.</span>
+            <span class="meta-desc">Commercial 3D product motion reel for Unimate Lemon &amp; Balance Citrus drink sachets. Vector die-cut packaging in Illustrator, citrus composites in Photoshop, and 3D kinetic camera animation in After Effects.</span>
             <div class="meta-tags">
-              <span class="meta-tool">Illustrator (Logo)</span>
-              <span class="meta-tool">Gen AI (Backgrounds)</span>
-              <span class="meta-tool">Photoshop (Composite)</span>
-              <span class="meta-year">5 SKUs</span>
+              <span class="meta-tool">After Effects</span>
+              <span class="meta-tool">Photoshop</span>
+              <span class="meta-tool">Illustrator</span>
+              <span class="meta-tool">YouTube Video</span>
+              <span class="meta-year">4K 60FPS</span>
             </div>
           </div>
         </article>
 
-        <!-- PROJECT 7: Coca-Cola: Coke Zero - Commercial Poster (Photoshop) -->
-        <article class="project-card" data-software="ps" data-id="7">
-          <div class="project-image image-cokezero">
-            <div class="project-badges">
-              <span class="badge badge-ps"><span class="badge-tag">Ps</span> Photoshop</span>
-            </div>
-            <span class="project-index">07 &bull; COMMERCIAL POSTER</span>
-            <button class="project-play-btn" aria-label="Open project details">
-              <span>View Breakdown ↗</span>
-            </button>
-            <div class="project-title">
-              <small>COMMERCIAL AD &bull; POSTER ART</small>
-              <h3>Coca-Cola &bull; Coke Zero</h3>
-            </div>
-          </div>
-          <div class="project-meta">
-            <span class="meta-desc">Classic beverage advertising poster created in Photoshop with frosted glass condensation, bubble typography, and liquid splash.</span>
-            <div class="meta-tags">
-              <span class="meta-tool">Photoshop (Composite)</span>
-              <span class="meta-tool">Product Key Art</span>
-              <span class="meta-year">Commercial</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJECT 8: Campus Shoes: Prebook Drop - Social Campaign (Photoshop) -->
-        <article class="project-card" data-software="ps" data-id="8">
-          <div class="project-image image-campus">
-            <div class="project-badges">
-              <span class="badge badge-ps"><span class="badge-tag">Ps</span> Photoshop</span>
-            </div>
-            <span class="project-index">08 &bull; SOCIAL MEDIA CAMPAIGN</span>
-            <button class="project-play-btn" aria-label="Open project details">
-              <span>View Breakdown ↗</span>
-            </button>
-            <div class="project-title">
-              <small>SOCIAL AD &bull; 3D MOCKUP</small>
-              <h3>Campus Shoes &bull; Prebook Drop</h3>
-            </div>
-          </div>
-          <div class="project-meta">
-            <span class="meta-desc">E-commerce social media sneaker ad designed in Photoshop with Instagram and Facebook 3D mobile mockup.</span>
-            <div class="meta-tags">
-              <span class="meta-tool">Photoshop (Ad Design)</span>
-              <span class="meta-tool">Social Media</span>
-              <span class="meta-year">E-Commerce</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJECT 9: Peaceful Yoga: Mind & Body - Event Poster (Photoshop) -->
-        <article class="project-card" data-software="ps" data-id="9">
-          <div class="project-image image-yoga">
-            <div class="project-badges">
-              <span class="badge badge-ps"><span class="badge-tag">Ps</span> Photoshop</span>
-            </div>
-            <span class="project-index">09 &bull; WELLNESS POSTER</span>
-            <button class="project-play-btn" aria-label="Open project details">
-              <span>View Breakdown ↗</span>
-            </button>
-            <div class="project-title">
-              <small>EVENT POSTER &bull; WELLNESS</small>
-              <h3>Peaceful Yoga &bull; Event Poster</h3>
-            </div>
-          </div>
-          <div class="project-meta">
-            <span class="meta-desc">Calming wellness event poster designed in Photoshop with circular nature vignette, fluid shapes, and typography.</span>
-            <div class="meta-tags">
-              <span class="meta-tool">Photoshop (Layout)</span>
-              <span class="meta-tool">Poster Design</span>
-              <span class="meta-year">Print</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJECT 10: ChatGPT - Motion Graphic & Kinetic Visuals (After Effects & Gen AI) -->
-        <article class="project-card" data-software="ae pr genai" data-id="10">
+        <!-- PROJECT 02: ChatGPT - Motion Graphic & Kinetic Visuals (After Effects, Premiere Pro & Gen AI) -->
+        <article class="project-card project-wide" data-software="ae pr genai" data-id="2">
           <div class="project-image image-chatgpt-motion">
             <div class="project-badges">
               <span class="badge badge-ae"><span class="badge-tag">Ae</span> After Effects</span>
-              <span class="badge badge-genai"><span class="badge-tag">AI</span> Gen AI</span>
               <span class="badge badge-pr"><span class="badge-tag">Pr</span> Premiere Pro</span>
+              <span class="badge badge-genai"><span class="badge-tag">AI</span> Gen AI</span>
             </div>
-            <span class="project-index">10 &bull; MOTION GRAPHIC</span>
+            <span class="project-index">02 &bull; MOTION GRAPHIC</span>
             <button class="project-play-btn" aria-label="Open project details">
-              <span>View Breakdown ↗</span>
+              <span>Watch Breakdown ↗</span>
             </button>
             <div class="project-title">
               <small>KINETIC MOTION &bull; YOUTUBE SHOWCASE</small>
@@ -699,9 +502,10 @@
             </div>
           </div>
           <div class="project-meta">
-            <span class="meta-desc">Cinematic commercial motion graphic for ChatGPT with "Unleash your creativity" kinetic typography, Mount Fuji backdrop, and glassmorphism UI.</span>
+            <span class="meta-desc">Cinematic commercial motion graphic for ChatGPT with "Unleash your creativity" kinetic typography, Mount Fuji backdrop, and frosted glassmorphism UI.</span>
             <div class="meta-tags">
               <span class="meta-tool">After Effects</span>
+              <span class="meta-tool">Premiere Pro</span>
               <span class="meta-tool">Motion Graphics</span>
               <span class="meta-tool">YouTube Video</span>
               <span class="meta-year">4K 60FPS</span>
@@ -709,13 +513,17 @@
           </div>
         </article>
 
-        <!-- PROJECT 11: Holy India - Brand Identity & Logo Design Thinking (Adobe Illustrator Only) -->
-        <article class="project-card project-wide" data-software="ai" data-id="11">
+        <!-- ================================================================ -->
+        <!-- DISCIPLINE 2: BRAND IDENTITY & VECTOR LOGO DESIGN -->
+        <!-- ================================================================ -->
+
+        <!-- PROJECT 03: Holy India - Brand Identity & Logo Design Thinking (Adobe Illustrator Only) -->
+        <article class="project-card" data-software="ai" data-id="3">
           <div class="project-image image-holy-india">
             <div class="project-badges">
               <span class="badge badge-ai"><span class="badge-tag">Ai</span> Illustrator Only</span>
             </div>
-            <span class="project-index">11 &bull; BRAND IDENTITY &amp; DESIGN THINKING</span>
+            <span class="project-index">03 &bull; BRAND IDENTITY &amp; DESIGN THINKING</span>
             <button class="project-play-btn" aria-label="Open project details">
               <span>View Breakdown ↗</span>
             </button>
@@ -735,13 +543,13 @@
           </div>
         </article>
 
-        <!-- PROJECT 12: Pixel Pulse - Tech Brand Logo & Monogram Design (Adobe Illustrator Only) -->
-        <article class="project-card" data-software="ai" data-id="12">
+        <!-- PROJECT 04: Pixel Pulse - Tech Brand Logo & Monogram Design (Adobe Illustrator Only) -->
+        <article class="project-card" data-software="ai" data-id="4">
           <div class="project-image image-pixel-pulse">
             <div class="project-badges">
               <span class="badge badge-ai"><span class="badge-tag">Ai</span> Illustrator Only</span>
             </div>
-            <span class="project-index">12 &bull; LOGO &amp; MONOGRAM SUITE</span>
+            <span class="project-index">04 &bull; LOGO &amp; MONOGRAM SUITE</span>
             <button class="project-play-btn" aria-label="Open project details">
               <span>View Breakdown ↗</span>
             </button>
@@ -761,13 +569,127 @@
           </div>
         </article>
 
-        <!-- PROJECT 13: Vector Infographic Design & Recreations (Adobe Illustrator Only) -->
-        <article class="project-card" data-software="ai" data-id="13">
+        <!-- PROJECT 05: Trivana - Logo & Packaging Design Suite (Illustrator & Photoshop) -->
+        <article class="project-card" data-software="ai ps" data-id="5">
+          <div class="project-image image-trivana">
+            <div class="project-badges">
+              <span class="badge badge-ai"><span class="badge-tag">Ai</span> Illustrator Logo</span>
+              <span class="badge badge-ps"><span class="badge-tag">Ps</span> Photoshop Packaging</span>
+            </div>
+            <span class="project-index">05 &bull; LOGO &amp; PACKAGING (2 MODELS)</span>
+            <button class="project-play-btn" aria-label="Open project details">
+              <span>View Breakdown ↗</span>
+            </button>
+            <div class="project-title">
+              <small>BRAND LOGO &bull; PRODUCT COVER</small>
+              <h3>Trivana &bull; Packaging Suite</h3>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="meta-desc">Logo designed in Illustrator; product packaging cover and Aloe Vera composite crafted in Photoshop across 2 color models.</span>
+            <div class="meta-tags">
+              <span class="meta-tool">Illustrator (Logo)</span>
+              <span class="meta-tool">Photoshop (Packaging)</span>
+              <span class="meta-year">Dual Model</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- ================================================================ -->
+        <!-- DISCIPLINE 3: PACKAGING & COMMERCIAL PRODUCT ADVERTISING -->
+        <!-- ================================================================ -->
+
+        <!-- PROJECT 06: Fine Up - 5-Flavor Soda Bottle Label Suite (Illustrator, Photoshop & Gen AI) -->
+        <article class="project-card project-wide" data-software="ai ps genai" data-id="6">
+          <div class="project-image image-fineup">
+            <div class="project-badges">
+              <span class="badge badge-ai"><span class="badge-tag">Ai</span> Illustrator Logo</span>
+              <span class="badge badge-ps"><span class="badge-tag">Ps</span> Photoshop</span>
+              <span class="badge badge-genai"><span class="badge-tag">AI</span> Gen AI</span>
+            </div>
+            <span class="project-index">06 &bull; 5-FLAVOR BOTTLE LABEL SUITE</span>
+            <button class="project-play-btn" aria-label="Open project details">
+              <span>View Breakdown ↗</span>
+            </button>
+            <div class="project-title">
+              <small>BEVERAGE PACKAGING &bull; 5 FLAVORS</small>
+              <h3>Fine Up &bull; Carbonated Drink Suite</h3>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="meta-desc">Complete 5-flavor beverage bottle label suite: Orange, Cola, Jeera, Lemon-Lime, and Soda. Logo in Illustrator, AI splash plates, and Photoshop print composites.</span>
+            <div class="meta-tags">
+              <span class="meta-tool">Illustrator (Logo)</span>
+              <span class="meta-tool">Photoshop (Compositing)</span>
+              <span class="meta-tool">Gen AI (Liquid BG)</span>
+              <span class="meta-year">5 SKUs</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 07: KC Fashion Show - A4 Commercial Poster & Street Mockup (Illustrator + Gen AI Mockup) -->
+        <article class="project-card" data-software="ai genai" data-id="7">
+          <div class="project-image image-kc-fashion">
+            <div class="project-badges">
+              <span class="badge badge-ai"><span class="badge-tag">Ai</span> Illustrator</span>
+              <span class="badge badge-genai"><span class="badge-tag">AI</span> Gen AI Mockup</span>
+            </div>
+            <span class="project-index">07 &bull; A4 COMMERCIAL POSTER</span>
+            <button class="project-play-btn" aria-label="Open project details">
+              <span>View Breakdown ↗</span>
+            </button>
+            <div class="project-title">
+              <small>FASHION AD &bull; STREET STOREFRONT MOCKUP</small>
+              <h3>KC Fashion &bull; A4 Poster Ad</h3>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="meta-desc">Chic A4 fashion event poster designed in Illustrator with avant-garde stacked typography, paired with a photorealistic boutique storefront AI mockup.</span>
+            <div class="meta-tags">
+              <span class="meta-tool">Illustrator (Layout)</span>
+              <span class="meta-tool">Gen AI (Mockup)</span>
+              <span class="meta-tool">Poster Design</span>
+              <span class="meta-year">A4 Print</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 08: Coca-Cola: Coke Zero - Commercial Poster (Photoshop) -->
+        <article class="project-card" data-software="ps" data-id="8">
+          <div class="project-image image-cokezero">
+            <div class="project-badges">
+              <span class="badge badge-ps"><span class="badge-tag">Ps</span> Photoshop</span>
+            </div>
+            <span class="project-index">08 &bull; COMMERCIAL POSTER</span>
+            <button class="project-play-btn" aria-label="Open project details">
+              <span>View Breakdown ↗</span>
+            </button>
+            <div class="project-title">
+              <small>BEVERAGE KEY ART &bull; COMMERCIAL</small>
+              <h3>Coca-Cola &bull; Coke Zero Poster</h3>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="meta-desc">Commercial product poster for Coke Zero Sugar with dynamic cola whirlpool splash, floating ice cubes, citrus slices, and dramatic rim lighting.</span>
+            <div class="meta-tags">
+              <span class="meta-tool">Photoshop (Product Art)</span>
+              <span class="meta-tool">Liquid Splash</span>
+              <span class="meta-year">Commercial</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- ================================================================ -->
+        <!-- DISCIPLINE 4: EDITORIAL & DATA VISUALIZATION -->
+        <!-- ================================================================ -->
+
+        <!-- PROJECT 09: Vector Infographic Design & Recreations (Adobe Illustrator Only) -->
+        <article class="project-card" data-software="ai" data-id="9">
           <div class="project-image image-infographic">
             <div class="project-badges">
               <span class="badge badge-ai"><span class="badge-tag">Ai</span> Illustrator Only</span>
             </div>
-            <span class="project-index">13 &bull; INFOGRAPHIC DESIGN</span>
+            <span class="project-index">09 &bull; INFOGRAPHIC DESIGN</span>
             <button class="project-play-btn" aria-label="Open project details">
               <span>View Breakdown ↗</span>
             </button>
@@ -787,32 +709,161 @@
           </div>
         </article>
 
-        <!-- PROJECT 14: KC Fashion Show - A4 Commercial Poster & Street Mockup (Illustrator + Gen AI Mockup) -->
-        <article class="project-card" data-software="ai genai" data-id="14">
-          <div class="project-image image-kc-fashion">
+        <!-- ================================================================ -->
+        <!-- DISCIPLINE 5: THEATRICAL KEY ART, MATTE PAINTING & POP CULTURE POSTERS -->
+        <!-- ================================================================ -->
+
+        <!-- PROJECT 10: Spider-Man: Miles Morales - Movie Poster Design (Photoshop) -->
+        <article class="project-card" data-software="ps" data-id="10">
+          <div class="project-image image-spiderman">
             <div class="project-badges">
-              <span class="badge badge-ai"><span class="badge-tag">Ai</span> Illustrator</span>
-              <span class="badge badge-genai"><span class="badge-tag">AI</span> Gen AI Mockup</span>
+              <span class="badge badge-ps"><span class="badge-tag">Ps</span> Photoshop</span>
             </div>
-            <span class="project-index">14 &bull; A4 COMMERCIAL POSTER</span>
+            <span class="project-index">10 &bull; MOVIE POSTER &amp; MOCKUP</span>
             <button class="project-play-btn" aria-label="Open project details">
               <span>View Breakdown ↗</span>
             </button>
             <div class="project-title">
-              <small>FASHION AD &bull; STREET STOREFRONT MOCKUP</small>
-              <h3>KC Fashion &bull; A4 Poster Ad</h3>
+              <small>THEATRICAL KEY ART &bull; MOCKUP</small>
+              <h3>Spider-Man: Miles Morales</h3>
             </div>
           </div>
           <div class="project-meta">
-            <span class="meta-desc">Chic A4 fashion event poster designed in Illustrator with avant-garde stacked typography, paired with a photorealistic boutique storefront AI mockup.</span>
+            <span class="meta-desc">Double-exposure theatrical movie poster designed in Photoshop with rainy night bus shelter advertising mockup.</span>
             <div class="meta-tags">
-              <span class="meta-tool">Illustrator (Layout)</span>
-              <span class="meta-tool">Gen AI (Mockup)</span>
-              <span class="meta-tool">Poster Design</span>
-              <span class="meta-year">A4 Print</span>
+              <span class="meta-tool">Photoshop (Key Art)</span>
+              <span class="meta-tool">Mockup Design</span>
+              <span class="meta-year">Key Art</span>
             </div>
           </div>
         </article>
+
+        <!-- PROJECT 11: Demon Slayer: Infinity Castle - Movie Poster Design (Photoshop) -->
+        <article class="project-card" data-software="ps" data-id="11">
+          <div class="project-image image-demonslayer">
+            <div class="project-badges">
+              <span class="badge badge-ps"><span class="badge-tag">Ps</span> Photoshop</span>
+            </div>
+            <span class="project-index">11 &bull; ANIME KEY ART &amp; MOCKUP</span>
+            <button class="project-play-btn" aria-label="Open project details">
+              <span>View Breakdown ↗</span>
+            </button>
+            <div class="project-title">
+              <small>THEATRICAL KEY ART &bull; MOCKUP</small>
+              <h3>Demon Slayer &bull; Infinity Castle</h3>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="meta-desc">Theatrical anime poster designed in Photoshop featuring Tanjiro's Hinokami Kagura flame breathing and illuminated cinema lobby mockup.</span>
+            <div class="meta-tags">
+              <span class="meta-tool">Photoshop (Digital Paint)</span>
+              <span class="meta-tool">Cinema Mockup</span>
+              <span class="meta-year">Anime Art</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 12: Men in Blue: Cricket World Cup - Tribute Poster (Photoshop) -->
+        <article class="project-card" data-software="ps" data-id="12">
+          <div class="project-image image-meninblue">
+            <div class="project-badges">
+              <span class="badge badge-ps"><span class="badge-tag">Ps</span> Photoshop</span>
+            </div>
+            <span class="project-index">12 &bull; SPORTS TRIBUTE &amp; SUBWAY MOCKUP</span>
+            <button class="project-play-btn" aria-label="Open project details">
+              <span>View Breakdown ↗</span>
+            </button>
+            <div class="project-title">
+              <small>SPORTS KEY ART &bull; COMMUTER MOCKUP</small>
+              <h3>Men in Blue &bull; Cricket Tribute</h3>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="meta-desc">Dynamic sports tribute poster featuring Rohit, Virat, and Hardik with tricolor smoke effects, stadium lighting, and realistic subway station mockup.</span>
+            <div class="meta-tags">
+              <span class="meta-tool">Photoshop (Composite)</span>
+              <span class="meta-tool">Sports Art</span>
+              <span class="meta-tool">Subway Mockup</span>
+              <span class="meta-year">Editorial</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 13: Gentle Giants: Elephant Sanctuary - Digital Matte Painting (Photoshop) -->
+        <article class="project-card" data-software="ps" data-id="13">
+          <div class="project-image image-elephant">
+            <div class="project-badges">
+              <span class="badge badge-ps"><span class="badge-tag">Ps</span> Photoshop</span>
+            </div>
+            <span class="project-index">13 &bull; MATTE PAINTING &bull; WILDLIFE</span>
+            <button class="project-play-btn" aria-label="Open project details">
+              <span>View Breakdown ↗</span>
+            </button>
+            <div class="project-title">
+              <small>MATTE PAINTING &bull; PHOTO MANIPULATION</small>
+              <h3>Gentle Giants &bull; Sanctuary</h3>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="meta-desc">Atmospheric golden hour digital matte painting crafted in Photoshop with volumetric sun rays, misty jungle river, and wildlife photo manipulation.</span>
+            <div class="meta-tags">
+              <span class="meta-tool">Photoshop (Matte Painting)</span>
+              <span class="meta-tool">Photo Manipulation</span>
+              <span class="meta-year">Concept Art</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 14: Campus Shoes - E-Commerce Sneaker Ad & 3D Mockup (Photoshop) -->
+        <article class="project-card" data-software="ps" data-id="14">
+          <div class="project-image image-campus">
+            <div class="project-badges">
+              <span class="badge badge-ps"><span class="badge-tag">Ps</span> Photoshop</span>
+            </div>
+            <span class="project-index">14 &bull; SOCIAL MEDIA CAMPAIGN</span>
+            <button class="project-play-btn" aria-label="Open project details">
+              <span>View Breakdown ↗</span>
+            </button>
+            <div class="project-title">
+              <small>SOCIAL AD &bull; 3D MOCKUP</small>
+              <h3>Campus Shoes &bull; Prebook Drop</h3>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="meta-desc">E-commerce social media sneaker ad designed in Photoshop with Instagram and Facebook 3D mobile mockup.</span>
+            <div class="meta-tags">
+              <span class="meta-tool">Photoshop (Ad Design)</span>
+              <span class="meta-tool">Social Media</span>
+              <span class="meta-year">E-Commerce</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 15: Peaceful Yoga: Mind & Body - Event Poster (Photoshop) -->
+        <article class="project-card" data-software="ps" data-id="15">
+          <div class="project-image image-yoga">
+            <div class="project-badges">
+              <span class="badge badge-ps"><span class="badge-tag">Ps</span> Photoshop</span>
+            </div>
+            <span class="project-index">15 &bull; WELLNESS POSTER</span>
+            <button class="project-play-btn" aria-label="Open project details">
+              <span>View Breakdown ↗</span>
+            </button>
+            <div class="project-title">
+              <small>EVENT POSTER &bull; WELLNESS</small>
+              <h3>Peaceful Yoga &bull; Event Poster</h3>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="meta-desc">Calming wellness event poster designed in Photoshop with circular nature vignette, fluid shapes, and typography.</span>
+            <div class="meta-tags">
+              <span class="meta-tool">Photoshop (Layout)</span>
+              <span class="meta-tool">Poster Design</span>
+              <span class="meta-year">Print</span>
+            </div>
+          </div>
+        </article>
+
       </div>
     </section>
 
@@ -830,8 +881,18 @@
             Motion &amp; Edit <em>Showreel.</em>
           </h2>
           <p>
-            Featured piece: <strong>Motion graphic of ChatGPT</strong> — kinetic typography, glassmorphism UI animation, and visual composites by Kamalendu (KC_Din).
+            Featured video pieces: <strong>Unimate &amp; Balance 3D Product Motion Reel</strong> and <strong>ChatGPT Motion Graphic</strong> — kinetic typography, 3D camera choreography, and visual composites by Kamalendu (KC_Din).
           </p>
+          <div class="showreel-switcher" id="showreelSwitcher">
+            <button type="button" class="reel-switch-btn active" data-videoid="s3BlFzT4MIk" data-title="Unimate &amp; Balance — 3D Product Motion Reel • by KC_Din" data-url="https://youtube.com/shorts/s3BlFzT4MIk?feature=share">
+              <span class="soc-dot yt-dot"></span>
+              <span>▶ 01 / Unimate &amp; Balance (3D Product Reel)</span>
+            </button>
+            <button type="button" class="reel-switch-btn" data-videoid="UhjRv-46pgg" data-title="Motion graphic of ChatGPT • by KC_Din" data-url="https://youtu.be/UhjRv-46pgg">
+              <span class="soc-dot yt-dot"></span>
+              <span>▶ 02 / ChatGPT (Kinetic Motion Graphic)</span>
+            </button>
+          </div>
         </div>
 
         <!-- Video Player Wrapper (Supports custom interactive player or YouTube Embed) -->
@@ -839,17 +900,17 @@
           
           <!-- YouTube Iframe Container (Active with Kamalendu's ChatGPT Motion Graphic) -->
           <div class="youtube-player-wrap" id="youtubePlayerWrap">
-            <iframe id="youtubeIframe" src="https://www.youtube.com/embed/UhjRv-46pgg?rel=0" title="Motion graphic of ChatGPT by Kamalendu (KC_Din)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe id="youtubeIframe" src="https://www.youtube.com/embed/s3BlFzT4MIk?rel=0" title="Unimate & Balance — 3D Product Motion Reel by Kamalendu (KC_Din)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
 
           <!-- Bottom Action Bar for Video -->
           <div class="reel-video-bar">
             <div class="reel-video-info">
               <span class="reel-video-badge"><span class="soc-dot yt-dot"></span> YOUTUBE MOTION SHOWCASE</span>
-              <h4 class="reel-video-title">Motion graphic of ChatGPT &bull; by KC_Din</h4>
+              <h4 class="reel-video-title" id="reelVideoTitle">Unimate &amp; Balance — 3D Product Motion Reel &bull; by KC_Din</h4>
             </div>
             <div class="reel-video-actions">
-              <a href="https://youtu.be/UhjRv-46pgg" target="_blank" rel="noopener noreferrer" class="social-text-btn">
+              <a href="https://youtube.com/shorts/s3BlFzT4MIk?feature=share" id="reelWatchLink" target="_blank" rel="noopener noreferrer" class="social-text-btn">
                 <span>Watch on YouTube</span> ↗
               </a>
               <a href="https://www.youtube.com/@kc__din70" target="_blank" rel="noopener noreferrer" class="social-text-btn">
@@ -1152,6 +1213,6 @@
     </div>
   </div>
 
-  <script src="script.js?v=4.4"></script>
+  <script src="script.js?v=5.0"></script>
 </body>
 </html>
