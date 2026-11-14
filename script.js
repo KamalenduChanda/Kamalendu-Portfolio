@@ -364,6 +364,29 @@ const PROJECTS_CONFIG = [
       'Deliverables: Print and presentation-ready vector assets (.AI, .EPS, .SVG, .PDF) optimized for business decks, editorial reports, and digital whitepapers.'
     ],
     deliverables: 'Vector Master Files (.AI, .EPS, .SVG, .PDF), High-Res Editorial Sheets (300 DPI), and Digital Slide Presentation Assets.'
+  },
+  {
+    id: 14,
+    title: 'KC Fashion Show — A4 Commercial Poster & Street Mockup',
+    subtitle: 'EDITORIAL FASHION POSTER & AI STOREFRONT MOCKUP',
+    category: 'Commercial Poster & Fashion Advertising',
+    software: ['ai', 'genai'],
+    image: 'assets/kc-fashion-mockup.jpg',
+    gallery: [
+      { url: 'assets/kc-fashion-mockup.jpg', label: 'Boutique Storefront Street Mockup — Photorealistic Architectural Wall Presentation (Gen AI Mockup)' },
+      { url: 'assets/kc-fashion-poster-flat.jpg', label: 'Master A4 Commercial Print Poster Layout — Editorial Typography, Geometric Clipping Masks & Model Showcase (Illustrator)' }
+    ],
+    spec: 'Adobe Illustrator Vector Suite • Gen AI Commercial Mockup • 300 DPI A4 Print Layout',
+    desc: 'Chic high-fashion commercial A4 event poster and architectural boutique street mockup designed for "KC Presents: Fashion Collection" (Gurgaon, Haryana showcase). Crafted in Adobe Illustrator, the poster features bold avant-garde stacked typography ("FA-SHI-ON", "COLL-ECT-ION") intersecting dual-tone geometric arches in peach coral and sage teal. Generative AI was utilized to synthesize a photorealistic luxury fashion boutique storefront with travertine stone cladding, warm interior display illumination, street greenery, and ambient daylight shadows to present the poster in a real-world commercial advertising context.',
+    pipeline: [
+      'Art Direction & Color Palette: Curating a contemporary warm editorial palette (peach coral #f8a878, mint sage #85b09a, and stark high-contrast typography).',
+      'Adobe Illustrator Layout: Designing the A4 grid with avant-garde syllabic stacked typography ("FA-SHI-ON / COLL-ECT-ION") and subtle drop shadow elevation.',
+      'Geometric Clipping & Masking: Precision vector path cutting of model photography across dual interlocking circular and semi-arch silhouettes.',
+      'Generative AI Mockup Synthesis: Prompt-engineered generation of an upscale high-fashion boutique exterior wall mockup with architectural stone texture, window reflections, and daylight lighting.',
+      'Editorial Typography & Event Hierarchy: Balancing brand mark ("KC PRESENTS"), headline, event venue details, and digital web link.',
+      'Deliverables: Print-ready A4 master (300 DPI CMYK), High-Resolution Street Mockup Key Visuals, and Digital Campaign Formats.'
+    ],
+    deliverables: 'Print-Ready A4 Master (300 DPI CMYK), Photorealistic Street Wall Mockup, and Social Campaign Stills.'
   }
 ];
 
