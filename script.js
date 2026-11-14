@@ -289,6 +289,34 @@ const PROJECTS_CONFIG = [
       'Premiere Pro: Audio rhythm synchronization, timing pacing, and broadcast master rendering in 4K 60FPS.'
     ],
     deliverables: '4K Master Video (YouTube), Kinetic Title Templates, and High-Resolution Keyframe Stills.'
+  },
+  {
+    id: 11,
+    title: 'Holy India — Logo Design & Design Thinking',
+    subtitle: 'SACRED SYMBOLISM & VECTOR TYPOGRAPHY CASE STUDY',
+    category: 'Brand Identity & Logo Design',
+    software: ['ai'],
+    image: 'assets/holy-india-logo.png',
+    gallery: [
+      { url: 'assets/holy-india-logo.png', label: 'Holy India Master Logotype — Fluid Saffron Typography & Sacred Lotus Emblem', wide: true },
+      { url: 'assets/holy-india-lotus-petals.png', label: 'Design Thinking: Lotus Petals Symbolism — Purity, Rebirth, Resilience, Spiritual Enlightenment & Beauty' },
+      { url: 'assets/holy-india-banyan-leaf.png', label: 'Design Thinking: Banyan Tree Leaf — Eternal Life, Deep Roots, National Unity, Wisdom & Immortality' },
+      { url: 'assets/holy-india-leaf-concept.jpg', label: 'Vector Synthesis: Transition from Organic Leaf Anatomy to the Sacred Emblem Atop the "i"' },
+      { url: 'assets/holy-india-typography-curve.png', label: 'Typographic Anatomy: Sweeping Lower Ligature Connecting "H" & "y" — Movement, Fluidity & Positive Emotion' },
+      { url: 'assets/holy-india-typography-serif.png', label: 'Typographic Anatomy: Regal Crown Finial on "l" — Stability, Dignity & Temple Architecture' },
+      { url: 'assets/holy-india-banyan-tree.jpg', label: 'Cultural Grounding: The Sacred Banyan Tree (National Tree of India) — Symbolizing Expansive Heritage' }
+    ],
+    spec: 'Adobe Illustrator Vector Suite • 100% Bezier Precision • Pure Vector Identity',
+    desc: 'Comprehensive brand identity and logo design thinking case study for "Holy India", handcrafted exclusively in Adobe Illustrator. The identity bridges ancient sacred Indian iconography with modern fluid logotype design. The emblem dotting the letter "i" conceptually fuses two of India\'s most revered national symbols: the Sacred Lotus Flower (representing spiritual purity, rebirth, resilience, and enlightenment) and the Banyan Tree Leaf (symbolizing eternal life, deep roots, wisdom, and national unity). Every curve was sculpted using Adobe Illustrator\'s Pen Tool with meticulous Bezier anchor control, culminating in bespoke letterforms with a fluid under-swoop connecting "H" and "y" alongside regal, architectural finials.',
+    pipeline: [
+      'Conceptual Research & Symbolism: Distilling the sacred philosophical attributes of the Lotus Flower (Purity, Rebirth, Resilience, Enlightenment, Beauty) and Banyan Tree (Eternal Life, National Unity, Wisdom, Immortality) into a unified identity system.',
+      'Adobe Illustrator: Custom vector lettering for "Holy" and "India", designing the sweeping lower connecting ligature between "H" and "y" to evoke movement, fluidity, and warmth.',
+      'Adobe Illustrator: Crafting the regal crown serif on the "l" to establish classical stability, dignity, and architectural structure.',
+      'Adobe Illustrator: Geometric vector crafting of the flame-lotus emblem dotting the "i", using precision Pen Tool bezier curves and pathfinder operations.',
+      'Color Theory & System: Curating sacred saffron-orange gradients (#ff5722 / #ea580c) embodying spirituality, vitality, and cultural warmth.',
+      'Vector Deliverables: Master scalable assets (.AI, .EPS, .SVG, .PDF) calibrated for crisp display from 16px favicons to monumental physical signage.'
+    ],
+    deliverables: 'Complete Vector Master Identity (.AI, .EPS, .SVG, .PDF), Monogram Variations, Brand Color Swatches, and Design Thinking Presentation Slides.'
   }
 ];
 
