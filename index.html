@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Manrope:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css?v=3.2">
+  <link rel="stylesheet" href="styles.css?v=3.3">
 </head>
 <body>
   <!-- Ambient Grain Overlay -->
@@ -870,6 +870,10 @@
           <!-- Direct Info Chips -->
           <div class="contact-chips">
             <div class="info-chip">
+              <span class="chip-title">DIRECT EMAIL:</span>
+              <a href="mailto:kamalenduwork70@gmail.com" class="chip-val chip-email-val">kamalenduwork70@gmail.com</a>
+            </div>
+            <div class="info-chip">
               <span class="chip-title">LOCATION:</span>
               <span class="chip-val">India &bull; Remote Worldwide</span>
             </div>
@@ -896,7 +900,7 @@
           </div>
 
           <div class="contact-action-box">
-            <a class="button button-lime" href="mailto:kamalendu.portfolio@example.com?subject=Project%20Inquiry%20for%20Kamalendu">
+            <a class="button button-lime" href="mailto:kamalenduwork70@gmail.com?subject=Project%20Inquiry%20for%20Kamalendu">
               <span>Send An Email</span>
               <span class="btn-icon">↗</span>
             </a>
@@ -910,39 +914,47 @@
         <!-- Quick Inquiry Card -->
         <div class="contact-card">
           <h3 class="card-title">Quick Inquiry</h3>
-          <p class="card-sub">Send a direct message:</p>
+          <p class="card-sub">Send a message directly to <strong>kamalenduwork70@gmail.com</strong>:</p>
           
-          <form class="quick-inquiry" id="inquiryForm" onsubmit="event.preventDefault(); alert('Thank you, message sent to Kamalendu!');">
+          <form class="quick-inquiry" id="inquiryForm" action="https://formsubmit.co/kamalenduwork70@gmail.com" method="POST">
+            <!-- FormSubmit Email Routing & Configurations -->
+            <input type="hidden" name="_subject" value="New Project Inquiry for Kamalendu!">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+
             <div class="form-group">
-              <label for="clientName">Your Name</label>
-              <input type="text" id="clientName" placeholder="Name or Company" required>
+              <label for="clientName">YOUR NAME</label>
+              <input type="text" id="clientName" name="name" placeholder="Name or Company" required>
             </div>
             
             <div class="form-group">
-              <label for="clientEmail">Your Email</label>
-              <input type="email" id="clientEmail" placeholder="yourname@example.com" required>
+              <label for="clientEmail">YOUR EMAIL</label>
+              <input type="email" id="clientEmail" name="email" placeholder="client@example.com" required>
             </div>
 
             <div class="form-group">
-              <label>Service Needed</label>
+              <label>SERVICE NEEDED</label>
               <div class="form-checkboxes">
-                <label class="cb-label"><input type="checkbox" checked> After Effects Motion</label>
-                <label class="cb-label"><input type="checkbox" checked> Premiere Pro Video Edit</label>
-                <label class="cb-label"><input type="checkbox"> Photoshop Digital Art</label>
-                <label class="cb-label"><input type="checkbox"> Illustrator Vector Design</label>
-                <label class="cb-label"><input type="checkbox"> Generative AI Concepting</label>
+                <label class="cb-label"><input type="checkbox" name="service_ae" value="After Effects Motion" checked> After Effects Motion</label>
+                <label class="cb-label"><input type="checkbox" name="service_pr" value="Premiere Pro Video Edit" checked> Premiere Pro Video Edit</label>
+                <label class="cb-label"><input type="checkbox" name="service_ps" value="Photoshop Digital Art"> Photoshop Digital Art</label>
+                <label class="cb-label"><input type="checkbox" name="service_ai" value="Illustrator Vector Design"> Illustrator Vector Design</label>
+                <label class="cb-label"><input type="checkbox" name="service_genai" value="Generative AI Concepting"> Generative AI Concepting</label>
               </div>
             </div>
 
             <div class="form-group">
-              <label for="clientMessage">Project Details</label>
-              <textarea id="clientMessage" rows="3" placeholder="Timeline, scope, or reference links..."></textarea>
+              <label for="clientMessage">PROJECT DETAILS</label>
+              <textarea id="clientMessage" name="message" rows="3" placeholder="Timeline, scope, or reference links..."></textarea>
             </div>
 
-            <button type="submit" class="button button-lime w-100">
+            <button type="submit" class="button button-lime w-100" id="inquirySubmitBtn">
               <span>Send Message</span>
               <span>→</span>
             </button>
+
+            <!-- Dynamic Live AJAX Status Container -->
+            <div class="form-status" id="formStatus" aria-live="polite"></div>
           </form>
         </div>
       </div>
@@ -1029,6 +1041,6 @@
     </div>
   </div>
 
-  <script src="script.js?v=3.2"></script>
+  <script src="script.js?v=3.3"></script>
 </body>
 </html>

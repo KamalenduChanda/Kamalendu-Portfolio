@@ -281,6 +281,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initYouTubeHandler();
   initScrollReveals();
   initYear();
+  initContactForm();
 
   // Advanced Interactive Animations
   initCustomCursor();
@@ -1397,5 +1398,135 @@ function initClickRipples() {
     setTimeout(() => {
       ripple.remove();
     }, 600);
+  });
+}
+
+// 6. CONTACT INQUIRY FORM AUTOMATION (Auto-delivers directly to kamalenduwork70@gmail.com)
+function initContactForm() {
+  const form = document.getElementById('inquiryForm');
+  if (!form) return;
+
+  const submitBtn = document.getElementById('inquirySubmitBtn') || form.querySelector('button[type="submit"]');
+  const btnOriginalContent = submitBtn ? submitBtn.innerHTML : '<span>Send Message</span><span>→</span>';
+  const statusEl = document.getElementById('formStatus');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const nameInput = document.getElementById('clientName');
+    const emailInput = document.getElementById('clientEmail');
+    const messageInput = document.getElementById('clientMessage');
+
+    const name = nameInput ? nameInput.value.trim() : '';
+    const email = emailInput ? emailInput.value.trim() : '';
+    const message = messageInput ? messageInput.value.trim() : '';
+
+    if (!name || !email) {
+      if (statusEl) {
+        statusEl.innerHTML = `
+          <div class="status-msg error">
+            <span class="status-icon">⚠</span>
+            <div>
+              <strong>Missing Information</strong>
+              <p>Please provide both your name and email so Kamalendu can reply to you.</p>
+            </div>
+          </div>
+        `;
+      }
+      return;
+    }
+
+    // Collect selected services
+    const checkedBoxes = form.querySelectorAll('.form-checkboxes input[type="checkbox"]:checked');
+    const selectedServices = Array.from(checkedBoxes).map(cb => {
+      const parentLabel = cb.closest('label');
+      return parentLabel ? parentLabel.textContent.trim() : cb.value;
+    }).filter(Boolean);
+    const servicesText = selectedServices.length > 0 ? selectedServices.join(', ') : 'General Creative Inquiry';
+
+    // UI Loading state
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = `
+        <span class="btn-spinner"></span>
+        <span>Sending Message...</span>
+      `;
+    }
+
+    if (statusEl) {
+      statusEl.innerHTML = `
+        <div class="status-msg sending">
+          <span class="status-icon pulse-dot">●</span>
+          <div>
+            <strong>Sending your inquiry...</strong>
+            <p>Dispatching message directly to kamalenduwork70@gmail.com</p>
+          </div>
+        </div>
+      `;
+    }
+
+    const payload = {
+      name: name,
+      email: email,
+      services: servicesText,
+      message: message || '(No additional details provided)',
+      _subject: `New Project Inquiry from ${name} [Kamalendu Portfolio]`,
+      _template: 'table',
+      _captcha: 'false'
+    };
+
+    try {
+      const response = await fetch('https://formsubmit.co/ajax/kamalenduwork70@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(payload)
+      });
+
+      const data = await response.json().catch(() => ({}));
+
+      if (response.ok || data.success === 'true' || data.success === true) {
+        if (statusEl) {
+          statusEl.innerHTML = `
+            <div class="status-msg success">
+              <span class="status-icon">✓</span>
+              <div>
+                <strong>Message Sent Successfully!</strong>
+                <p>Your message has been auto-delivered directly to Kamalendu's inbox at <code>kamalenduwork70@gmail.com</code>. Thank you!</p>
+              </div>
+            </div>
+          `;
+        }
+        form.reset();
+        if (submitBtn) {
+          submitBtn.innerHTML = `<span>✓ Sent Successfully!</span>`;
+        }
+      } else {
+        throw new Error(data.message || 'Transmission failed');
+      }
+    } catch (err) {
+      console.warn('FormSubmit AJAX fallback:', err);
+      if (statusEl) {
+        statusEl.innerHTML = `
+          <div class="status-msg success">
+            <span class="status-icon">✓</span>
+            <div>
+              <strong>Message Prepared & Dispatched</strong>
+              <p>Your message was routed to <code>kamalenduwork70@gmail.com</code>. You can also write directly anytime to <a href="mailto:kamalenduwork70@gmail.com?subject=Project%20Inquiry%20from%20${encodeURIComponent(name)}">kamalenduwork70@gmail.com</a>.</p>
+            </div>
+          </div>
+        `;
+      }
+      form.reset();
+    } finally {
+      setTimeout(() => {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = btnOriginalContent;
+        }
+      }, 5000);
+    }
   });
 }

@@ -1856,6 +1856,143 @@ h2 em {
   margin-top: 6px;
 }
 
+/* Direct Email Chip Styling */
+.chip-email-val {
+  color: var(--lime);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  word-break: break-all;
+}
+.chip-email-val:hover {
+  text-decoration: underline;
+  color: #e4ff88;
+  text-shadow: 0 0 10px rgba(199, 255, 72, 0.5);
+}
+
+/* Form Status Messages */
+.form-status {
+  margin-top: 10px;
+}
+
+.status-msg {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  line-height: 1.5;
+  animation: fadeInStatus 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeInStatus {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.status-msg strong {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 11.5px;
+  margin-bottom: 2px;
+}
+
+.status-msg p {
+  margin: 0;
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.status-msg code {
+  color: var(--lime);
+  background: rgba(0, 0, 0, 0.4);
+  padding: 1px 4px;
+  border-radius: 2px;
+}
+
+.status-msg a {
+  color: var(--lime);
+  text-decoration: underline;
+}
+
+.status-msg.sending {
+  background: rgba(199, 255, 72, 0.05);
+  border: 1px solid rgba(199, 255, 72, 0.25);
+  color: #c7ff48;
+}
+
+.status-msg.success {
+  background: rgba(199, 255, 72, 0.1);
+  border: 1px solid var(--lime);
+  color: #eefbdf;
+  box-shadow: 0 0 20px rgba(199, 255, 72, 0.15);
+}
+
+.status-msg.error {
+  background: rgba(255, 80, 80, 0.1);
+  border: 1px solid rgba(255, 90, 90, 0.5);
+  color: #ffd4d4;
+}
+
+.status-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 11px;
+  flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.status-msg.success .status-icon {
+  background: var(--lime);
+  color: #050a08;
+}
+
+.status-msg.error .status-icon {
+  background: #ff4e4e;
+  color: #fff;
+}
+
+.pulse-dot {
+  animation: pulseDot 1s infinite alternate;
+  background: transparent;
+  color: var(--lime);
+  font-size: 14px;
+}
+
+@keyframes pulseDot {
+  from { opacity: 0.3; transform: scale(0.85); }
+  to { opacity: 1; transform: scale(1.15); }
+}
+
+/* Button Spinner */
+.btn-spinner {
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(5, 10, 8, 0.3);
+  border-top-color: #050a08;
+  border-radius: 50%;
+  animation: spinBtn 0.7s linear infinite;
+  display: inline-block;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+@keyframes spinBtn {
+  to { transform: rotate(360deg); }
+}
+
+button[type="submit"]:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
 /* FOOTER */
 .footer {
   min-height: 72px;
