@@ -470,6 +470,38 @@ a {
   transform: translateY(-2px);
 }
 
+.button-insta {
+  background: linear-gradient(135deg, rgba(225, 48, 108, 0.22) 0%, rgba(131, 58, 180, 0.22) 50%, rgba(253, 29, 29, 0.15) 100%);
+  border: 1px solid rgba(225, 48, 108, 0.55);
+  color: #fff;
+  box-shadow: 0 4px 18px rgba(225, 48, 108, 0.18);
+  backdrop-filter: blur(8px);
+}
+
+.button-insta:hover {
+  background: linear-gradient(135deg, rgba(225, 48, 108, 0.38) 0%, rgba(131, 58, 180, 0.38) 50%, rgba(253, 29, 29, 0.25) 100%);
+  border-color: #ea77ff;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 26px rgba(234, 119, 255, 0.35);
+}
+
+.chip-insta-val {
+  color: #ea77ff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.chip-insta-val:hover {
+  text-decoration: underline;
+  color: #fca8ff;
+  text-shadow: 0 0 10px rgba(234, 119, 255, 0.6);
+}
+
 .play-icon {
   font-size: 10px;
   color: var(--lime);

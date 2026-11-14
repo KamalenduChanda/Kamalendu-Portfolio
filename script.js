@@ -19,6 +19,7 @@
 const SOCIAL_LINKS = {
   youtube: 'https://www.youtube.com/@kc__din70',
   instagram: 'https://www.instagram.com/kc.din?utm_source=ig_web_button_share_sheet&srtk=ZDNlZDc0MzIxNw==',
+  instagramDm: 'https://ig.me/m/kc.din',
   linkedin: 'https://www.linkedin.com/in/kamalendu-chanda-324703339'
 };
 
@@ -329,7 +330,7 @@ function initSocialLinks() {
   if (linkedinHeader) linkedinHeader.href = SOCIAL_LINKS.linkedin;
 
   if (ytContact) ytContact.href = SOCIAL_LINKS.youtube;
-  if (instaContact) instaContact.href = SOCIAL_LINKS.instagram;
+  if (instaContact) instaContact.href = SOCIAL_LINKS.instagramDm || SOCIAL_LINKS.instagram;
   if (linkedinContact) linkedinContact.href = SOCIAL_LINKS.linkedin;
 }
 
